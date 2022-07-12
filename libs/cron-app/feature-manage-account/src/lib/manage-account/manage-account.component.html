@@ -1,0 +1,54 @@
+<nui-cron-app-page-wrapper pageTitle="Plan"
+                           i18n-pageTitle>
+    <h1 nui-page-wrapper-title
+        i18n>
+        Settings
+    </h1>
+
+    <p nui-page-wrapper-subtitle
+       i18n>
+        Manage your Beew account
+    </p>
+
+    <div class="manage-account">
+
+        <div class="manage-account__nav">
+            <nui-vertical-nav>
+                <!-- <a nuiVerticalNavItem
+                   [routerLink]="['/', 'settings', 'account']"
+                   [routerLinkActive]="['is-active']">
+                    <hero-icon name="cog"></hero-icon>
+                    <span i18n>Account</span>
+                </a> -->
+
+                <a nuiVerticalNavItem
+                   [routerLink]="['/', 'settings', 'plan']"
+                   [routerLinkActive]="['is-active']">
+                    <hero-icon name="credit-card"></hero-icon>
+                    <span i18n>Plan</span>
+                </a>
+
+                <a nuiVerticalNavItem
+                   [routerLink]="['/', 'settings', 'api']"
+                   [routerLinkActive]="['is-active']">
+                    <hero-icon name="terminal"></hero-icon>
+                    <span i18n>API</span>
+                </a>
+
+                <a nuiVerticalNavItem
+                   [routerLink]="['/', 'settings', 'support']"
+                   [routerLinkActive]="['is-active']">
+                    <hero-icon name="support"></hero-icon>
+                    <span i18n>Support</span>
+                </a>
+            </nui-vertical-nav>
+        </div>
+
+        <div class="manage-account__content">
+            <router-outlet></router-outlet>
+        </div>
+
+
+    </div>
+
+</nui-cron-app-page-wrapper>

@@ -1,0 +1,29 @@
+:host {
+  display: block;
+}
+
+.privacy-policy {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-y: hidden;
+
+  background: var(--nui-color-neutral-50);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    padding: 64px 32px;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+
+  }
+}

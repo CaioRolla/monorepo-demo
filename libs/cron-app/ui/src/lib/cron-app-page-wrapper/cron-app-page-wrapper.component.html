@@ -1,0 +1,51 @@
+<nui-page-wrapper [pageTitle]="pageTitle">
+
+    <nui-sidebar>
+
+        <img src="assets/logo/icon-app.png"
+             nui-sidebar-logo>
+        <a [routerLink]="['/']"
+           [routerLinkActive]="['is-active']"
+           [routerLinkActiveOptions]="{ exact: true }">
+            <hero-icon name="chart-bar"></hero-icon>
+            <span i18n>Dashboard</span>
+        </a>
+        <a [routerLink]="['/', 'execution']"
+           [routerLinkActive]="['is-active']">
+            <hero-icon name="view-list"></hero-icon>
+            <span i18n>Executions</span>
+        </a>
+
+        <ng-container nui-sidebar-footer>
+            <a [routerLink]="['/', 'settings']"
+               [routerLinkActive]="['is-active']">
+                <hero-icon name="cog"></hero-icon>
+                <span i18n>Settings</span>
+            </a>
+            <a (click)="authAppFacade.logout()"
+               href="#">
+                <hero-icon name="logout"></hero-icon>
+                <span i18n>Logout</span>
+            </a>
+        </ng-container>
+
+        <!-- <div nui-sidebar-footer>TESTE 002</div> -->
+    </nui-sidebar>
+
+    <ng-content ngProjectAs="h1[nui-page-wrapper-title]"
+                select="h1[nui-page-wrapper-title]"></ng-content>
+
+    <ng-content ngProjectAs="[nui-page-wrapper-title-actions]"
+                select="[nui-page-wrapper-title-actions]"></ng-content>
+
+    <ng-content ngProjectAs="p[nui-page-wrapper-subtitle]"
+                select="p[nui-page-wrapper-subtitle]"></ng-content>
+
+    <nui-topbar>
+        <img src="assets/logo/icon-app.png"
+             nui-topbar-logo>
+    </nui-topbar>
+
+    <ng-content></ng-content>
+
+</nui-page-wrapper>

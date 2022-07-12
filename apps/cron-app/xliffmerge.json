@@ -1,0 +1,13 @@
+{
+  "xliffmergeOptions": {
+    "srcDir": "apps/cron-app/locale",
+    "genDir": "apps/cron-app/locale",
+    "defaultLanguage": "en",
+    "beautifyOutput": true,
+    "autotranslate": true,
+    "apikey": "",
+    "languages": [
+      "en"
+    ]
+  }
+}

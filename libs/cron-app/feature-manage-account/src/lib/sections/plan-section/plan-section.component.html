@@ -1,0 +1,135 @@
+<div *ngIf="(account$ | async) as account"
+     class="plan-section">
+
+
+    <div class="plan-section__selector">
+        <nui-button-group>
+            <button nui-button
+                    [attr.checked]="planTypeControl.value === AccountPlanType.MONTHLY"
+                    (click)="planTypeControl.patchValue(AccountPlanType.MONTHLY)">Monthly</button>
+            <button nui-button
+                    [attr.checked]="planTypeControl.value === AccountPlanType.YEARLY"
+                    (click)="planTypeControl.patchValue(AccountPlanType.YEARLY)">Yearly</button>
+        </nui-button-group>
+
+
+        <a *ngIf="acountIsStripe$ | async"
+           href="javascript:"
+           (click)="openStripeCustomerPortal()">Manage Subscription</a>
+
+    </div>
+
+
+    <div class="plan-section__content">
+        <nui-card [active]="account.plan === AccountPlan.FREE">
+            <div class="plan-section-content">
+                <div class="plan-section-content__name"
+                     i18n>
+                    Stater
+                </div>
+                <div class="plan-section-content__price"
+                     i18n>
+                    FREE
+                </div>
+
+                <div class="plan-section-content__separator"></div>
+
+
+                <div class="plan-section-features">
+                    <div class="plan-section-feature"
+                         *ngFor="let feature of freeFeatures">
+                        <div class="plan-section-feature__icon plan-section-feature__icon--{{feature.type}}">
+                        </div>
+                        <div class="plan-section-feature__text"
+                             i18n
+                             [innerHtml]="feature.inner">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nui-card>
+
+
+        <nui-card [active]="account.planType === planTypeControl.value && account.plan === AccountPlan.DEVELOPER">
+            <div class="plan-section-content">
+                <div class="plan-section-content__name"
+                     i18n>
+                    <div>Developer</div>
+                    <a *ngIf="acountCanSubscribePlan$ | async"
+                       href="javascript:"
+                       (click)="planClicked(account, AccountPlan.DEVELOPER, planTypeControl.value)">Subscribe</a>
+                </div>
+                <div *ngIf="planTypeControl.value === AccountPlanType.MONTHLY"
+                     class="plan-section-content__price"
+                     i18n>
+                    $8<small>/month</small>
+                </div>
+
+
+                <div *ngIf="planTypeControl.value === AccountPlanType.YEARLY"
+                     class="plan-section-content__price"
+                     i18n>
+                    $80<small>/year</small>
+                </div>
+
+                <div class="plan-section-content__separator"></div>
+
+
+                <div class="plan-section-features">
+                    <div class="plan-section-feature"
+                         *ngFor="let feature of developerFeatures">
+                        <div class="plan-section-feature__icon plan-section-feature__icon--{{feature.type}}">
+                        </div>
+                        <div class="plan-section-feature__text"
+                             i18n
+                             [innerHtml]="feature.inner">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nui-card>
+
+
+        <nui-card [active]="account.planType === planTypeControl.value && account.plan === AccountPlan.UNLIMITED">
+            <div class="plan-section-content">
+                <div class="plan-section-content__name"
+                     i18n>
+                    <div>Unlimited</div>
+                    <a *ngIf="acountCanSubscribePlan$ | async"
+                       href="javascript:"
+                       (click)="planClicked(account, AccountPlan.UNLIMITED, planTypeControl.value)">Subscribe</a>
+                </div>
+                <div class="plan-section-content__price"
+                     *ngIf="planTypeControl.value === AccountPlanType.MONTHLY"
+                     i18n>
+                    $80<small>/month</small>
+                </div>
+
+                <div class="plan-section-content__price"
+                     *ngIf="planTypeControl.value === AccountPlanType.YEARLY"
+                     i18n>
+                    $800<small>/year</small>
+                </div>
+
+                <div class="plan-section-content__separator"></div>
+
+
+                <div class="plan-section-features">
+                    <div class="plan-section-feature"
+                         *ngFor="let feature of unlimitedFeatures">
+                        <div class="plan-section-feature__icon plan-section-feature__icon--{{feature.type}}">
+                        </div>
+                        <div class="plan-section-feature__text"
+                             i18n
+                             [innerHtml]="feature.inner">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nui-card>
+    </div>
+
+</div>

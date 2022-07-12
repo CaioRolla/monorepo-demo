@@ -1,0 +1,101 @@
+.interview-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 100%;
+
+
+  &__filters {
+    padding-left: 24px;
+  }
+
+  &__table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // max-width: var(--nui-content-container);
+
+    &__header,
+    &__row {
+      display: flex;
+
+      &__first-column {
+        flex: 6;
+
+      }
+
+      &__primary {
+        flex: 2;
+      }
+      // &__started {
+      //   flex: 2;
+      // }
+
+      &__actions {
+        flex: 1;
+      }
+    }
+
+    &__row {
+      align-items: center;
+
+      &--empty {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        font-size: var(--nui-fs-200);
+        color: var(--nui-color-neutral-500);
+        font-weight: 300;
+      }
+
+      &__actions {
+        display: flex;
+        flex-direction: row;
+      }
+
+
+      &__first-column {
+        display: flex;
+        flex-direction: column;
+
+        &__identifiers {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 16px;
+
+          &:empty {
+            display: none;
+          }
+
+          div[nuiChip] {
+            &:not(:last-child) {
+              margin-right: 8px;
+            }
+          }
+        }
+
+        &__open {
+          padding-right: 16px;
+        }
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column-reverse;
+
+    &__filters {
+      padding: 0;
+      padding-bottom: 24px;
+
+      nui-interview-filter {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<div class="api-section">
+    <nui-card>
+        <div class="api-section-content">
+
+            <div class="api-section-content__key">
+                <nui-form-field>
+
+                    <label for="apiKey"
+                           nui-label
+                           i18n>
+                        API Key
+                    </label>
+
+                    <input name="apiKey"
+                           [value]="apiKey$ | async"
+                           type="text"
+                           nui-input
+                           #URLinput
+                           readonly>
+
+                    <button nui-button
+                            nui-input-suffix
+                            [cdkCopyToClipboard]="URLinput.elementRef.nativeElement.value"
+                            (cdkCopyToClipboardCopied)="copiedToClipboard()">
+                        <hero-icon name="clipboard"></hero-icon>
+                    </button>
+                    <nui-hint>
+                        <ng-container i18n>Do not share your API key with anyone.</ng-container>
+                    </nui-hint>
+                </nui-form-field>
+            </div>
+
+            <div class="api-section-content__disclaimer"
+                 i18n>
+                Check out our <a target="_blank"
+                   href="https://beew.io/api">API reference</a> for more information. You can also use our <a target="_blank"
+                   href="https://www.npmjs.com/package/beew">NodeJS SDK</a>.
+            </div>
+        </div>
+    </nui-card>
+
+</div>

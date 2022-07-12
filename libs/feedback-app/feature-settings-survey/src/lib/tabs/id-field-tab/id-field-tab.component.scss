@@ -1,0 +1,75 @@
+:host {
+  display: block;
+}
+
+.id-field {
+  display: flex;
+  flex-direction: column;
+
+  padding: 36px 64px;
+
+  @media screen and (max-width: 600px) {
+    padding: 16px;
+  }
+
+  &__create {
+  }
+
+  &__table {
+    &__row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &__name {
+        flex: 3;
+      }
+      &__status {
+        flex: 2;
+      }
+      &__interviews {
+        flex: 2;
+      }
+      &__actions {
+        flex: 1;
+
+        ::ng-deep button {
+          padding: 0px;
+        }
+      }
+
+      &__empty {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &__msg {
+          text-align: center;
+          max-width: 480px;
+          font-size: var(--nui-fs-200);
+          color: var(--nui-color-neutral-400);
+          font-weight: 300;
+        }
+      }
+    }
+    &__header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &__name {
+        flex: 3;
+      }
+      &__status {
+        flex: 2;
+      }
+      &__interviews {
+        flex: 2;
+      }
+      &__actions {
+        flex: 1;
+      }
+    }
+  }
+}

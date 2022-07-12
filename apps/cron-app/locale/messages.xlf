@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="5410502947509664451" datatype="html">
+        <source>Working late</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/+state/auth-app.selectors.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8772850684697870535" datatype="html">
+        <source>Good evening</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/+state/auth-app.selectors.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7931339902227306467" datatype="html">
+        <source>Good afternon</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/+state/auth-app.selectors.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8829540234129394429" datatype="html">
+        <source>Good morning</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/+state/auth-app.selectors.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5573521891741907372" datatype="html">
+        <source>Hi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/+state/auth-app.selectors.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80fa492363c5cb45e3ed52edefb6f9bda4e3e2f4" datatype="html">
+        <source> Continue with Google </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/login/login.component.html</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1d6a0ac8b5afcaa0b3ffa53059146e710853a2bb" datatype="html">
+        <source> By signing in you accept our <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+                    target=&quot;_blank&quot;
+                    [href]=&quot;config.termsOfServiceUrl&quot;
+                &gt;"/> terms of service <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> . </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/login/login.component.html</context>
+          <context context-type="linenumber">46,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f65253954b66e929a8b4d5ecaf61f9129f8cec64" datatype="html">
+        <source>Dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/ui/src/lib/cron-app-page-wrapper/cron-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="976968dafb6d6fc3778b015a2524bb394227a952" datatype="html">
+        <source> Dashboard </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4200d38e999cbb654dadbd2a177900084d619ce2" datatype="html">
+        <source> You have exceeded your plan limit. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8ec9c89cc410742174cc4a892e75fefe353d2334" datatype="html">
+        <source> Upgrade to create more schedulers and increase the amount of allowed executions. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="76f8cc5cda9c3030cedabb742b28d1a520e56d1d" datatype="html">
+        <source> Schedulers </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">104,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="119ec2d433a7b826197170b744471ba89ad75cd5" datatype="html">
+        <source> Failed Executions </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">115,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f36b76f9c83487b3bed697ee8cdde7da6fdfe29c" datatype="html">
+        <source> Successful Executions </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">128,130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1544348a6496c3dcf8e4905654cbb5f5fee191e6" datatype="html">
+        <source> Name </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/schedules-table/schedules-table.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="115eaa1bdca527ac84208978535af3b828c13a48" datatype="html">
+        <source> Status </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/schedules-table/schedules-table.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f670eb4fe9c6d1e1ab921ff11cd539511a17e52e" datatype="html">
+        <source> Last Execution </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/schedules-table/schedules-table.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b5cc6a03379951012c90cd5f5de910ef9196c4c9" datatype="html">
+        <source> Actions </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/schedules-table/schedules-table.component.html</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4d1fa766fecad29169351a631f76a892941ddd50" datatype="html">
+        <source> Active </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/schedules-table/schedules-table.component.html</context>
+          <context context-type="linenumber">88,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="13caa5384078627d7a51b4ce230c37feb300466e" datatype="html">
+        <source> Paused </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/schedules-table/schedules-table.component.html</context>
+          <context context-type="linenumber">93,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3806b7448e53c19a1d9e577c83d3eec61f8b8275" datatype="html">
+        <source> Running </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/schedules-table/schedules-table.component.html</context>
+          <context context-type="linenumber">101,103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f94f3c8db57e11c8c94a9d1ba54fab014b86c01a" datatype="html">
+        <source> Failure </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/schedules-table/schedules-table.component.html</context>
+          <context context-type="linenumber">106,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7f30f0cc6d7aab164c45ebe19b7534a20df3acd5" datatype="html">
+        <source> Success </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/schedules-table/schedules-table.component.html</context>
+          <context context-type="linenumber">111,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7cc27ecdefea7336870cd06ce2c820cdd786fab0" datatype="html">
+        <source> Aborted (timeout) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/schedules-table/schedules-table.component.html</context>
+          <context context-type="linenumber">116,118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="644f4dd5699a29a14515c4b77646468aa09e8616" datatype="html">
+        <source> Failure (Account Limit) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-home/src/lib/schedules-table/schedules-table.component.html</context>
+          <context context-type="linenumber">121,123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80ff435ff37f4842f7cf4164d10ff08d04603382" datatype="html">
+        <source>Executions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/ui/src/lib/cron-app-page-wrapper/cron-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="62ab657297eb0dedb8f1baa102bb84050c98d99e" datatype="html">
+        <source> Executions </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fe6ab827ae5ac68f122dcea1882eb163694dc4d3" datatype="html">
+        <source> URL </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cecf13586daa3aa540ff611e343094149915f1dc" datatype="html">
+        <source> Scheduler </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e0b6b18999b49db517c66d6a75a2bd7b2445bb59" datatype="html">
+        <source> Status </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="291d66acfe296913a5f17d033208f24da9d9d6bd" datatype="html">
+        <source> Execution </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4eeb88974b66672705c9b7f14708c8b1ea7060da" datatype="html">
+        <source> Duration </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1765589277b4eb40ee1f896b75d27c9ae540f5a3" datatype="html">
+        <source> Running </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">112,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="860843f530235836c49e2a88726c3662fca63cc0" datatype="html">
+        <source> Failure <x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngIf=&quot;execution.responseStatus&quot;&gt;"/>- <x id="INTERPOLATION" equiv-text="{{ execution.responseStatus }}"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">117,119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="84b965a37aadecc301b04389a5b83eabfb725d93" datatype="html">
+        <source> Success - <x id="INTERPOLATION" equiv-text="{{ execution.responseStatus }}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">123,125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2674f590eac2eff01e5bbb0184c8d4acd1e4d5a4" datatype="html">
+        <source> Aborted (timeout) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">128,130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c0c7eb15fde5902933edf1c9ccba9bbd1ce341b1" datatype="html">
+        <source> Failure (Account Limit) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-list-execution/src/lib/list-execution/list-execution.component.html</context>
+          <context context-type="linenumber">133,135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="559ca25b8d4363008d7794a18710e2a4c216d888" datatype="html">
+        <source>Plan</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/manage-account/manage-account.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/manage-account/manage-account.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fbcb7a32844c5ba916ed63b5a7135d201e929212" datatype="html">
+        <source> Settings </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/manage-account/manage-account.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="981a244902f65d9c04a0877df37a749c7547edef" datatype="html">
+        <source> Manage your Beew account </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/manage-account/manage-account.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e351b40b3869a5c7d19c3d4918cb1ac7aaab95c4" datatype="html">
+        <source>API</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/manage-account/manage-account.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b5629d298ff1a69b8db19a4ba2995c76b52da604" datatype="html">
+        <source>Support</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/manage-account/manage-account.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="41681d7d9aa29179a9bb94ecba0cd4e3076b6ab8" datatype="html">
+        <source> API Key </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/api-section/api-section.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b9e8eb78698e9a8dc384eac821d185c223e28407" datatype="html">
+        <source>Do not share your API key with anyone.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/api-section/api-section.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1d370e04fb07dea9c7929a5ee018ce1746508b8c" datatype="html">
+        <source> Check out our <x id="START_LINK" ctype="x-a" equiv-text="&lt;a target=&quot;_blank&quot;
+                   href=&quot;https://beew.io/api&quot;&gt;"/>API reference<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> for more information. You can also use our <x id="START_LINK_1" equiv-text="&lt;a target=&quot;_blank&quot;
+                   href=&quot;https://www.npmjs.com/package/beew&quot;&gt;"/>NodeJS SDK<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/api-section/api-section.component.html</context>
+          <context context-type="linenumber">34,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3212373921185336182" datatype="html">
+        <source>Copied API key to Clipboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/api-section/api-section.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f82459f913eac72f971e0eadb464ce450720a24c" datatype="html">
+        <source> Stater </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/plan-section/plan-section.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3f8e3c00b9aa9a050d9990e84e2b2baae67069b1" datatype="html">
+        <source> FREE </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/plan-section/plan-section.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bedc58621a9f2c764bee1eb16399082d7d903af6" datatype="html">
+        <source><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>Developer<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a *ngIf=&quot;acountCanSubscribePlan$ | async&quot;
+                       href=&quot;javascript:&quot;
+                       (click)=&quot;planClicked(account, AccountPlan.DEVELOPER, planTypeControl.value)&quot;&gt;"/>Subscribe<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/plan-section/plan-section.component.html</context>
+          <context context-type="linenumber">58,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7b8a249ce1b7f77f226f8535f82c92217edda86a" datatype="html">
+        <source> $8<x id="START_SMALL_TEXT" ctype="x-small" equiv-text="&lt;small&gt;"/>/month<x id="CLOSE_SMALL_TEXT" ctype="x-small" equiv-text="&lt;/small&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/plan-section/plan-section.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0038b24f838165642403ded876f9affe8ca3ef33" datatype="html">
+        <source> $80<x id="START_SMALL_TEXT" ctype="x-small" equiv-text="&lt;small&gt;"/>/year<x id="CLOSE_SMALL_TEXT" ctype="x-small" equiv-text="&lt;/small&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/plan-section/plan-section.component.html</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6e46ccf38b6e9668050b6500fc8a3e7dfd52a432" datatype="html">
+        <source><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>Unlimited<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a *ngIf=&quot;acountCanSubscribePlan$ | async&quot;
+                       href=&quot;javascript:&quot;
+                       (click)=&quot;planClicked(account, AccountPlan.UNLIMITED, planTypeControl.value)&quot;&gt;"/>Subscribe<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/plan-section/plan-section.component.html</context>
+          <context context-type="linenumber">99,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7784a68bd083123d10acf58e7d37be526762dbd5" datatype="html">
+        <source> $80<x id="START_SMALL_TEXT" ctype="x-small" equiv-text="&lt;small&gt;"/>/month<x id="CLOSE_SMALL_TEXT" ctype="x-small" equiv-text="&lt;/small&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/plan-section/plan-section.component.html</context>
+          <context context-type="linenumber">106,107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fc681c8bb9c3e308e3123477cb10f84d1ce122ca" datatype="html">
+        <source> $800<x id="START_SMALL_TEXT" ctype="x-small" equiv-text="&lt;small&gt;"/>/year<x id="CLOSE_SMALL_TEXT" ctype="x-small" equiv-text="&lt;/small&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-manage-account/src/lib/sections/plan-section/plan-section.component.html</context>
+          <context context-type="linenumber">112,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="00106e6d4d5fee65de62a0c4d37867f9dac0a88a" datatype="html">
+        <source> Update Scheduler </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule-dialog/save-schedule-dialog.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1c38246ba269e52ec4d2b38ce3224aa1e3558df2" datatype="html">
+        <source> Create Scheduler </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule-dialog/save-schedule-dialog.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fb4d1e0ce01940692d80037663169dffea9bf880" datatype="html">
+        <source> Cancel </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule-dialog/save-schedule-dialog.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80a2dd545e7d96f3efd4d3db03de37201069434a" datatype="html">
+        <source> Save </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule-dialog/save-schedule-dialog.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2d47286f0f7ab05682f45a30cfbc73b810c94322" datatype="html">
+        <source> Create </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule-dialog/save-schedule-dialog.component.html</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="59cccd3b440ed2285ac397121cc45a32d0f74ac7" datatype="html">
+        <source> Name </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b95fa0d5ad58aed9bb7e9f07fe651a53fe6a39e8" datatype="html">
+        <source>Your job must have a name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="91d130f4d03590d2ab82ec6ccd644aaff7dbf49c" datatype="html">
+        <source> Description </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7ec1616e3283fad5873a1a632b370c704011a9d1" datatype="html">
+        <source> Status </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d11348830c0155ec51d35fd98f3a6177a83135b8" datatype="html">
+        <source> Active </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">58,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="73e857f6016aec8eea8feeb4a99a9d91ea94f34d" datatype="html">
+        <source> Paused </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">64,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9b5098744d7ede4e9c0429d37cfe209eecd141b8" datatype="html">
+        <source> Method </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">76,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="58081993ee78abefbe2f95fb001e6859fd3efa94" datatype="html">
+        <source> URL </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ee5219aa2ad7c4c2c74c629b3e01965dac9b2592" datatype="html">
+        <source>You need to inform a target URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ce1405249c57702436158b5bf35e26927df4320c" datatype="html">
+        <source> Recurring execution </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">127,129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71819c3b7ab9d113bef05a57dc10caa3880164c5" datatype="html">
+        <source> Execution Date </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">138,140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6d79dbf51183f6eb6134fedaa2d5b7e6491103cc" datatype="html">
+        <source>You need to inform a execution date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c1896a82d297974d8f3be70bb6eda15e0a737a32" datatype="html">
+        <source>Invalid date format</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="22c4bc6505f651e3db28ff3ab9d05b8671ebb755" datatype="html">
+        <source> Timezone </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">166,168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="46b8a6b0a087717bac0c27a76904dcf7267414a3" datatype="html">
+        <source> Frequency </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">193,195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9fb1e22b0ff3298966a0099fd79d2892b837ddd5" datatype="html">
+        <source> Custom Frequency </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">215,217</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7573e17a10c5e1914cbc619f245c63e4a6dcb5d5" datatype="html">
+        <source> You must configure your job execution frequency </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">225,227</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="163313c1e218a91abdfae69d5fb328a1606fee18" datatype="html">
+        <source>Invalid unix-cron expression</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">230</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="552ceb5047bfaee19ec1f927b523719224ffe0a3" datatype="html">
+        <source> Use <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+                        href=&quot;https://crontab.guru/&quot;
+                        target=&quot;_blank&quot;
+                    &gt;"/> unix-cron schedule expressions <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> to setup the execution dates of your task </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">233,242</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="42fcaf028980448841dcae838217f1bbaa3f70b9" datatype="html">
+        <source> Notify in case of failure <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span
+                    *ngIf=&quot;disableNotificationOption$ | async&quot;
+                    nuiChip
+                &gt;"/> Upgrade <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">259,266</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9dae7d3443bb1a6afe673ef2708b7d14d55a2684" datatype="html">
+        <source> Notification email </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">278,280</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f71879bd3d7a6c026bf0122eac46d5e534413a3b" datatype="html">
+        <source> The email address where the notification will be sent. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">289,291</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b125c66bb6c7db4fe6cc2e0b2b59a3bc2e4de54c" datatype="html">
+        <source> You can only be notified if you provide a email </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">294,296</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8bf2a6b13d79fd1fbbccb5049e7ade1ee7f69f1c" datatype="html">
+        <source>Invalid email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">299</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ff3c0afd09c392bd78de6b7347ce067b51ea5f9f" datatype="html">
+        <source><x id="START_TAG_HERO_ICON" ctype="x-hero_icon" equiv-text="&lt;hero-icon
+                nui-icon-prefix
+                name=&quot;chevron-down&quot;
+            &gt;"/><x id="CLOSE_TAG_HERO_ICON" ctype="x-hero_icon" equiv-text="&lt;/hero-icon&gt;"/> Show more </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">311,316</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ef04c9fac4065f8a7d1f6ab94ad7914513d23037" datatype="html">
+        <source><x id="START_TAG_HERO_ICON" ctype="x-hero_icon" equiv-text="&lt;hero-icon
+                nui-icon-prefix
+                name=&quot;chevron-up&quot;
+            &gt;"/><x id="CLOSE_TAG_HERO_ICON" ctype="x-hero_icon" equiv-text="&lt;/hero-icon&gt;"/> Show less </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">324,329</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2618e0929002d447086ee255b711c038ab9d67d2" datatype="html">
+        <source> Headers </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">338,340</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="df70f72c12509c4dca96a5e9a00a1be99cdcc4a9" datatype="html">
+        <source><x id="START_TAG_HERO_ICON" ctype="x-hero_icon" equiv-text="&lt;hero-icon name=&quot;x&quot;&gt;"/><x id="CLOSE_TAG_HERO_ICON" ctype="x-hero_icon" equiv-text="&lt;/hero-icon&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">382</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="072bb96708b757fbfbd802cbe6ab2853f34e029b" datatype="html">
+        <source><x id="START_TAG_HERO_ICON" ctype="x-hero_icon" equiv-text="&lt;hero-icon
+                    nui-icon-prefix
+                    name=&quot;plus&quot;
+                &gt;"/><x id="CLOSE_TAG_HERO_ICON" ctype="x-hero_icon" equiv-text="&lt;/hero-icon&gt;"/> Add header </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">393,398</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3e25ce5023039975b67cdd905216e31ddc908c55" datatype="html">
+        <source> Response Type </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">407,409</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bf0b70e6cd64263765d1a9c489fc3b303af73321" datatype="html">
+        <source> text </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">418,420</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7ff5595a9922617c5e86a38c2fcd25db9d1932dd" datatype="html">
+        <source> json </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">443,445</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="02cb772a474fef167fcf5d3a2bf031785b3424a0" datatype="html">
+        <source> Payload </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-save-schedule/src/lib/save-schedule/save-schedule.component.html</context>
+          <context context-type="linenumber">461,463</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b8d10cd55fae4e4ad4f87d28e18251694f159bf7" datatype="html">
+        <source>Privacy Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3688f4a9ef4c60980c853930380d31400e08c4f9" datatype="html">
+        <source> Your privacy is important to us. It is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>beew.io&apos;s<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> policy to respect your privacy regarding any information we may collect from you across our website, <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [href]=&quot;&apos;https://beew.io&apos;&quot;&gt;"/>beew.io<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> , and other sites we own and operate. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">5,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9b8c6585d69221a117b5e4f187121624ee4a5908" datatype="html">
+        <source> We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">13,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1f22fe914d0174f73a5734b33ad3550ae8003d2d" datatype="html">
+        <source> We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">19,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="87339153359a6389607dfc01ba1cea498214825f" datatype="html">
+        <source> We don’t share any personally identifying information publicly or with third-parties, except when required to by law. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="333944fa793209ca74dd1913680718ca4a8dddfa" datatype="html">
+        <source> Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">28,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="818c821bf776691fbdbab1023d5708468281ac8f" datatype="html">
+        <source> You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="78bbba11c421db6381b8cf83e244c8badc0ffee9" datatype="html">
+        <source> Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">35,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="61fbbef5c2a64656a62b24905ce6ead6c503c762" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Cookie Policy<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> for <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>beew.io<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">42,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b0121e654914a35c8586aaa1b5c5e49b4e744b2d" datatype="html">
+        <source> This is the Cookie Policy for <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>beew.io<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> , accessible from URL </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">46,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="61da10fdae9de1ce1dd2965c75a8a89997a2e68a" datatype="html">
+        <source> As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or &apos;break&apos; certain elements of the sites functionality. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">52,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8b1f668adef8ea3aa446f96bf64668d250baf7f3" datatype="html">
+        <source> We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">59,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5c7e892d945558449ce4524c745aa6eb8a55cdb5" datatype="html">
+        <source> You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">66,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="434e37e8b23547e1ab93516acc6ca1b11884d442" datatype="html">
+        <source> Account related cookies <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> If you create an account with us then we will use cookies for the management of the signup process and general administration. These cookies will usually be deleted when you log out however in some cases they may remain afterwards to remember your site preferences when logged out. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">72,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="447be27a58c8ac2a083e5334ca595d949458c7cc" datatype="html">
+        <source> Login related cookies <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> We use cookies when you are logged in so that we can remember this fact. This prevents you from having to log in every single time you visit a new page. These cookies are typically removed or cleared when you log out to ensure that you can only access restricted features and areas when logged in. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">79,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5067dbfd3261d19cc54669971113206435f778fe" datatype="html">
+        <source> Email newsletters related cookies <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> This site offers newsletter or email subscription services and cookies may be used to remember if you are already registered and whether to show certain notifications which might only be valid to subscribed/unsubscribed users. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">86,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="33097c84c3e9dbbeff53afcc8ff211dae4058172" datatype="html">
+        <source> Orders processing related cookies <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> This site offers e-commerce or payment facilities and some cookies are essential to ensure that your order is remembered between pages so that we can process it properly. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">94,98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8ba9f983e6c33f0bf98941afc91daff832901bbc" datatype="html">
+        <source> Surveys related cookies <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> From time to time we offer user surveys and questionnaires to provide you with interesting insights, helpful tools, or to understand our user base more accurately. These surveys may use cookies to remember who has already taken part in a survey or to provide you with accurate results after you change pages. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">99,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="84357d1fb3d99b56c0d7bda8cef46c532a288c9f" datatype="html">
+        <source> Forms related cookies <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> When you submit data to through a form such as those found on contact pages or comment forms cookies may be set to remember your user details for future correspondence. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">107,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b5953dfde248f9c64be578aa245b1aaf2120f08c" datatype="html">
+        <source> Site preferences cookies <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> In order to provide you with a great experience on this site we provide the functionality to set your preferences for how this site runs when you use it. In order to remember your preferences we need to set cookies so that this information can be called whenever you interact with a page is affected by your preferences. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">112,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="05e0a4d1c25903da319f5327345e3f8202cc99f1" datatype="html">
+        <source> In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">120,122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12c8a834116a1476a6f0119991575b4c3d9f176d" datatype="html">
+        <source> This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content. For more information on Google Analytics cookies, see the official Google Analytics page. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">124,130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="107653d982c709b0e829bfd660e2f3392779aad0" datatype="html">
+        <source> Third party analytics are used to track and measure usage of this site so that we can continue to produce engaging content. These cookies may track things such as how long you spend on the site or pages you visit which helps us to understand how we can improve the site for you. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">131,135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="992e7ebd80978441bce3f867e4277cdec3720842" datatype="html">
+        <source> From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features these cookies may be used to ensure that you receive a consistent experience whilst on the site whilst ensuring we understand which optimisations our users appreciate the most. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">136,139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6732ecb2e4c7fd7236611855603a8dc9cb8859ea" datatype="html">
+        <source> As we sell products it&apos;s important for us to understand statistics about how many of the visitors to our site actually make a purchase and as such this is the kind of data that these cookies will track. This is important to you as it means that we can accurately make business predictions that allow us to monitor our advertising and product costs to ensure the best possible price. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">140,144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="194c11c19296e5aa8018bc97e5f3d086af5f9248" datatype="html">
+        <source>More Information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="555cc452f3a5bf251ed41898d70bb3d37755b3cc" datatype="html">
+        <source> Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren&apos;t sure whether you need or not it&apos;s usually safer to leave cookies enabled in case it does interact with one of the features you use on our site. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">148,153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b04a8796bf889fce3d9885c978f817d3742a1a5d" datatype="html">
+        <source>Links to Other Websites</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="386a02c12aebdd01335dcf2db1e6937aa062160b" datatype="html">
+        <source> Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party&apos;s site. We strongly advise You to review the Privacy Policy of every site You visit. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">157,160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a1c4ac3de6ff505f5bdb2fa00b16b7e6c76c4209" datatype="html">
+        <source> We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">162,164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="02e9e69ddcbf93de9fd38bc4d0f312142658610d" datatype="html">
+        <source>Contact Us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="95be0a2d829839f9a2bb3ea0710e82d97b3a779a" datatype="html">
+        <source> If you have any questions about this Privacy Policy, You can contact us: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">167,169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e1da2a3dc44cf609eceb8e20d2e50ec9562f65c2" datatype="html">
+        <source>By email: suporte@beew.io</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8f24a5f502cd0a237754b6d065fd2118072fdc10" datatype="html">
+        <source> This policy is effective as of <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>November<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>2020<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> . </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">174,179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1d29468dd602dda2ee3e2daad868e8f106e6cc98" datatype="html">
+        <source>1.Terms of Service</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0a0bc1f7147739fc6ad140119279d2b682e553ba" datatype="html">
+        <source>1. Terms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7a9dc396c7a758e4d93d7a4b78b781691febd5e0" datatype="html">
+        <source> By accessing the website at <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [href]=&quot;&apos;https://beew.io&apos;&quot;&gt;"/>beew.io<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">6,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4fb314f24dca3fcd19df4af3581223db6d1dc8f7" datatype="html">
+        <source>2. Use License</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a18091fe2f3caa3206e7edf20dd0e0b5ef3a2fd6" datatype="html">
+        <source> Permission is granted to temporarily download one copy of the materials (information or software) on beew.io&apos;s website for personal, non-commercial transitory viewing only. This is the grant of a licence, not a transfer of title, and under this licence you may not: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">17,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="74461d6124733ca6996ec1a69c7abf219ab2f5b5" datatype="html">
+        <source>modify or copy the materials;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6a77e2a5b7912fbc7ffcdf88263317bbb5590dda" datatype="html">
+        <source> use the materials for any commercial purpose, or for any public display (commercial or non-commercial); </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="37116126a46ec0b7a309ce52ca550c4128cb6a74" datatype="html">
+        <source> attempt to decompile or reverse engineer any software contained on beew.io website; </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ec3e3a947a04d6c97c6b9acddbc7fe52c27c6ff4" datatype="html">
+        <source> remove any copyright or other proprietary notations from the materials; or </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30f8a793f614ba90c77081e77f89ecde66df877a" datatype="html">
+        <source> transfer the materials to another person or &apos;mirror&apos; the materials on any other server. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4b1e804f9297b13a6a59adef9bfcc6eece8a889d" datatype="html">
+        <source> 2. This licence shall automatically terminate if you violate any of these restrictions and may be terminated by beew.io at any time. Upon terminating your viewing of these materials or upon the termination of this licence, you must destroy any downloaded materials in your possession whether in electronic or printed format. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">39,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f748a1e7c773da4c44c6c66c50623d86feefabaf" datatype="html">
+        <source>3. Disclaimer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e33d0988b38177c6cffbc3af0b64f4aee48993bd" datatype="html">
+        <source> 1. The materials on beew.io&apos;s website are provided on an &apos;as is&apos; basis. beew.io makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">48,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9251c9fd95552f7dcde5215907ed1b5d208e0fa6" datatype="html">
+        <source> 2. Further, beew.io does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">53,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8f3e70892c71035964b1992cc9305e9a1fa0015b" datatype="html">
+        <source>4. Limitations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4d3e33e5582d6918497e9768691696f2ff11168d" datatype="html">
+        <source> In no event shall beew.io or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on beew.io&apos;s website, even if beew.io or a beew.io authorised representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">61,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="57f31ad9dc10b7a8924e0c73101ea473bb031c4d" datatype="html">
+        <source>5. Accuracy of materials</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12debb23493ba92053697098983840d7fb6279a5" datatype="html">
+        <source> The materials appearing on beew.io&apos;s website could include technical, typographical, or photographic errors. beew.io does not warrant that any of the materials on its website are accurate, complete or current. beew.io may make changes to the materials contained on its website at any time without notice. However beew.io does not make any commitment to update the materials. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">70,74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6fa36c4adfd57d331798cd509e4dc0290f72a5b8" datatype="html">
+        <source>6. Links</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="78db9d60d71c3a954313540b8751470a3e881106" datatype="html">
+        <source> beew.io has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by beew.io of the site. Use of any such linked website is at the user&apos;s own risk. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">76,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e504f6c58226571d6c916612cdca1db103645302" datatype="html">
+        <source>7. Modifications</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f52baa849f0fc908efc4282a5efb2bc8386a4991" datatype="html">
+        <source> beew.io may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">82,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="04501c61d73e14890654834632eae0e005e58ac3" datatype="html">
+        <source>8. Governing Law</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="df64bc62850b591298534231e6464e66d118063f" datatype="html">
+        <source> These terms and conditions are governed by and construed in accordance with the laws of beew.io and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/feature-terms/src/lib/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">86,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="121cc5391cd2a5115bc2b3160379ee5b36cd7716" datatype="html">
+        <source>Settings</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/ui/src/lib/cron-app-page-wrapper/cron-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb694b49d408265c91c62799c2b3a7e3151c824d" datatype="html">
+        <source>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/ui/src/lib/cron-app-page-wrapper/cron-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5bb48ff19f7f3c554d3040701af20530cddab118" datatype="html">
+        <source> (optional)
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/shared-app/forms/src/lib/form-field/label/label.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb7d844af3b660d1d40c0aab61b78bdb3a78136c" datatype="html">
+        <source><x id="START_TAG_NG_CONTENT" ctype="x-ng_content" equiv-text="&lt;ng-content select=&quot;[nui-cta-card-title]&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTENT" ctype="x-ng_content" equiv-text="&lt;/ng-content&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/shared-app/ui/src/lib/cta-card/cta-card.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/shared-app/ui/src/lib/cta-card/cta-card.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="808294c2fe6ae422cdce77e4aaddb2eaac5e18fa" datatype="html">
+        <source> Loading... </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/shared-app/ui/src/lib/loading-content/loading-content.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ec2a80f075341f0fb54d70ba46311d59ec9f26c6" datatype="html">
+        <source> Showing <x id="INTERPOLATION" equiv-text="{{ showingCount }}"/> of <x id="INTERPOLATION_1" equiv-text="{{ totalCount }}"/> results </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/shared-app/ui/src/lib/paginator/paginator.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="94516fa213706c67ce5a5b5765681d7fb032033a" datatype="html">
+        <source>Loading...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/shared-app/ui/src/lib/paginator/paginator.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

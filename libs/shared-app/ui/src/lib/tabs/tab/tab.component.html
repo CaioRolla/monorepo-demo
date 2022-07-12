@@ -1,0 +1,12 @@
+<div
+    class="tab"
+>
+    <div
+        class="tab__content"
+        #content
+    >
+        <ng-container *ngIf="!(hidden$ | async)">
+            <ng-content></ng-content>
+        </ng-container>
+    </div>
+</div>

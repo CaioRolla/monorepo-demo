@@ -1,0 +1,49 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.linear-progress {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 4px;
+  width: 100%;
+
+  border-radius: 4px;
+
+  background: var(--nui-color-neutral-100);
+
+  &__bar {
+    display: block;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &--primary {
+    .linear-progress__bar {
+      background: var(--nui-color-primary-500);
+    }
+  }
+
+  &--accent {
+    .linear-progress__bar {
+      background: var(--nui-color-accent-500);
+    }
+  }
+
+  &--neutral {
+    .linear-progress__bar {
+      background: var(--nui-color-neutral-500);
+    }
+  }
+
+  &--success {
+    .linear-progress__bar {
+      background: var(--nui-color-success-500);
+    }
+  }
+}

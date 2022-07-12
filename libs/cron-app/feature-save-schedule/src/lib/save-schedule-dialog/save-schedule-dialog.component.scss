@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+
+
+.save-schedule-dialog {
+  width: 90vw;
+  max-width: 620px;
+
+  &__content {
+    padding: 16px;
+    max-height: calc(100vh - 71px - 59px - 64px);
+    overflow: auto;
+
+  }
+}

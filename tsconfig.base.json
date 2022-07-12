@@ -1,0 +1,130 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nui/+asset/app": ["libs/+asset/app/src/index.ts"],
+      "@nui/+asset/app/*": ["libs/+asset/app/src/lib/*"],
+      "@nui/+asset/core": ["libs/+asset/core/src/index.ts"],
+      "@nui/+asset/server": ["libs/+asset/server/src/index.ts"],
+      "@nui/+auth/app": ["libs/+auth/app/src/index.ts"],
+      "@nui/+auth/core": ["libs/+auth/core/src/index.ts"],
+      "@nui/+auth/server": ["libs/+auth/server/src/index.ts"],
+      "@nui/+webhook/core": ["libs/+webhook/core/src/index.ts"],
+      "@nui/+webhook/server": ["libs/+webhook/server/src/index.ts"],
+      "@nui/cron-app/account": ["libs/cron-app/account/src/index.ts"],
+      "@nui/cron-app/application": ["libs/cron-app/application/src/index.ts"],
+      "@nui/cron-app/feature-home": ["libs/cron-app/feature-home/src/index.ts"],
+      "@nui/cron-app/feature-list-execution": [
+        "libs/cron-app/feature-list-execution/src/index.ts"
+      ],
+      "@nui/cron-app/feature-login-merch": [
+        "libs/cron-app/feature-login-merch/src/index.ts"
+      ],
+      "@nui/cron-app/feature-manage-account": [
+        "libs/cron-app/feature-manage-account/src/index.ts"
+      ],
+      "@nui/cron-app/feature-save-schedule": [
+        "libs/cron-app/feature-save-schedule/src/index.ts"
+      ],
+      "@nui/cron-app/feature-terms": [
+        "libs/cron-app/feature-terms/src/index.ts"
+      ],
+      "@nui/cron-app/login-merch": ["libs/cron-app/login-merch/src/index.ts"],
+      "@nui/cron-app/ui": ["libs/cron-app/ui/src/index.ts"],
+      "@nui/cron-app/ui/*": ["libs/cron-app/ui/src/lib/*"],
+      "@nui/cron-shared/core": ["libs/cron-shared/core/src/index.ts"],
+      "@nui/eminem-shared/core": ["libs/eminem-shared/core/src/index.ts"],
+      "@nui/feedback-app/account": ["libs/feedback-app/account/src/index.ts"],
+      "@nui/feedback-app/application": [
+        "libs/feedback-app/application/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-create-identifier": [
+        "libs/feedback-app/feature-create-identifier/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-create-integration": [
+        "libs/feedback-app/feature-create-integration/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-create-survey": [
+        "libs/feedback-app/feature-create-survey/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-delete-survey": [
+        "libs/feedback-app/feature-delete-survey/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-home": [
+        "libs/feedback-app/feature-home/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-integration": [
+        "libs/feedback-app/feature-integration/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-integration-list": [
+        "libs/feedback-app/feature-integration-list/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-interview": [
+        "libs/feedback-app/feature-interview/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-interview-filter": [
+        "libs/feedback-app/feature-interview-filter/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-interview-list": [
+        "libs/feedback-app/feature-interview-list/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-login-merch": [
+        "libs/feedback-app/feature-login-merch/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-settings-survey": [
+        "libs/feedback-app/feature-settings-survey/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-setup-survey": [
+        "libs/feedback-app/feature-setup-survey/src/index.ts"
+      ],
+      "@nui/feedback-app/feature-survey-dashboard": [
+        "libs/feedback-app/feature-survey-dashboard/src/index.ts"
+      ],
+      "@nui/feedback-app/questions": [
+        "libs/feedback-app/questions/src/index.ts"
+      ],
+      "@nui/feedback-app/ui": ["libs/feedback-app/ui/src/index.ts"],
+      "@nui/feedback-app/ui/*": ["libs/feedback-app/ui/src/lib/*"],
+      "@nui/feedback-shared/core": ["libs/feedback-shared/core/src/index.ts"],
+      "@nui/health/server": ["libs/+health/server/src/index.ts"],
+      "@nui/job-app/feature-create": [
+        "libs/job-app/feature-create/src/index.ts"
+      ],
+      "@nui/job-app/ui": ["libs/job-app/ui/src/index.ts"],
+      "@nui/job-app/ui/*": ["libs/job-app/ui/src/lib/*"],
+      "@nui/job-shared/core": ["libs/job-shared/core/src/index.ts"],
+      "@nui/shared-app/forms": ["libs/shared-app/forms/src/index.ts"],
+      "@nui/shared-app/forms/*": ["libs/shared-app/forms/src/lib/*"],
+      "@nui/shared-app/ui": ["libs/shared-app/ui/src/index.ts"],
+      "@nui/shared-app/ui/*": ["libs/shared-app/ui/src/lib/*"],
+      "@nui/shared-app/utils": ["libs/shared-app/utils/src/index.ts"],
+      "@nui/shared-server/beew": ["libs/shared-server/beew/src/index.ts"],
+      "@nui/shared-server/email-list": [
+        "libs/shared-server/email-list/src/index.ts"
+      ],
+      "@nui/shared-server/logging": ["libs/shared-server/logging/src/index.ts"],
+      "@nui/shared-server/sitemap": ["libs/shared-server/sitemap/src/index.ts"],
+      "@nui/shared-server/stripe": ["libs/shared-server/stripe/src/index.ts"],
+      "@nui/shared-server/upload": ["libs/shared-server/upload/src/index.ts"],
+      "@nui/shared-server/utils": ["libs/shared-server/utils/src/index.ts"],
+      "@nui/shared-server/utils/*": ["libs/shared-server/utils/src/lib/*"],
+      "@nui/shared/utils": ["libs/shared/utils/src/index.ts"],
+      "@nui/shared/utils/*": ["libs/shared/utils/src/lib/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

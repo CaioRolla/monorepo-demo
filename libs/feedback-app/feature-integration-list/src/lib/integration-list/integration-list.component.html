@@ -1,0 +1,72 @@
+<nui-feedback-app-page-wrapper
+    pageTitle="Integrations"
+    i18n-pageTitle
+>
+
+    <h1
+        nui-page-wrapper-title
+        i18n
+        style="display: inline-flex; align-items: center;"
+    >
+        Integrations <div style="margin-left:16px; display: inline-block; background: red; color: white; font-size: 10px; padding: 4px 6px; border-radius: 20px; line-height: 10px;">Comming Soon</div>
+    </h1>
+
+    <p nui-page-wrapper-subtitle>
+        Make Surveyx work with apps that you already love.
+    </p>
+
+    <div class="integration-list">
+
+        <div class="integration-list__available">
+
+            <nui-card>
+                <div class="integration-list__available__integration">
+                    <div class="integration-list__available__integration__icon">
+                        <hero-icon name="beaker"></hero-icon>
+                    </div>
+                    <div class="integration-list__available__integration__name">Custom Integration</div>
+                    <div class="integration-list__available__integration__desc">
+                        <p>
+                            Create a custom integration with your favorite apps using webhooks.
+                        </p>
+                        <p>
+                            If you wasn't able to setup your custom integration, get in touch with our
+                            <a
+                                href="mailto:caio.rolla@surveyx.co"
+                                
+                            >
+                                Support.
+                            </a>
+
+                        </p>
+                    </div>
+                    <div class="integration-list__available__integration__cta">
+                        <button
+                            (click)="createCustomIntegrationClicked()"
+                            nui-primary-button
+                            disabled
+                        >
+                            <hero-icon
+                                nui-icon-prefix
+                                name="plus"
+                            ></hero-icon>
+                            <ng-container i18n>Create Integration</ng-container>
+                        </button>
+                    </div>
+                </div>
+            </nui-card>
+            <!-- <nui-card>
+                <div class="integration-list__available__integration">TODO</div>
+            </nui-card>
+
+            <nui-card>
+                <div class="integration-list__available__integration">TODO</div>
+            </nui-card> -->
+
+        </div>
+
+        <div class="integration-list__current"></div>
+
+    </div>
+
+</nui-feedback-app-page-wrapper>

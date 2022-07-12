@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="en">
+    <body>
+      <trans-unit id="5410502947509664451" datatype="html">
+        <source>Working late</source>
+        <target state="final">Working late</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/+state/auth-app.selectors.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8772850684697870535" datatype="html">
+        <source>Good evening</source>
+        <target state="final">Good evening</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/+state/auth-app.selectors.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7931339902227306467" datatype="html">
+        <source>Good afternon</source>
+        <target state="final">Good afternon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/+state/auth-app.selectors.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8829540234129394429" datatype="html">
+        <source>Good morning</source>
+        <target state="final">Good morning</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/+state/auth-app.selectors.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5573521891741907372" datatype="html">
+        <source>Hi</source>
+        <target state="final">Hi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/+state/auth-app.selectors.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80fa492363c5cb45e3ed52edefb6f9bda4e3e2f4" datatype="html">
+        <source> Continue with Google </source>
+        <target state="final"> Continue with Google </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/login/login.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1d6a0ac8b5afcaa0b3ffa53059146e710853a2bb" datatype="html">
+        <source> By signing in you accept our <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+                    target=&quot;_blank&quot;
+                    [href]=&quot;config.termsOfServiceUrl&quot;
+                >"/> terms of service <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> . </source>
+        <target state="final"> By signing in you accept our <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+                    target=&quot;_blank&quot;
+                    [href]=&quot;config.termsOfServiceUrl&quot;
+                >"/> terms of service <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> . </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/login/login.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f4e529ae5ffd73001d1ff4bbdeeb0a72e342e5c8" datatype="html">
+        <source>Close</source>
+        <target state="final">Close</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/account/src/lib/dialogs/canceled-dialog/canceled-dialog.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/account/src/lib/dialogs/start-trial-dialog/start-trial-dialog.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e5580416a35e85e0ce48cf447c45043386d1027f" datatype="html">
+        <source>Renew Plan</source>
+        <target state="final">Renew Plan</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/account/src/lib/dialogs/canceled-dialog/canceled-dialog.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f6df27e9f40ac782a659ae2bfebf05269c5b6d53" datatype="html">
+        <source> Get access to all features, unlimited surveys and feedbacks by paying only $9 monthly. </source>
+        <target state="final"> Get access to all features, unlimited surveys and feedbacks by paying only $9 monthly. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/account/src/lib/dialogs/start-trial-dialog/start-trial-dialog.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="05bab237c07aaa59243993ef7cb6ee2256cffdf5" datatype="html">
+        <source> Get two months for free with access to all features, unlimited surveys and feedbacksby paying only $90 yearly. </source>
+        <target state="final"> Get two months for free with access to all features, unlimited surveys and feedbacksby paying only $90 yearly. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/account/src/lib/dialogs/start-trial-dialog/start-trial-dialog.component.html</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f732c304c7433e5a83ffcd862c3dce709a0f4982" datatype="html">
+        <source>Next</source>
+        <target state="final">Next</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/account/src/lib/dialogs/start-trial-dialog/start-trial-dialog.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="404740840682620905" datatype="html">
+        <source>Identifier created successfully!</source>
+        <target state="final">Identifier created successfully!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-identifier/src/lib/+state/create-identifier.effects.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2041417c40fe05fb0c9631aeb72df3e1d1ccf9d0" datatype="html">
+        <source> Key </source>
+        <target state="final"> Key </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-identifier/src/lib/create-identifier/create-identifier.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aa33014f01e67c3f89b264244ed31e1a4bc42df0" datatype="html">
+        <source>Your identifier must have a unique key.</source>
+        <target state="final">Your identifier must have a unique key.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-identifier/src/lib/create-identifier/create-identifier.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ae92352b1adb4bfd2754412f681b63dbe9bd1e87" datatype="html">
+        <source> The Identifier key will be used in the Survey URL: &amp;key=value </source>
+        <target state="final"> The Identifier key will be used in the Survey URL: &amp;key=value </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-identifier/src/lib/create-identifier/create-identifier.component.html</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c1c885afd2594e086a7165c9d67fa1522ef46263" datatype="html">
+        <source> Unique </source>
+        <target state="final"> Unique </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-identifier/src/lib/create-identifier/create-identifier.component.html</context>
+          <context context-type="linenumber">38,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="20344c27cb46a20285949211713eb3089d44d5e0" datatype="html">
+        <source> Create </source>
+        <target state="final"> Create </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-identifier/src/lib/create-identifier/create-identifier.component.html</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8738090380307387281" datatype="html">
+        <source>Integration created successfully!</source>
+        <target state="final">Integration created successfully!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-integration/src/lib/+state/create-integration.effects.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e222a5ee5cb2e348d3badf303f3fabe5d846d98a" datatype="html">
+        <source>Create Integration</source>
+        <target state="final">Create Integration</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-integration/src/lib/create-integration-dialog/create-integration-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-integration-list/src/lib/integration-list/integration-list.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c406e0bf3b57c09e5f25a3d0bfb156c46fdba5d6" datatype="html">
+        <source> Name </source>
+        <target state="final"> Name </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-integration/src/lib/create-integration-dialog/create-integration-dialog.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c3ebd6f2bc25d2900fbd6ee6f6764a515fbe8c8d" datatype="html">
+        <source>Your integration must have a name</source>
+        <target state="final">Your integration must have a name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-integration/src/lib/create-integration-dialog/create-integration-dialog.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fbc70fd2e29ab17aca5b1856be1038338506290d" datatype="html">
+        <source> Description </source>
+        <target state="final"> Description </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-integration/src/lib/create-integration-dialog/create-integration-dialog.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e7e4957155dd0e48d4266d1044a2b128c3fdc275" datatype="html">
+        <source> Cancel </source>
+        <target state="final"> Cancel </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-integration/src/lib/create-integration-dialog/create-integration-dialog.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="98af075eab54aec6f2ebc27a99e89e6abd566435" datatype="html">
+        <source> Create </source>
+        <target state="final"> Create </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-integration/src/lib/create-integration-dialog/create-integration-dialog.component.html</context>
+          <context context-type="linenumber">65,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d71f968e49d2e81e47ec305b2e03ed4ec9c703b9" datatype="html">
+        <source>Create Survey</source>
+        <target state="final">Create Survey</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-survey/src/lib/create-survey-dialog/create-survey-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">354</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1544348a6496c3dcf8e4905654cbb5f5fee191e6" datatype="html">
+        <source> Name </source>
+        <target state="final"> Name </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-survey/src/lib/create-survey-dialog/create-survey-dialog.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2b63b57f9a221ea7bb9e70fd25b5a415294805aa" datatype="html">
+        <source>Your survey must have a name</source>
+        <target state="final">Your survey must have a name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-survey/src/lib/create-survey-dialog/create-survey-dialog.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b95fa0d5ad58aed9bb7e9f07fe651a53fe6a39e8" datatype="html">
+        <source>Your job must have a name</source>
+        <target state="final">Your job must have a name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bf8636634d2d00fe63982098d0eae588f20b3c4e" datatype="html">
+        <source> Description </source>
+        <target state="final"> Description </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-survey/src/lib/create-survey-dialog/create-survey-dialog.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bf844a41a29961b6dacc48a20eaf97bef0cf5013" datatype="html">
+        <source> Cancel </source>
+        <target state="final"> Cancel </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-survey/src/lib/create-survey-dialog/create-survey-dialog.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="75db05d5e0bebee12a6a7b0e31ea09754d18d8fb" datatype="html">
+        <source> Next </source>
+        <target state="final"> Next </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-create-survey/src/lib/create-survey-dialog/create-survey-dialog.component.html</context>
+          <context context-type="linenumber">65,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7570218351900448135" datatype="html">
+        <source>Survey deleted successfully</source>
+        <target state="final">Survey deleted successfully</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-delete-survey/src/lib/+state/delete-survey.effects.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="be6e75e7270795f9cecb795ea895773f1cb04f57" datatype="html">
+        <source> You are about to permanently delete the survey <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong>"/><x id="INTERPOLATION" equiv-text="{{data?.surveyName}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong>"/> . Are you sure you want to continue? </source>
+        <target state="final"> You are about to permanently delete the survey <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong>"/><x id="INTERPOLATION" equiv-text="{{data?.surveyName}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong>"/> . Are you sure you want to continue? </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-delete-survey/src/lib/delete-survey-dialog/delete-survey-dialog.component.html</context>
+          <context context-type="linenumber">6,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fb4d1e0ce01940692d80037663169dffea9bf880" datatype="html">
+        <source> Cancel </source>
+        <target state="final"> Cancel </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-delete-survey/src/lib/delete-survey-dialog/delete-survey-dialog.component.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e5d6e906566e0f2de984d137b2de401b2ce36c68" datatype="html">
+        <source> Delete </source>
+        <target state="final"> Delete </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-delete-survey/src/lib/delete-survey-dialog/delete-survey-dialog.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="43a51f6aa1c907dfef5d2e40423995e30f56f236" datatype="html">
+        <source>Surveys</source>
+        <target state="final">Surveys</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/ui/src/lib/feedback-app-page-wrapper/feedback-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d782ddf2f12e9069c7ba021cbf818d7aad59d73a" datatype="html">
+        <source> Surveys </source>
+        <target state="final"> Surveys </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="44d76b81022eea3a327b40806bc11f9160bdfe6b" datatype="html">
+        <source> Name </source>
+        <target state="final"> Name </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8ac0a8b50bf981a87e4a7dc3539d101056aea1a5" datatype="html">
+        <source> Metric </source>
+        <target state="final"> Metric </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">98,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8ef250d6664b34a3f9fe986ba589d764e44fcee1" datatype="html">
+        <source> Status </source>
+        <target state="final"> Status </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ab80b2039460b40c89561d077704dddcf569e509" datatype="html">
+        <source> Responses </source>
+        <target state="final"> Responses </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">110,112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9136cf4d6a01a3696ba0e7afd3d0f20f5677e284" datatype="html">
+        <source> Actions </source>
+        <target state="final"> Actions </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6be1ba10af61dcc6278b64efefbbe2856d234316" datatype="html">
+        <source> 🚀 NPS </source>
+        <target state="final"> 🚀 NPS </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">190,192</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="78a313dd21883103b3adba02e787e143f49e33d0" datatype="html">
+        <source> 🎖 CSAT </source>
+        <target state="final"> 🎖 CSAT </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">196,198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bee9d0143c530af2f7ffad694a7c259d4587c160" datatype="html">
+        <source> 👍 Like &amp; Dislike </source>
+        <target state="final"> 👍 Like &amp; Dislike </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">202,204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6e28c32564a07d3acca66fc8e870f29341550c36" datatype="html">
+        <source> - </source>
+        <target state="final"> - </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">208,210</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b36c42f498080855cc8c4732fc75fb2a6beb7f56" datatype="html">
+        <source> Draft </source>
+        <target state="final"> Draft </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">219,221</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="70d5b7a478bdaf0ac1bb35b4c1fb9dbd1e724fbc" datatype="html">
+        <source> Active </source>
+        <target state="final"> Active </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">225,227</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c321b3a75c6127ae50456bfd7bdc2024eb407fc9" datatype="html">
+        <source> Stopped </source>
+        <target state="final"> Stopped </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">231,233</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="045e47e68e1120b3a5acf4cad60ef1331e1b73ca" datatype="html">
+        <source> You don't have any Surveys yet </source>
+        <target state="final"> You don't have any Surveys yet </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">325,327</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2760fc878fe1afae53b016567e510adb593a2f92" datatype="html">
+        <source> Create a Survey and start collecting feedback from your Newsletter subscribers. </source>
+        <target state="final"> Create a Survey and start collecting feedback from your Newsletter subscribers. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-home/src/lib/home/home.component.html</context>
+          <context context-type="linenumber">331</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28ac130a4af687a4e23538cab4f2b5306503b6cc" datatype="html">
+        <source>Integrations</source>
+        <target state="final">Integrations</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-integration-list/src/lib/integration-list/integration-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-integration/src/lib/integration/integration.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/ui/src/lib/feedback-app-page-wrapper/feedback-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="85ff6807d4a2c0601f31e0b08fe5b8671a5f4a89" datatype="html">
+        <source> Integrations <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div style=&quot;margin-left:16px; display: inline-block; background: red; color: white; font-size: 10px; padding: 4px 6px; border-radius: 20px; line-height: 10px;&quot;>"/>Comming Soon<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div>"/></source>
+        <target state="final"> Integrations <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div style=&quot;margin-left:16px; display: inline-block; background: red; color: white; font-size: 10px; padding: 4px 6px; border-radius: 20px; line-height: 10px;&quot;>"/>Comming Soon<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div>"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-integration-list/src/lib/integration-list/integration-list.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f11894f128ea5ce2aa3675586b36a6684708c4cb" datatype="html">
+        <source> Integrations </source>
+        <target state="final"> Integrations </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-integration/src/lib/integration/integration.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3beab084118a314af76bf69c9a3af62d27675a87" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ option.value }}"/> </source>
+        <target state="final"> <x id="INTERPOLATION" equiv-text="{{ option.value }}"/> </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-interview-filter/src/lib/interview-filter/interview-filter.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e12cf9872dd6c1a4f04c8b06a5b78628eb5f2fbb" datatype="html">
+        <source>Responses</source>
+        <target state="final">Responses</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-interview-list/src/lib/interview-list/interview-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bbc94e96f67d2ba88f165077d8bdff9d33067f27" datatype="html">
+        <source> Responses </source>
+        <target state="final"> Responses </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-interview-list/src/lib/interview-list/interview-list.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d2950f54e9b93802424d14ffe69d0b0de59cc5a6" datatype="html">
+        <source> Survey not found. Please contact the owner of the survey. </source>
+        <target state="final"> Survey not found. Please contact the owner of the survey. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-interview/src/lib/interview/interview.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="255b836d1904086189b0d2daa5b2f36d33cd1d1f" datatype="html">
+        <source> Finish </source>
+        <target state="final"> Finish </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-interview/src/lib/interview/interview.component.html</context>
+          <context context-type="linenumber">157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="06728218406254093856df65e55c5e412864fad0" datatype="html">
+        <source> Thanks for your feedback! </source>
+        <target state="final"> Thanks for your feedback! </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-interview/src/lib/interview/interview.component.html</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bf45d62be6f4b9c4abb5a999330ae21b10514b20" datatype="html">
+        <source> You will be redirected in a few seconds. </source>
+        <target state="final"> You will be redirected in a few seconds. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-interview/src/lib/interview/interview.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="559ca25b8d4363008d7794a18710e2a4c216d888" datatype="html">
+        <source>Plan</source>
+        <target state="final">Plan</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/ui/src/lib/feedback-app-page-wrapper/feedback-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f147d0f7f965cccee2e77294cba8e1b88021fa08" datatype="html">
+        <source>Upgrade</source>
+        <target state="final">Upgrade</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/ui/src/lib/feedback-app-page-wrapper/feedback-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5579352331243682633" datatype="html">
+        <source>New settings successfully saved!</source>
+        <target state="final">New settings successfully saved!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/+state/settings-survey.effects.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="121cc5391cd2a5115bc2b3160379ee5b36cd7716" datatype="html">
+        <source>Settings</source>
+        <target state="final">Settings</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/settings-survey/settings-survey.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/settings-survey/settings-survey.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c5a982e1992b27aa80db793741a4b45f173436a9" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ surveyName }}"/> </source>
+        <target state="final"> <x id="INTERPOLATION" equiv-text="{{ surveyName }}"/> </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/settings-survey/settings-survey.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-survey-dashboard/src/lib/survey-dashboard/survey-dashboard.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0bd8b27f60a1f098a53e06328426d818e3508ff9" datatype="html">
+        <source>Share</source>
+        <target state="final">Share</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/settings-survey/settings-survey.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d1edd8a469504e449fe9f8c6e22dac01ed44ed05" datatype="html">
+        <source>Identifiers</source>
+        <target state="final">Identifiers</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/settings-survey/settings-survey.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="af2998ca6ac6d97e0f5647f11c900a92201294d3" datatype="html">
+        <source> Identifiers </source>
+        <target state="final"> Identifiers </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/id-field-tab/id-field-tab.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8ac44d3196d366223b47a37cd7dc1aea4713d71c" datatype="html">
+        <source> Identify your survey respondent by their email address, phone number, or other unique identifier. You can also use non-unique identifiers such as gender and name. </source>
+        <target state="final"> Identify your survey respondent by their email address, phone number, or other unique identifier. You can also use non-unique identifiers such as gender and name. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/id-field-tab/id-field-tab.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4dee4852daafb7f36143b0c7dc500015a6497e4a" datatype="html">
+        <source> Key </source>
+        <target state="final"> Key </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/id-field-tab/id-field-tab.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="978eaa3bc361bdd4fec6cfb88c567dd4343af616" datatype="html">
+        <source> Unique </source>
+        <target state="final"> Unique </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/id-field-tab/id-field-tab.component.html</context>
+          <context context-type="linenumber">40,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fcc2a3a5e95eef9d883d7fb3371793c50362dd7b" datatype="html">
+        <source> Values </source>
+        <target state="final"> Values </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/id-field-tab/id-field-tab.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7360542d7e041efebeeab189ae6c74c0441c2c78" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ identifier.key }}"/> </source>
+        <target state="final"> <x id="INTERPOLATION" equiv-text="{{ identifier.key }}"/> </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/id-field-tab/id-field-tab.component.html</context>
+          <context context-type="linenumber">63,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="13dda130e5bd007dfee99eee6f08b8a2b5699734" datatype="html">
+        <source><x id="START_TAG_NUI_CHECKBOX_FIELD" ctype="x-nui_checkbox_field" equiv-text="&lt;nui-checkbox-field>"/><x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input
+                                type=&quot;checkbox&quot;
+                                name=&quot;primary&quot;
+                                disabled=&quot;true&quot;
+                                [checked]=&quot;identifier.primary&quot;
+                            >"/><x id="CLOSE_TAG_NUI_CHECKBOX_FIELD" ctype="x-nui_checkbox_field" equiv-text="&lt;/nui-checkbox-field>"/></source>
+        <target state="final"><x id="START_TAG_NUI_CHECKBOX_FIELD" ctype="x-nui_checkbox_field" equiv-text="&lt;nui-checkbox-field>"/><x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input
+                                type=&quot;checkbox&quot;
+                                name=&quot;primary&quot;
+                                disabled=&quot;true&quot;
+                                [checked]=&quot;identifier.primary&quot;
+                            >"/><x id="CLOSE_TAG_NUI_CHECKBOX_FIELD" ctype="x-nui_checkbox_field" equiv-text="&lt;/nui-checkbox-field>"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/id-field-tab/id-field-tab.component.html</context>
+          <context context-type="linenumber">70,77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="041daa5a0af54faaf53bf6b945c5ea7387e01130" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ identifier.valuesCount }}"/> </source>
+        <target state="final"> <x id="INTERPOLATION" equiv-text="{{ identifier.valuesCount }}"/> </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/id-field-tab/id-field-tab.component.html</context>
+          <context context-type="linenumber">82,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8d5ac186e2296b21f9256c42974b8e215a98edd1" datatype="html">
+        <source> Settings </source>
+        <target state="final"> Settings </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7373b31598e5d48f807cb53ee44ea11e4d9b1625" datatype="html">
+        <source> Update your survey settings. </source>
+        <target state="final"> Update your survey settings. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3c6b0ab342e17a872b4a5b257c5b137c6c1faf46" datatype="html">
+        <source> Name </source>
+        <target state="final"> Name </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5a18954d2c233b73467ffcdea7120cb3fed45b92" datatype="html">
+        <source> Description </source>
+        <target state="final"> Description </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="07dd2b8e37950480da85fc1afc78b08cdba6e449" datatype="html">
+        <source> Primary Question </source>
+        <target state="final"> Primary Question </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">70,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9827ecc07f711e8de652b16d3ae9caaf3da3e6a9" datatype="html">
+        <source> You need to provide a custom question when "Custom title for primary question" is enabled. </source>
+        <target state="final"> You need to provide a custom question when "Custom title for primary question" is enabled. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">83,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="49d38d9c07532e0ea74b83857391520b68efea98" datatype="html">
+        <source> Custom logo </source>
+        <target state="final"> Custom logo </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">105,107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1974b3e9b0271cc098afe3d3a2ea2853ea825401" datatype="html">
+        <source> Open question enabled </source>
+        <target state="final"> Open question enabled </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="434b6284d0b153c733218d06c38d49bd733b1c49" datatype="html">
+        <source> Open question optional </source>
+        <target state="final"> Open question optional </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9922bb8c470142318a9f27b998ec97437d1141b6" datatype="html">
+        <source> Open Question </source>
+        <target state="final"> Open Question </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5def8b872d83c039cb3c2f0a4f0e816d31a95de4" datatype="html">
+        <source> You need to provide a custom question when "Custom title for open question" is enabled. </source>
+        <target state="final"> You need to provide a custom question when "Custom title for open question" is enabled. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="763f6e98ca1c0a436c44ca1ecc516f6e12b7df99" datatype="html">
+        <source> Redirect after completed </source>
+        <target state="final"> Redirect after completed </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a2ec45d25580446c648295c751c43687f733d1af" datatype="html">
+        <source> Redirect URL </source>
+        <target state="final"> Redirect URL </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="054b3edf91588921a1b893e8459d201f24cc3922" datatype="html">
+        <source> You must provide a redirect URL when "Redirect after completed" is enabled. </source>
+        <target state="final"> You must provide a redirect URL when "Redirect after completed" is enabled. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">224</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="587417e2d598d5f5f6c37b9150b6bceb91daa692" datatype="html">
+        <source>Invalid URL format.</source>
+        <target state="final">Invalid URL format.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">230</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">348</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0cc849bf01a161d4b18674cbbe29ce802c946a10" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span nui-icon-prefix>"/>💾<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Save </source>
+        <target state="final"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span nui-icon-prefix>"/>💾<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/> Save </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/settings-tab/settings-tab.component.html</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="854e5f43a4510d41481c2eb6a5a3ae0763fcda39" datatype="html">
+        <source> Share </source>
+        <target state="final"> Share </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/share-tab/share-tab.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a18dac8613c7d087867250795b028eac205cf396" datatype="html">
+        <source> Share your survey with your newsletters subscribers. If you have Identifiers configured, remember to add values for them to all links in the HTML above in the following format: &amp;key=value </source>
+        <target state="final"> Share your survey with your newsletters subscribers. If you have Identifiers configured, remember to add values for them to all links in the HTML above in the following format: &amp;key=value </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/share-tab/share-tab.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="18e6285bb59f1d924ebacc2c14c922408e6b6329" datatype="html">
+        <source> Survey URL </source>
+        <target state="final"> Survey URL </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/share-tab/share-tab.component.html</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="da2663953ffba03252c9af2060f4013e9fae2471" datatype="html">
+        <source> HTML Template </source>
+        <target state="final"> HTML Template </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/share-tab/share-tab.component.html</context>
+          <context context-type="linenumber">69,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f09fb31c7e38d0f424d6f3e208396fe96527c728" datatype="html">
+        <source> Simple Text </source>
+        <target state="final"> Simple Text </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/share-tab/share-tab.component.html</context>
+          <context context-type="linenumber">109,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8312574256751742276" datatype="html">
+        <source>Copied Survey URL to Clipboard</source>
+        <target state="final">Copied Survey URL to Clipboard</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-settings-survey/src/lib/tabs/share-tab/share-tab.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4736948759647960847" datatype="html">
+        <source>Your survey is ready to rock!</source>
+        <target state="final">Your survey is ready to rock!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/+state/setup-survey.effects.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="23c1bfd4433290a1a4458bb16925c599c9286867" datatype="html">
+        <source>Setup Survey</source>
+        <target state="final">Setup Survey</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5d2e23046004d21abbaabf9b55e2654656647186" datatype="html">
+        <source> Setup Survey </source>
+        <target state="final"> Setup Survey </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52b44924320c5a17684793ba676eb30b4a0fcf62" datatype="html">
+        <source> Metric </source>
+        <target state="final"> Metric </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12518f9db8b3933ce696c7bb0c0e392f39955381" datatype="html">
+        <source> Measure newsletter subscriber satisfaction using Customer Satisfaction Score. </source>
+        <target state="final"> Measure newsletter subscriber satisfaction using Customer Satisfaction Score. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="15f3f89184d548d14324aa2cd41d0a9d1b2a5d81" datatype="html">
+        <source> Find out what your subscribers thinks about your newsletter. </source>
+        <target state="final"> Find out what your subscribers thinks about your newsletter. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fff2713bdf433c5e2d7f95c32c9d4f2a395b297e" datatype="html">
+        <source> Measure how likely is that your subscribers would recommend your Newsletter. </source>
+        <target state="final"> Measure how likely is that your subscribers would recommend your Newsletter. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">102,104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4ec562929f491a21cf40cee61d80f645897375cc" datatype="html">
+        <source> Custom title for primary question </source>
+        <target state="final"> Custom title for primary question </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="82aa2353f45c0c435e78472628b44e4dd8dfa17c" datatype="html">
+        <source> You can modify the title of the primary question to add your newsletter's name. </source>
+        <target state="final"> You can modify the title of the primary question to add your newsletter's name. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dd13c481590a97f09655e8f6fcdb5cc4c530614b" datatype="html">
+        <source> Primary Question </source>
+        <target state="final"> Primary Question </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f600a862ee06cf4552877be63332f21ac24135fa" datatype="html">
+        <source> You need to provide a custom question when "Custom title for primary question" is enabled. </source>
+        <target state="final"> You need to provide a custom question when "Custom title for primary question" is enabled. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="db98d627abcfa743d6c69a13cdba8f4b887f8c35" datatype="html">
+        <source> Custom logo </source>
+        <target state="final"> Custom logo </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">181,183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="10435e5124a783712622fb72ce32b8c41c79b83a" datatype="html">
+        <source> Open question enabled </source>
+        <target state="final"> Open question enabled </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="00bc9d79dd54962da8c0dc784653efb74078b1ba" datatype="html">
+        <source> Open question optional </source>
+        <target state="final"> Open question optional </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">229</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1ee1efc8d108345c8752efd50b4d49342cb73739" datatype="html">
+        <source> Custom title for open question </source>
+        <target state="final"> Custom title for open question </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">247</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b1340f16ee201655d482a00e6fd79d9f2c294715" datatype="html">
+        <source> Open Question </source>
+        <target state="final"> Open Question </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">262</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="84515768f5ff70cecda062836133dca131bb3561" datatype="html">
+        <source> You need to provide a custom question when "Custom title for open question" is enabled. </source>
+        <target state="final"> You need to provide a custom question when "Custom title for open question" is enabled. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">275</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="581c5cced5fc14993fe09b94c0ffda19dfd4521e" datatype="html">
+        <source> Redirect after completed </source>
+        <target state="final"> Redirect after completed </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">316</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1f2085917f30a6beac6aa2adab4b94756fb50494" datatype="html">
+        <source> Redirect URL </source>
+        <target state="final"> Redirect URL </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">331</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a8dfe5fc518b5fc2ce3c8ae88fd82d1111aafe60" datatype="html">
+        <source> You must provide a redirect URL when "Redirect after completed" is enabled. </source>
+        <target state="final"> You must provide a redirect URL when "Redirect after completed" is enabled. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">342</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="87629a2b88667a484473a6939867cd859a711b07" datatype="html">
+        <source> Publish Survey </source>
+        <target state="final"> Publish Survey </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-setup-survey/src/lib/setup-survey/setup-survey.component.html</context>
+          <context context-type="linenumber">366</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f65253954b66e929a8b4d5ecaf61f9129f8cec64" datatype="html">
+        <source>Dashboard</source>
+        <target state="final">Dashboard</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-survey-dashboard/src/lib/survey-dashboard/survey-dashboard.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb9df9fd2045ffd4693781efaa66ffd36f4fcc7a" datatype="html">
+        <source> Net Promoter Score </source>
+        <target state="final"> Net Promoter Score </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-survey-dashboard/src/lib/survey-dashboard/survey-dashboard.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b131624c8516e64f9a408cb47f38e73cd0738c63" datatype="html">
+        <source> Customer Satisfaction Score </source>
+        <target state="final"> Customer Satisfaction Score </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-survey-dashboard/src/lib/survey-dashboard/survey-dashboard.component.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-survey-dashboard/src/lib/survey-dashboard/survey-dashboard.component.html</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="beef74621393d913783cff6d160a5c504186e595" datatype="html">
+        <source> Average Answer (0-1) </source>
+        <target state="final"> Average Answer (0-1) </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-survey-dashboard/src/lib/survey-dashboard/survey-dashboard.component.html</context>
+          <context context-type="linenumber">76,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8d41bfc2d81a7040610265cd9b6407842d94f8a6" datatype="html">
+        <source> Average Answer (0-10) </source>
+        <target state="final"> Average Answer (0-10) </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-survey-dashboard/src/lib/survey-dashboard/survey-dashboard.component.html</context>
+          <context context-type="linenumber">90,92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9dd31fccb87fc3085103ae529c0026bb71651478" datatype="html">
+        <source> Average Answer (1-5) </source>
+        <target state="final"> Average Answer (1-5) </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-survey-dashboard/src/lib/survey-dashboard/survey-dashboard.component.html</context>
+          <context context-type="linenumber">104,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b72f8e3df879e34ff70f1456c1451cc4c202a183" datatype="html">
+        <source> Responses </source>
+        <target state="final"> Responses </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/feature-survey-dashboard/src/lib/survey-dashboard/survey-dashboard.component.html</context>
+          <context context-type="linenumber">115,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6c521e8b0206ada102502982d6e8430187be0353" datatype="html">
+        <source>Interviews</source>
+        <target state="final">Interviews</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/ui/src/lib/feedback-app-page-wrapper/feedback-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb694b49d408265c91c62799c2b3a7e3151c824d" datatype="html">
+        <source>Logout</source>
+        <target state="final">Logout</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/feedback-app/ui/src/lib/feedback-app-page-wrapper/feedback-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5bb48ff19f7f3c554d3040701af20530cddab118" datatype="html">
+        <source> (optional)
+</source>
+        <target state="final"> (optional)
+</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/shared-app/forms/src/lib/form-field/label/label.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb7d844af3b660d1d40c0aab61b78bdb3a78136c" datatype="html">
+        <source><x id="START_TAG_NG_CONTENT" ctype="x-ng_content" equiv-text="&lt;ng-content select=&quot;[nui-cta-card-title]&quot;>"/><x id="CLOSE_TAG_NG_CONTENT" ctype="x-ng_content" equiv-text="&lt;/ng-content>"/></source>
+        <target state="final"><x id="START_TAG_NG_CONTENT" ctype="x-ng_content" equiv-text="&lt;ng-content select=&quot;[nui-cta-card-title]&quot;>"/><x id="CLOSE_TAG_NG_CONTENT" ctype="x-ng_content" equiv-text="&lt;/ng-content>"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/shared-app/ui/src/lib/cta-card/cta-card.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/shared-app/ui/src/lib/cta-card/cta-card.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ed1f3b52d71b61a34bc30ad465a29ac47b432ba2" datatype="html">
+        <source> Optional </source>
+        <target state="final"> Optional </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/shared-app/ui/src/lib/image-upload/image-upload.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ec2a80f075341f0fb54d70ba46311d59ec9f26c6" datatype="html">
+        <source> Showing <x id="INTERPOLATION" equiv-text="{{ showingCount }}"/> of <x id="INTERPOLATION_1" equiv-text="{{ totalCount }}"/> results </source>
+        <target state="final"> Showing <x id="INTERPOLATION" equiv-text="{{ showingCount }}"/> of <x id="INTERPOLATION_1" equiv-text="{{ totalCount }}"/> results </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/shared-app/ui/src/lib/paginator/paginator.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

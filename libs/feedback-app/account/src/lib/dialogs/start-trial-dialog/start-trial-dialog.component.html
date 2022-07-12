@@ -1,0 +1,98 @@
+<div class="start-trial-dialog">
+
+    <nui-card [noPadding]="true">
+
+        <!-- <nui-card-simple-header>
+            <ng-container i18n>Welcome! 🎉</ng-container>
+        </nui-card-simple-header> -->
+
+        <div class="start-trial-dialog__content">
+
+            <div class="start-trial-dialog__content__header">
+                <img src="https://surveyx.s3.us-east-1.amazonaws.com/previews/og.png">
+            </div>
+
+            <!-- <div class="start-trial-dialog__content__logo">
+                <img src="assets/logo/logo01.png">
+            </div> -->
+
+            <p i18n>
+                Surveyx is the easiest way to create surveys and collect feedback from your newsletter subscribers. Choose a plan that best fits you and click in the "Start Trial" button to get started.
+            </p>
+
+            <p i18n>
+                <strong>14 Days Free Trial</strong>
+            </p>
+            <!-- 
+            <p>
+                Choose a plan that best fits your needs and click in the "Next" button to get started.
+            </p> -->
+
+            <nui-radio-card-group>
+
+                <nui-radio-card-item>
+                    <input type="radio"
+                           name="plan"
+                           [formControl]="plan"
+                           nui-radio-card-item-input
+                           [value]="AccountPlan.SCALE_MONTHLY">
+                    <span radio-card-item-title
+                          i18n>Monthly - $9/month</span>
+                    <span radio-card-item-subtitle
+                          i18n>
+                        Get access to all features, unlimited surveys and feedbacks by paying only $9 monthly with a 14 Days Free Trial.
+                    </span>
+                </nui-radio-card-item>
+
+                <nui-radio-card-item>
+                    <input type="radio"
+                           name="plan"
+                           [formControl]="plan"
+                           nui-radio-card-item-input
+                           [value]="AccountPlan.SCALE_YEARLY">
+                    <span radio-card-item-title
+                          i18n>Yearly - $90/year</span>
+                    <span radio-card-item-subtitle
+                          i18n>
+                        Get two months for free with access to all features, unlimited surveys and feedbacksby paying only $90 yearly with a 14 Days Free Trial.
+                    </span>
+                </nui-radio-card-item>
+
+                <!-- <nui-radio-card-item>
+                  <input
+                      type="radio"
+                      name="plan"
+                      [formControl]="plan"
+                      nui-radio-card-item-input
+                      [value]="AccountPlan.SCALE_LIFETIME"
+                  >
+                  <span radio-card-item-title>Scale - $500 once! (7 days trial)</span>
+                  <span
+                      radio-card-item-subtitle
+                      i18n
+                  >
+                      Get full access to Surveyx and unlimited surveys by paying only $500 once.
+                  </span>
+                </nui-radio-card-item> -->
+            </nui-radio-card-group>
+
+        </div>
+
+        <nui-card-actions-footer *ngIf="account$ | async as account">
+            <!-- <button nui-text-neutral-button
+                    (click)="close()">
+                <ng-container i18n>Close</ng-container>
+            </button> -->
+            <span class="start-trial-dialog__cancel">Cancel at any time!</span>
+            <button nui-primary-button
+                    (click)="onSubmit(account)">
+
+                <ng-container i18n>Start Trial</ng-container>
+                <hero-icon name="chevron-right"
+                           nui-icon-suffix></hero-icon>
+            </button>
+        </nui-card-actions-footer>
+
+    </nui-card>
+
+</div>

@@ -1,0 +1,15 @@
+<div
+    class="linear-progress"
+    [class.linear-progress--primary]="theme === 'primary'"
+    [class.linear-progress--accent]="theme === 'accent'"
+    [class.linear-progress--neutral]="theme === 'neutral'"
+    [class.linear-progress--success]="theme === 'success'"
+>
+
+    <div
+        class="linear-progress__bar"
+        [style.width.%]="progress"
+        [style.background-color]="color"
+    ></div>
+
+</div>

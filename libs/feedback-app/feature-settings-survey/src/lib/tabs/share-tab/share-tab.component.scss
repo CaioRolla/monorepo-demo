@@ -1,0 +1,55 @@
+:host {
+  display: block;
+}
+
+.share-tab {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 36px;
+
+  @media screen and (max-width: 600px) {
+    padding: 16px;
+  }
+
+  nui-form-section-header {
+    width: 100%;
+  }
+
+  #url {
+    margin-bottom: 22px;
+    max-width: 400px;
+  }
+
+  &__template {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+
+    &__preview {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    // &__preview {
+    //   ::ng-deep * {
+    //     transform: scale(.9);
+    //   }
+    // }
+
+    &__html {
+    }
+
+    &__preview,
+    &__html {
+      //
+    }
+
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

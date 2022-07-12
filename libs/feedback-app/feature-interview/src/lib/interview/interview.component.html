@@ -1,0 +1,224 @@
+<div class="interview">
+
+    <div class="interview__logo">
+
+        <ng-container *ngIf="(customLogo$ | async) || false else defaultLogo">
+
+            <img [src]="logoUrl$ | async"
+                 alt="Logo">
+
+        </ng-container>
+
+        <ng-template #defaultLogo>
+            <img src="assets/logo/logo01.png"
+                 alt="Surveyx Logo">
+        </ng-template>
+    </div>
+
+    <div class="interview__questions">
+        <div class="interview__questions__container"
+             [style.transform]="currentQuestionTranslate$ | async">
+
+            <div *ngIf="(startError$ | async) || false"
+                 class="interview__questions__container__question">
+                <ng-container>
+                    <nui-generic-question>
+                        <h2 nui-question-title
+                            i18n>
+                            Survey not found. Please contact the owner of the survey.
+                        </h2>
+                    </nui-generic-question>
+                </ng-container>
+
+            </div>
+
+
+            <div class="interview__questions__container__question">
+
+                <ng-container [ngSwitch]="type$ | async">
+
+                    <nui-generic-question *ngSwitchCase="surveyType.NPS">
+                        <h2 nui-question-title>{{ primaryQuestionTitle$ | async }}</h2>
+
+                        <nui-question-radio-answer *ngFor="let range of NPSRange">
+                            <input type="radio"
+                                   name="answer"
+                                   nui-question-radio-answer-input
+                                   [formControl]="primaryQuestionAnswer"
+                                   [value]="range">
+                            {{ range }}
+                        </nui-question-radio-answer>
+                    </nui-generic-question>
+
+                    <nui-generic-question *ngSwitchCase="surveyType.CSAT">
+                        <h2 nui-question-title>{{ primaryQuestionTitle$ | async }}</h2>
+
+                        <nui-question-radio-answer nuiTooltip="Very Dissatisfied">
+                            <input type="radio"
+                                   name="answer"
+                                   nui-question-radio-answer-input
+                                   [formControl]="primaryQuestionAnswer"
+                                   [value]="1">
+                            😡
+                        </nui-question-radio-answer>
+
+                        <nui-question-radio-answer nuiTooltip="Dissatisfied">
+                            <input type="radio"
+                                   name="answer"
+                                   nui-question-radio-answer-input
+                                   [formControl]="primaryQuestionAnswer"
+                                   [value]="2">
+                            😕
+                        </nui-question-radio-answer>
+
+                        <nui-question-radio-answer nuiTooltip="Neutral">
+                            <input type="radio"
+                                   name="answer"
+                                   nui-question-radio-answer-input
+                                   [formControl]="primaryQuestionAnswer"
+                                   [value]="3">
+                            😐
+                        </nui-question-radio-answer>
+
+                        <nui-question-radio-answer nuiTooltip="Satisfied">
+                            <input type="radio"
+                                   name="answer"
+                                   nui-question-radio-answer-input
+                                   [formControl]="primaryQuestionAnswer"
+                                   [value]="4">
+                            😊
+                        </nui-question-radio-answer>
+
+                        <nui-question-radio-answer nuiTooltip="Very Satisfied">
+                            <input type="radio"
+                                   name="answer"
+                                   nui-question-radio-answer-input
+                                   [formControl]="primaryQuestionAnswer"
+                                   [value]="5">
+                            😍
+                        </nui-question-radio-answer>
+                    </nui-generic-question>
+
+                    <nui-generic-question *ngSwitchCase="surveyType.LIKE">
+                        <h2 nui-question-title>{{ primaryQuestionTitle$ | async }}</h2>
+
+                        <nui-question-radio-answer nuiTooltip="Dissatisfied">
+                            <input type="radio"
+                                   name="answer"
+                                   nui-question-radio-answer-input
+                                   [formControl]="primaryQuestionAnswer"
+                                   [value]="0">
+                            👎
+                        </nui-question-radio-answer>
+
+                        <nui-question-radio-answer nuiTooltip="Satisfied">
+                            <input type="radio"
+                                   name="answer"
+                                   nui-question-radio-answer-input
+                                   [formControl]="primaryQuestionAnswer"
+                                   [value]="1">
+                            👍
+                        </nui-question-radio-answer>
+                    </nui-generic-question>
+
+                </ng-container>
+
+            </div>
+
+            <div class="interview__questions__container__question">
+
+                <nui-generic-question *ngIf="(openQuestionEnabled$ | async) || false">
+                    <h2 nui-question-title>{{ openQuestionTitle$ | async }}</h2>
+
+                    <nui-form-field>
+
+                        <label *ngIf="(openQuestionOptional$ | async) || false"
+                               for="openQuestionAnswer"
+                               [optional]="true"
+                               nui-label
+                               i18n>
+                            <!-- Source list -->
+                        </label>
+
+                        <textarea name="openQuestionAnswer"
+                                  [formControl]="openQuestionAnswer"
+                                  type="text"
+                                  nui-input
+                                  rows="6"></textarea>
+
+                    </nui-form-field>
+
+                    <button nui-primary-button
+                            [disabled]="disableNext$ | async"
+                            [nuiTooltipDisabled]="(disableNext$ | async) || false"
+                            nui-question-radio-answer-button
+                            nuiTooltip="Finish interview"
+                            (click)="finishInterview()"
+                            i18n>
+                        Finish
+                    </button>
+                </nui-generic-question>
+
+            </div>
+
+            <div class="interview__questions__container__question">
+
+                <nui-generic-question>
+                    <h2 nui-question-title
+                        i18n>
+                        Thanks for your feedback!
+                    </h2>
+                    <span nui-question-subtitle
+                          i18n
+                          *ngIf="(redirectAfterCompleted$ | async) || false">
+                        You will be redirected in a few seconds.
+                    </span>
+                </nui-generic-question>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="interview__nav"
+         *ngIf="((openQuestionEnabled$ | async) || false) && (currentQuestionIndex$ | async) !== 2">
+        <button nui-button
+                nuiTooltip="Previous Question"
+                [disabled]="(disablePrevious$ | async) || false"
+                [nuiTooltipDisabled]="(disablePrevious$ | async) || false"
+                (click)="previousQuestion()">
+            <hero-icon name="chevron-left"></hero-icon>
+
+        </button>
+        <button nui-button
+                [disabled]="(disableNext$ | async) || false"
+                [nuiTooltipDisabled]="(disableNext$ | async) || false"
+                *ngIf="(currentQuestionIndex$ | async) === 0"
+                nuiTooltip="Next Question"
+                (click)="nextQuestion()">
+
+            <hero-icon name="chevron-right"></hero-icon>
+        </button>
+
+        <button nui-button
+                [disabled]="(disableNext$ | async) || false"
+                [nuiTooltipDisabled]="(disableNext$ | async) || false"
+                *ngIf="(currentQuestionIndex$ | async) === 1"
+                nuiTooltip="Finish interview"
+                (click)="finishInterview()">
+
+            <hero-icon name="chevron-right"></hero-icon>
+        </button>
+    </div>
+
+    <div class="interview__powered">
+        <span>Powered by</span>
+        <a href="http://surveyx.co"
+           target="_blank"
+           rel="noopener noreferrer">
+            <img src="assets/logo/logo01.png"
+                 alt="App Logo">
+        </a>
+    </div>
+
+</div>

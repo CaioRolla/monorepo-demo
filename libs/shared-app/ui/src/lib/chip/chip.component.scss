@@ -1,0 +1,16 @@
+:host {
+  display: inline-block;
+}
+
+.chip {
+  display: inline-block;
+  width: fit-content;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--nui-color-neutral-100);
+  color: var(--nui-color-neutral-500);
+
+  font-size: 12px;
+  font-weight: 300;
+}
+

@@ -1,0 +1,88 @@
+:host {
+  display: block;
+
+  --question-radio-answer-size: 56px;
+}
+
+.generic-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    display: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    // text-align: center;
+    ::ng-deep * {
+      font-size: var(--nui-fs-600);
+      font-weight: 400;
+      color: var(--nui-color-neutral-600);
+    }
+
+    &:not(:empty) {
+      display: block;
+    }
+  }
+
+  &__subtitle {
+    display: none;
+    // text-align: center;
+    ::ng-deep * {
+      font-size: var(--nui-fs-300);
+      font-weight: 300;
+      color: var(--nui-color-neutral-400);
+    }
+
+    &:not(:empty) {
+      display: block;
+    }
+  }
+
+  &__content {
+    display: none;
+    margin-top: 36px;
+    width: 100%;
+
+    &:not(:empty) {
+      display: block;
+    }
+    // display: flex;
+    // flex-direction: column;
+    // flex: 1;
+  }
+
+  &__radio-questions {
+    width: 100%;
+    display: none;
+    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fit, var(--question-radio-answer-size));
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 36px;
+
+    &:not(:empty) {
+      display: inline-grid;
+    }
+  }
+
+  &__actions {
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 16px;
+
+    &:not(:empty) {
+      display: flex;
+    }
+
+    ::ng-deep button {
+      &:not(:last-child) {
+        margin-left: 16px;
+      }
+    }
+  }
+}

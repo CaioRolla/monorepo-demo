@@ -1,0 +1,148 @@
+<div class="schedules-table">
+
+    <nui-stacked-list>
+        <nui-stacked-list-header>
+            <div class="schedules-table__header">
+
+                <div class="schedules-table__header__column"
+                     i18n>
+                    Name
+                </div>
+
+                <div class="schedules-table__header__column"
+                     i18n>
+                    Status
+                </div>
+
+                <div class="schedules-table__header__column"
+                     i18n>
+                    Last Execution
+                </div>
+
+                <div class="schedules-table__header__column"
+                     i18n>
+                    Actions
+                </div>
+
+            </div>
+
+        </nui-stacked-list-header>
+
+        <ng-container ngProjectAs="nui-stacked-list-row"
+                      *ngIf="(loadingStats$ | async) || false">
+            <nui-stacked-list-row *ngFor="let __ of [0, 1, 2, 3, 4, 5]">
+                <div class="schedules-table__row">
+                    <div class="schedules-table__row__column">
+                        <div nui-loading-placeholder
+                             style="height: 12px; width: 60%;"></div>
+                    </div>
+                    <div class="schedules-table__row__column">
+                        <div nui-loading-placeholder
+                             style="height: 12px; width: 20%;"></div>
+                    </div>
+                    <div class="schedules-table__row__column">
+                        <div nui-loading-placeholder
+                             style="height: 12px; width: 20%;"></div>
+                    </div>
+                    <div class="schedules-table__row__column">
+                        <div nui-loading-placeholder
+                             style="height: 12px; width: 20%;"></div>
+                        <div nui-loading-placeholder
+                             style="height: 12px; width: 20%; margin-left: 8px;"></div>
+                        <div nui-loading-placeholder
+                             style="height: 12px; width: 20%; margin-left: 8px;"></div>
+                    </div>
+                </div>
+            </nui-stacked-list-row>
+        </ng-container>
+
+        <nui-stacked-list-row *ngIf="(displayEmptyMessage$ | async) || false">
+            <div class="schedules-table__row">
+                <div class="schedules-table__row__empty">
+                    <div class="schedules-table__row__empty__msg">
+                        You don't have any jobs yet.
+                        <a href="javascript:;"
+                           (click)="createScheduleClicked()">
+                            Click here
+                        </a>
+                        to schedule a HTTP request.
+                    </div>
+                </div>
+            </div>
+        </nui-stacked-list-row>
+
+        <ng-container ngProjectAs="nui-stacked-list-row"
+                      *ngIf="!(loadingStats$ | async) || false">
+
+            <nui-stacked-list-row *ngFor="let schedule of (paginatedSchedules$ | async)">
+                <div class="schedules-table__row">
+                    <div class="schedules-table__row__column">
+                        <a [routerLink]="['/', 'execution']"
+                           [queryParams]="{scheduleId: schedule.id}">
+                            {{ schedule.name }}
+                        </a>
+                    </div>
+                    <div class="schedules-table__row__column">
+                        <ng-container [ngSwitch]="schedule.status">
+                            <ng-container i18n
+                                          *ngSwitchCase="ScheduleStatus.ACTIVE">
+                                Active
+                            </ng-container>
+
+                            <ng-container i18n
+                                          *ngSwitchCase="ScheduleStatus.PAUSED">
+                                Paused
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                    <div class="schedules-table__row__column">
+                        <ng-container [ngSwitch]="schedule.lastExecutionStatus">
+                            <ng-container i18n
+                                          *ngSwitchCase="ExecutionStatus.RUNNING">
+                                Running
+                            </ng-container>
+
+                            <ng-container i18n
+                                          *ngSwitchCase="ExecutionStatus.FAILURE">
+                                Failure
+                            </ng-container>
+
+                            <ng-container i18n
+                                          *ngSwitchCase="ExecutionStatus.SUCCESS">
+                                Success
+                            </ng-container>
+
+                            <ng-container i18n
+                                          *ngSwitchCase="ExecutionStatus.ABORTED">
+                                Aborted (timeout)
+                            </ng-container>
+
+                            <ng-container i18n
+                                          *ngSwitchCase="ExecutionStatus.ACCOUNT_LIMIT">
+                                Failure (Account Limit)
+                            </ng-container>
+
+
+                            <ng-container *ngSwitchDefault>-</ng-container>
+                        </ng-container>
+                    </div>
+                    <div class="schedules-table__row__column">
+                        <button type="button"
+                                nui-text-neutral-button
+                                (click)="editScheduleClicked(schedule.id)">
+                            <hero-icon name="pencil"></hero-icon>
+                        </button>
+                    </div>
+                </div>
+            </nui-stacked-list-row>
+        </ng-container>
+    </nui-stacked-list>
+
+    <nui-paginator [totalCount]="(statsSchedulesCount$ | async) || 0"
+                   [showingCount]="(paginatedSchedulesCount$ | async) || 0"
+                   [disableNext]="(disableNextSchedules$ | async) || false"
+                   [disablePrevious]="(disablePreviousSchedules$ | async) || false"
+                   (nextClicked)="nextSchedules()"
+                   (previousClicked)="previousSchedules()"></nui-paginator>
+
+</div>

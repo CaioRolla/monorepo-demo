@@ -1,0 +1,32 @@
+:host {
+  display: block;
+}
+
+.primary-question-answer-chip {
+  &__CSAT-score,
+  &__LIKE-score {
+    &--0,
+    &--1,
+    &--2,
+    &--3,
+    &--4,
+    &--5 {
+      color: white !important;
+    }
+  }
+
+  &__NPS-score {
+    &--promoter {
+      color: white;
+      background: #10b981;
+    }
+    &--detractor {
+      color: white;
+      background: #dc2626;
+    }
+    &--passive {
+      color: white;
+      background: #fbbf24;
+    }
+  }
+}

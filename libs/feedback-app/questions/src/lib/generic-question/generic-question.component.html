@@ -1,0 +1,33 @@
+<div class="generic-question">
+
+  <div class="generic-question__title">
+
+    <ng-content select="[nui-question-title]"></ng-content>
+
+  </div>
+
+  <div class="generic-question__subtitle">
+
+    <ng-content select="[nui-question-subtitle]"></ng-content>
+
+  </div>
+
+  <div class="generic-question__content">
+
+    <ng-content></ng-content>
+
+  </div>
+
+  <div class="generic-question__radio-questions">
+
+    <ng-content select="nui-question-radio-answer"></ng-content>
+
+  </div>
+
+  <div class="generic-question__actions">
+
+    <ng-content select="[nui-question-radio-answer-button]"></ng-content>
+
+  </div>
+
+</div>

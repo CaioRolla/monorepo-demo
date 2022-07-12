@@ -1,0 +1,13 @@
+.settings-survey {
+  display: flex;
+  flex-direction: column;
+
+  // align-items: center;
+
+  padding-bottom: 64px;
+
+  &__container {
+    width: 100%;
+    max-width: var(--nui-content-container);
+  }
+}

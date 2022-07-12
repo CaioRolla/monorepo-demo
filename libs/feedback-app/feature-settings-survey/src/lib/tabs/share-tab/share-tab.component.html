@@ -1,0 +1,129 @@
+<div class="share-tab">
+
+    <nui-form-section-header>
+        <h2
+            nui-form-section-header-title
+            i18n
+        >
+            Share
+        </h2>
+        <p
+            nui-form-section-header-subtitle
+            i18n
+        >
+            Share your survey with your newsletters subscribers. If you have Identifiers configured, remember to add values for them to all links in the HTML above in the following format: &key=value
+        </p>
+    </nui-form-section-header>
+
+    <nui-form-field id="url">
+        <label
+            for="url"
+            nui-label
+            i18n
+        >
+            Survey URL
+        </label>
+        <input
+            name="url"
+            type="text"
+            [value]="url$ | async"
+            readonly
+            nui-input
+        >
+
+        <button
+            nui-button
+            nui-input-suffix
+            [cdkCopyToClipboard]="(url$ | async) || ''"
+            (cdkCopyToClipboardCopied)="copiedURLToClipboard()"
+        >
+            <hero-icon name="clipboard"></hero-icon>
+        </button>
+        <!-- <textarea
+          name="url"
+          type="text"
+          nui-input
+          rows="6"
+          readonly
+      ></textarea> -->
+
+        <nui-hint>
+            <ng-container>
+                If you have Identifiers configured, remember to add values for them to all links in the HTML above in the following format: &key=value
+            </ng-container>
+        </nui-hint>
+
+    </nui-form-field>
+
+    <nui-form-section-separator></nui-form-section-separator>
+
+
+    <div class="share-tab__template">
+
+        <div class="share-tab__template__html">
+            <nui-form-field id="template">
+                <label
+                    for="template01"
+                    nui-label
+                    i18n
+                >
+                    HTML Template
+                </label>
+                <textarea
+                    name="template01"
+                    [formControl]="form01"
+                    type="text"
+                    nui-input
+                    rows="6"
+                    readonly
+                ></textarea>
+
+                <div nui-input [innerHtml]="template02Preview$ | async"> </div>
+
+                <nui-hint>
+                  <ng-container>
+                      Copy and paste the above HTML into your email template.
+                  </ng-container>
+              </nui-hint>
+
+            </nui-form-field>
+        </div>
+
+        <div
+            class="share-tab__template__preview"
+            [innerHtml]="template01Preview$ | async"
+        ></div>
+
+    </div>
+
+    <nui-form-section-separator></nui-form-section-separator>
+
+    <div class="share-tab__template">
+
+      <div class="share-tab__template__html">
+          <nui-form-field id="template">
+              <label
+                  for="template01"
+                  nui-label
+                  i18n
+              >
+                  Simple Text
+              </label>
+
+              <div style="padding: 16px;" nui-input [innerHtml]="template02Preview$ | async"> </div>
+
+              <nui-hint>
+                  <ng-container>
+                      Copy and paste the above content into your email template.
+                  </ng-container>
+              </nui-hint>
+
+          </nui-form-field>
+      </div>
+
+
+  </div>
+
+
+
+</div>

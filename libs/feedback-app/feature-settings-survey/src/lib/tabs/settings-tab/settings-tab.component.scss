@@ -1,0 +1,65 @@
+:host {
+  display: block;
+}
+
+.settings-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 900px;
+    padding: 36px 64px;
+
+    &__logo {
+      height: 200px;
+      margin-top: 36px;
+      nui-image-upload {
+        height: 100%;
+      }
+    }
+
+
+    @media screen and (max-width: 600px) {
+      padding: 16px;
+    }
+
+    nui-form-field {
+      width: 100%;
+      margin-top: 36px;
+    }
+
+    #openQuestionOptional {
+      margin-top: 36px;
+
+    }
+
+    #surveyName,
+    #primaryQuestionTitle {
+      margin-top: 0px;
+    }
+
+    #surveyName,
+    #redirectAfterCompletedUrl {
+      max-width: 400px;
+    }
+
+    // #surveyDesc,
+    // #primaryQuestionTitle,
+    // #openQuestionTitle {
+    //   // max-width: 600px;
+    // }
+
+    &__actions {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      margin-top: 36px;
+    }
+  }
+}

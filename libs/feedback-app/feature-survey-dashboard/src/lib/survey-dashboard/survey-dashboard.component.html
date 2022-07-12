@@ -1,0 +1,275 @@
+<nui-feedback-app-page-wrapper
+    pageTitle="Dashboard"
+    i18n-pageTitle
+>
+
+    <h1
+        nui-page-wrapper-title
+        i18n
+        *ngIf="surveyName$ | async as surveyName"
+    >
+        {{ surveyName }}
+    </h1>
+
+    <p nui-page-wrapper-subtitle>
+        This dashboard is a overview of your survey answers.
+    </p>
+
+    <div class="dashboard">
+
+        <div class="dashboard__content">
+
+            <ng-container *ngIf="stats$ | async as stats">
+
+                <div class="dashboard__content__stats">
+
+                    <nui-stats-card
+                        [loading]="(loadingStats$ | async) || false"
+                        *ngIf="stats.type === surveyType.NPS"
+                    >
+                        <hero-icon name="chart-pie"></hero-icon>
+                        <ng-container
+                            nui-stats-card-title
+                            i18n
+                        >
+                            Net Promoter Score
+                        </ng-container>
+                        <ng-container nui-stats-card-value>{{ stats?.score || 0}}</ng-container>
+                    </nui-stats-card>
+
+                    <nui-stats-card
+                        [loading]="(loadingStats$ | async) || false"
+                        *ngIf="stats.type === surveyType.CSAT"
+                    >
+                        <hero-icon name="chart-pie"></hero-icon>
+                        <ng-container
+                            nui-stats-card-title
+                            i18n
+                        >
+                            Customer Satisfaction Score
+                        </ng-container>
+                        <ng-container nui-stats-card-value>{{ (stats?.score || 0) | percent}}</ng-container>
+                    </nui-stats-card>
+
+                    <nui-stats-card
+                        [loading]="(loadingStats$ | async) || false"
+                        *ngIf="stats.type === surveyType.LIKE"
+                    >
+                        <hero-icon name="chart-pie"></hero-icon>
+                        <ng-container
+                            nui-stats-card-title
+                            i18n
+                        >
+                            Customer Satisfaction Score
+                        </ng-container>
+                        <ng-container nui-stats-card-value>{{ (stats?.score || 0) | percent}}</ng-container>
+                    </nui-stats-card>
+
+                    <nui-stats-card
+                        [loading]="(loadingStats$ | async) || false"
+                        *ngIf="stats.type === surveyType.LIKE"
+                    >
+                        <hero-icon name="chart-bar"></hero-icon>
+                        <ng-container
+                            nui-stats-card-title
+                            i18n
+                        >
+                            Average Answer (0-1)
+                        </ng-container>
+                        <ng-container nui-stats-card-value>{{ stats?.average |averageLike }}</ng-container>
+                    </nui-stats-card>
+
+                    <nui-stats-card
+                        [loading]="(loadingStats$ | async) || false"
+                        *ngIf="stats.type === surveyType.NPS"
+                    >
+                        <hero-icon name="chart-bar"></hero-icon>
+                        <ng-container
+                            nui-stats-card-title
+                            i18n
+                        >
+                            Average Answer (0-10)
+                        </ng-container>
+                        <ng-container nui-stats-card-value>{{ stats?.average }}</ng-container>
+                    </nui-stats-card>
+
+                    <nui-stats-card
+                        [loading]="(loadingStats$ | async) || false"
+                        *ngIf="stats.type === surveyType.CSAT"
+                    >
+                        <hero-icon name="chart-bar"></hero-icon>
+                        <ng-container
+                            nui-stats-card-title
+                            i18n
+                        >
+                            Average Answer (1-5)
+                        </ng-container>
+                        <ng-container nui-stats-card-value>{{ stats?.average | averageCSAT }}</ng-container>
+                    </nui-stats-card>
+
+                    <nui-stats-card [loading]="(loadingStats$ | async) || false">
+                        <hero-icon name="cube"></hero-icon>
+                        <ng-container
+                            nui-stats-card-title
+                            i18n
+                        >
+                            Responses
+                        </ng-container>
+                        <ng-container nui-stats-card-value>{{ stats?.interviewsCount }}</ng-container>
+                    </nui-stats-card>
+
+                </div>
+
+                <div class="dashboard__content__bars">
+                    <nui-progress-stats-card *ngIf="stats.type === surveyType.LIKE">
+                        <nui-progress-stats-card-item
+                            label="Satisfied"
+                            [value]="stats?.likedCount || 0"
+                            [percentage]="stats?.likedPercentage || 0"
+                            [loading]="(loadingStats$ | async) || false"
+                            color="#10b981"
+                        >
+
+                        </nui-progress-stats-card-item>
+
+                        <nui-progress-stats-card-item
+                            label="Unsatisfied"
+                            [value]="stats?.dislikedCount || 0"
+                            [percentage]="stats?.dislikedPercentage || 0"
+                            [loading]="(loadingStats$ | async) || false"
+                            color="#dc2626"
+                        >
+
+                        </nui-progress-stats-card-item>
+
+                    </nui-progress-stats-card>
+
+                    <nui-progress-stats-card *ngIf="stats.type === surveyType.CSAT">
+                        <nui-progress-stats-card-item
+                            label="Satisfied"
+                            [value]="stats?.satisfiedCount || 0"
+                            [percentage]="stats?.satisfiedPercentage || 0"
+                            [loading]="(loadingStats$ | async) || false"
+                            color="#10b981"
+                        >
+
+                        </nui-progress-stats-card-item>
+
+                        <nui-progress-stats-card-item
+                            label="Unsatisfied"
+                            [value]="stats?.unsatisfiedCount || 0"
+                            [percentage]="stats?.unsatisfiedPercentage || 0"
+                            [loading]="(loadingStats$ | async) || false"
+                            color="#dc2626"
+                        >
+
+                        </nui-progress-stats-card-item>
+
+                    </nui-progress-stats-card>
+                    <nui-progress-stats-card *ngIf="stats.type === surveyType.NPS">
+                        <nui-progress-stats-card-item
+                            label="Promoters"
+                            [value]="stats?.promotersCount || 0"
+                            [percentage]="stats?.promotersPercentage || 0"
+                            [loading]="(loadingStats$ | async) || false"
+                            color="#10b981"
+                        >
+
+                        </nui-progress-stats-card-item>
+
+                        <nui-progress-stats-card-item
+                            label="Passives"
+                            [value]="stats?.passivesCount || 0"
+                            [percentage]="stats?.passivesPercentage || 0"
+                            [loading]="(loadingStats$ | async) || false"
+                            color="#fbbf24"
+                        >
+
+                        </nui-progress-stats-card-item>
+
+                        <nui-progress-stats-card-item
+                            label="Detractors"
+                            [value]="stats?.detractorsCount || 0"
+                            [percentage]="stats?.detractorsPercentage || 0"
+                            [loading]="(loadingStats$ | async) || false"
+                            color="#dc2626"
+                        >
+
+                        </nui-progress-stats-card-item>
+
+                    </nui-progress-stats-card>
+                </div>
+
+                <div
+                    class="dashboard__content__bars"
+                    *ngIf="stats.type === surveyType.CSAT"
+                >
+                    <nui-progress-stats-card>
+                        <nui-progress-stats-card-item
+                            *ngFor="let value of CSATrange; let i = index"
+                            [value]="CSATrange[i]"
+                            [percentage]="stats.groupedPrimaryPercentage ? stats.groupedPrimaryPercentage[i] || 0 : 0"
+                            [loading]="(loadingStats$ | async) || false"
+                            [color]="satisfactionColorRange[i]"
+                        >
+
+                        </nui-progress-stats-card-item>
+
+                    </nui-progress-stats-card>
+                </div>
+                <div
+                    *ngIf="stats?.hasOpenQuestion"
+                    class="dashboard__content__table"
+                >
+                    <nui-stacked-list>
+                        <nui-stacked-list-header>
+                            <div class="dashboard__content__table__header">
+                                <div class="dashboard__content__table__header__title">
+                                  "{{ stats?.openQuestionTitle }}"
+                                </div>
+                                <div class="dashboard__content__table__header__more">
+                                    <a
+                                        [routerLink]="['/', 'interviews']"
+                                        [queryParams]="{surveyId: surveyId}"
+                                    >
+                                        View all feedbacks
+                                    </a>
+                                </div>
+                            </div>
+                        </nui-stacked-list-header>
+
+                        <nui-stacked-list-row *ngIf="stats?.lastInterviews?.length === 0">
+                            <div class="dashboard__content__table__row--empty">
+                                Your survey doesn't have any feedback yet.
+                            </div>
+                        </nui-stacked-list-row>
+
+                        <nui-stacked-list-row *ngFor="let interview of stats?.lastInterviews">
+
+                            <div class="dashboard__content__table__row">
+
+                                <nui-primary-question-answer-chip
+                                    [type]="stats.type"
+                                    [primaryQuestionAnswer]="interview.primaryQuestionAnswer"
+                                ></nui-primary-question-answer-chip>
+                                <div class="dashboard__content__table__row__open">{{ interview.openQuestionAnswer }}</div>
+                            </div>
+
+                        </nui-stacked-list-row>
+                    </nui-stacked-list>
+                </div>
+
+            </ng-container>
+
+        </div>
+
+        <div class="dashboard__filters">
+            <nui-interview-filter
+                [surveyId]="surveyId"
+                [applyingFilters]="(loadingStats$ | async) || false"
+                (appliedFilter)="applyFilter($event)"
+            ></nui-interview-filter>
+        </div>
+
+    </div>
+</nui-feedback-app-page-wrapper>

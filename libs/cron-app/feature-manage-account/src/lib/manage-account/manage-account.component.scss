@@ -1,0 +1,28 @@
+.manage-account {
+  display: flex;
+  flex-direction: row;
+
+  &__nav {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+  }
+
+  &__content {
+    flex: 1;
+    padding-left: 32px;
+  }
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+
+    &__nav {
+      max-width: unset;
+    }
+
+    &__content {
+      padding-left: 0px;
+      margin-top: 32px;
+    }
+  }
+}

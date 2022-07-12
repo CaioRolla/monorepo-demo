@@ -1,0 +1,43 @@
+<div class="canceled-dialog">
+
+    <nui-card>
+
+        <div class="canceled-dialog__content">
+
+            <div class="canceled-dialog__content__logo">
+                <img src="assets/logo/logo01.png">
+            </div>
+
+            <p>
+                Your Surveyx account has been canceled. You are still able to access your data, but some features may be disabled.
+            </p>
+
+            <p>
+                New feedbacks will continue being collected but will not be available for you to view until your plan is renewed.
+            </p>
+
+            <p>
+                If you think that's a mistake, please contact us at
+                <a href="mailto:support@surveyx.co">support@surveyx.co</a>
+            </p>
+
+        </div>
+
+        <nui-card-actions-footer *ngIf="account$ | async as account">
+            <button
+                nui-text-neutral-button
+                (click)="close()"
+            >
+                <ng-container i18n>Close</ng-container>
+            </button>
+            <button
+                nui-primary-button
+                (click)="renewPlan(account)"
+            >
+                <span nui-icon-suffix>😍</span>
+                <ng-container i18n>Renew Plan</ng-container>
+            </button>
+        </nui-card-actions-footer>
+
+    </nui-card>
+</div>

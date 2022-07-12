@@ -1,0 +1,49 @@
+:host {
+  width: 100%;
+  display: block;
+}
+
+.tab-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &--card {
+      ::ng-deep nui-tab-header {
+        margin-bottom: 16px;
+      }
+    }
+
+    &:not(:last-child) {
+      ::ng-deep nui-tab-header {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    padding: 1px;
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+
+      &--animation {
+        transition: all 0.2s ease-in-out;
+        transition-property: transform, height;
+      }
+
+      &::ng-deep {
+        nui-tab:nth-child(0) {
+          display: none;
+        }
+      }
+    }
+  }
+}

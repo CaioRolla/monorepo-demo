@@ -1,0 +1,145 @@
+<nui-cron-app-page-wrapper
+    pageTitle="Dashboard"
+    i18n-pageTitle
+>
+
+    <h1
+        nui-page-wrapper-title
+        i18n
+    >
+        Dashboard
+    </h1>
+
+    <div
+        nui-page-wrapper-title-actions
+        [nuiTooltip]="'You have exceeded your plan limit. Upgrade to create more schedules.'"
+        nuiTooltipPosition="bottom"
+        [nuiTooltipDisabled]="(planAllowMoreSchedules$ | async) || false"
+    >
+        <button
+            type="button"
+            nui-primary-button
+            (click)="createScheduleClicked()"
+            [disabled]="!(planAllowMoreSchedules$ | async)"
+        >
+            Schedule Request
+            <hero-icon
+                nui-icon-prefix
+                name="clock"
+            ></hero-icon>
+        </button>
+    </div>
+
+    <div class="home">
+
+        <div
+            class="home__alerts"
+            *ngIf="!(planAllowMoreSchedules$ | async)"
+        >
+            <nui-alert>
+                <hero-icon
+                    name="exclamation"
+                    nui-alert-icon
+                ></hero-icon>
+                <ng-container
+                    nui-alert-title
+                    i18n
+                >
+                    You have exceeded your plan limit.
+                </ng-container>
+                <ng-container
+                    nui-alert-subtitle
+                    i18n
+                >
+                    Upgrade to create more schedulers and increase the amount of allowed executions.
+                </ng-container>
+                <a
+                    nui-text-primary-button
+                    [routerLink]="['/', 'settings', 'plan']"
+                >
+                    Upgrade
+                </a>
+            </nui-alert>
+        </div>
+        <div class="home__content">
+            <div class="home__content__stats">
+
+                <nui-cta-card>
+                    <ng-container nui-cta-card-title>{{ welcomeMessage$ | async }}</ng-container>
+                    <ng-container
+                        *ngIf="(account$ | async)?.plan === AccountPlan.FREE"
+                        nui-cta-card-content
+                    >
+                        Upgrade your account to get unlimited jobs and executions.
+                    </ng-container>
+                    <a
+                        *ngIf="(account$ | async)?.plan === AccountPlan.FREE"
+                        nui-cta-card-action
+                        [routerLink]="['/', 'settings', 'plan']"
+                    >
+                        Upgrade
+                    </a>
+                    <ng-container
+                        *ngIf="(account$ | async)?.plan !== AccountPlan.FREE"
+                        nui-cta-card-content
+                    >
+                        Need help with Beew? Get in touch with our support.
+                    </ng-container>
+                    
+                    <a
+                        *ngIf="(account$ | async)?.plan !== AccountPlan.FREE"
+                        nui-cta-card-action
+                        [routerLink]="['/', 'settings', 'support']"
+                        
+                    >
+                        Contact Support
+                    </a>
+                </nui-cta-card>
+
+                <nui-stats-card [loading]="(loadingStats$ | async) || false">
+                    <hero-icon name="globe-alt"></hero-icon>
+                    <ng-container
+                        nui-stats-card-title
+                        i18n
+                    >
+                        Schedulers
+                    </ng-container>
+                    <ng-container nui-stats-card-value>{{ statsSchedulesCount$ | async }}</ng-container>
+                </nui-stats-card>
+
+                <nui-stats-card [loading]="(loadingStats$ | async) || false">
+                    <hero-icon name="exclamation-circle"></hero-icon>
+                    <ng-container
+                        nui-stats-card-title
+                        i18n
+                    >
+                        Failed Executions
+                    </ng-container>
+                    <ng-container nui-stats-card-value>
+                        {{ statsFailureExecutionsCount$ | async }}
+                    </ng-container>
+                </nui-stats-card>
+
+                <nui-stats-card [loading]="(loadingStats$ | async) || false">
+                    <hero-icon name="check"></hero-icon>
+                    <ng-container
+                        nui-stats-card-title
+                        i18n
+                    >
+                        Successful Executions
+                    </ng-container>
+                    <ng-container nui-stats-card-value>
+                        {{ statsSuccessExecutionsCount$ | async }}
+                    </ng-container>
+                </nui-stats-card>
+
+            </div>
+
+            <div class="home__content__schedules">
+                <nui-schedules-table></nui-schedules-table>
+            </div>
+        </div>
+
+    </div>
+
+</nui-cron-app-page-wrapper>

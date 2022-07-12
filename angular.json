@@ -1,0 +1,1780 @@
+{
+  "version": 1,
+  "projects": {
+    "+asset-core": {
+      "root": "libs/+asset/core",
+      "sourceRoot": "libs/+asset/core/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/+asset/core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/+asset/core"],
+          "options": {
+            "jestConfig": "libs/+asset/core/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "+asset-server": {
+      "root": "libs/+asset/server",
+      "sourceRoot": "libs/+asset/server/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/+asset/server/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/+asset/server"],
+          "options": {
+            "jestConfig": "libs/+asset/server/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "+webhook-core": {
+      "root": "libs/+webhook/core",
+      "sourceRoot": "libs/+webhook/core/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/+webhook/core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/+webhook/core"],
+          "options": {
+            "jestConfig": "libs/+webhook/core/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "+webhook-server": {
+      "root": "libs/+webhook/server",
+      "sourceRoot": "libs/+webhook/server/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/+webhook/server/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/+webhook/server"],
+          "options": {
+            "jestConfig": "libs/+webhook/server/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "asset-app": {
+      "projectType": "library",
+      "root": "libs/+asset/app",
+      "sourceRoot": "libs/+asset/app/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/+asset/app"],
+          "options": {
+            "jestConfig": "libs/+asset/app/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/+asset/app/src/**/*.ts",
+              "libs/+asset/app/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        }
+      },
+      "tags": []
+    },
+    "auth-app": {
+      "projectType": "library",
+      "root": "libs/+auth/app",
+      "sourceRoot": "libs/+auth/app/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/+auth/app"],
+          "options": {
+            "jestConfig": "libs/+auth/app/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/+auth/app/src/**/*.ts",
+              "libs/+auth/app/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        }
+      },
+      "tags": []
+    },
+    "auth-core": {
+      "root": "libs/+auth/core",
+      "sourceRoot": "libs/+auth/core/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/+auth/core/**/*.ts"]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/+auth/core"],
+          "options": {
+            "jestConfig": "libs/+auth/core/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "auth-server": {
+      "root": "libs/+auth/server",
+      "sourceRoot": "libs/+auth/server/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/+auth/server/**/*.ts"]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/+auth/server"],
+          "options": {
+            "jestConfig": "libs/+auth/server/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "cron-app": {
+      "projectType": "application",
+      "root": "apps/cron-app",
+      "sourceRoot": "apps/cron-app/src",
+      "prefix": "nui",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "pt": "apps/cron-app/locale/messages.pt.xlf"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/cron-app",
+            "index": "apps/cron-app/src/index.html",
+            "main": "apps/cron-app/src/main.ts",
+            "polyfills": "apps/cron-app/src/polyfills.ts",
+            "tsConfig": "apps/cron-app/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "apps/cron-app/src/favicon.ico",
+              "apps/cron-app/src/assets"
+            ],
+            "styles": [
+              "libs/shared-app/ui/src/styles.scss",
+              "apps/cron-app/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "localize": true,
+              "aot": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "apps/cron-app/src/environments/environment.ts",
+                  "with": "apps/cron-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "cron-app:build:production"
+            },
+            "development": {
+              "browserTarget": "cron-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "cron-app:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/cron-app/src/**/*.ts",
+              "apps/cron-app/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/cron-app"],
+          "options": {
+            "jestConfig": "apps/cron-app/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "cron-app-account": {
+      "root": "libs/cron-app/account",
+      "sourceRoot": "libs/cron-app/account/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/cron-app/account/**/*.ts"]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/cron-app/account"],
+          "options": {
+            "jestConfig": "libs/cron-app/account/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "cron-app-application": {
+      "projectType": "library",
+      "root": "libs/cron-app/application",
+      "sourceRoot": "libs/cron-app/application/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/cron-app/application"],
+          "options": {
+            "jestConfig": "libs/cron-app/application/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/cron-app/application/src/**/*.ts",
+              "libs/cron-app/application/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "cron-app-feature-home": {
+      "projectType": "library",
+      "root": "libs/cron-app/feature-home",
+      "sourceRoot": "libs/cron-app/feature-home/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/cron-app/feature-home"],
+          "options": {
+            "jestConfig": "libs/cron-app/feature-home/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/cron-app/feature-home/src/**/*.ts",
+              "libs/cron-app/feature-home/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "cron-app-feature-list-execution": {
+      "projectType": "library",
+      "root": "libs/cron-app/feature-list-execution",
+      "sourceRoot": "libs/cron-app/feature-list-execution/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/cron-app/feature-list-execution"],
+          "options": {
+            "jestConfig": "libs/cron-app/feature-list-execution/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/cron-app/feature-list-execution/src/**/*.ts",
+              "libs/cron-app/feature-list-execution/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "cron-app-feature-login-merch": {
+      "projectType": "library",
+      "root": "libs/cron-app/feature-login-merch",
+      "sourceRoot": "libs/cron-app/feature-login-merch/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/cron-app/feature-login-merch"],
+          "options": {
+            "jestConfig": "libs/cron-app/feature-login-merch/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/cron-app/feature-login-merch/src/**/*.ts",
+              "libs/cron-app/feature-login-merch/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "cron-app-feature-manage-account": {
+      "projectType": "library",
+      "root": "libs/cron-app/feature-manage-account",
+      "sourceRoot": "libs/cron-app/feature-manage-account/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/cron-app/feature-manage-account"],
+          "options": {
+            "jestConfig": "libs/cron-app/feature-manage-account/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/cron-app/feature-manage-account/**/*.ts",
+              "libs/cron-app/feature-manage-account/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "cron-app-feature-save-schedule": {
+      "projectType": "library",
+      "root": "libs/cron-app/feature-save-schedule",
+      "sourceRoot": "libs/cron-app/feature-save-schedule/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/cron-app/feature-save-schedule"],
+          "options": {
+            "jestConfig": "libs/cron-app/feature-save-schedule/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/cron-app/feature-save-schedule/src/**/*.ts",
+              "libs/cron-app/feature-save-schedule/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "cron-app-feature-terms": {
+      "projectType": "library",
+      "root": "libs/cron-app/feature-terms",
+      "sourceRoot": "libs/cron-app/feature-terms/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/cron-app/feature-terms"],
+          "options": {
+            "jestConfig": "libs/cron-app/feature-terms/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/cron-app/feature-terms/src/**/*.ts",
+              "libs/cron-app/feature-terms/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        }
+      },
+      "tags": []
+    },
+    "cron-app-ui": {
+      "projectType": "library",
+      "root": "libs/cron-app/ui",
+      "sourceRoot": "libs/cron-app/ui/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/cron-app/ui"],
+          "options": {
+            "jestConfig": "libs/cron-app/ui/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/cron-app/ui/src/**/*.ts",
+              "libs/cron-app/ui/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "cron-server": {
+      "root": "apps/cron-server",
+      "sourceRoot": "apps/cron-server/src",
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:webpack",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/cron-server",
+            "main": "apps/cron-server/src/main.ts",
+            "tsConfig": "apps/cron-server/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "libs/+auth/server/src/email-templates",
+                "output": "./email-templates/"
+              },
+              "apps/cron-server/src/assets",
+              "apps/cron-server/src/email-templates"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/cron-server/src/environments/environment.ts",
+                  "with": "apps/cron-server/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:node",
+          "options": {
+            "buildTarget": "cron-server:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/cron-server/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/cron-server"],
+          "options": {
+            "jestConfig": "apps/cron-server/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "cron-shared-core": {
+      "root": "libs/cron-shared/core",
+      "sourceRoot": "libs/cron-shared/core/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/cron-shared/core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/cron-shared/core"],
+          "options": {
+            "jestConfig": "libs/cron-shared/core/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app": {
+      "projectType": "application",
+      "root": "apps/feedback-app",
+      "sourceRoot": "apps/feedback-app/src",
+      "prefix": "nui",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {}
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/feedback-app",
+            "index": "apps/feedback-app/src/index.html",
+            "main": "apps/feedback-app/src/main.ts",
+            "polyfills": "apps/feedback-app/src/polyfills.ts",
+            "tsConfig": "apps/feedback-app/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "apps/feedback-app/src/favicon.ico",
+              "apps/feedback-app/src/assets"
+            ],
+            "styles": [
+              "libs/shared-app/ui/src/styles.scss",
+              "apps/feedback-app/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "localize": true,
+              "aot": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "apps/feedback-app/src/environments/environment.ts",
+                  "with": "apps/feedback-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "feedback-app:build:production"
+            },
+            "development": {
+              "browserTarget": "feedback-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "feedback-app:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/feedback-app/src/**/*.ts",
+              "apps/feedback-app/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/feedback-app"],
+          "options": {
+            "jestConfig": "apps/feedback-app/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-account": {
+      "root": "libs/feedback-app/account",
+      "sourceRoot": "libs/feedback-app/account/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/feedback-app/account/**/*.ts"]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/account"],
+          "options": {
+            "jestConfig": "libs/feedback-app/account/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-application": {
+      "projectType": "library",
+      "root": "libs/feedback-app/application",
+      "sourceRoot": "libs/feedback-app/application/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/application"],
+          "options": {
+            "jestConfig": "libs/feedback-app/application/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/application/src/**/*.ts",
+              "libs/feedback-app/application/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-create-identifier": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-create-identifier",
+      "sourceRoot": "libs/feedback-app/feature-create-identifier/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-create-identifier"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-create-identifier/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-create-identifier/src/**/*.ts",
+              "libs/feedback-app/feature-create-identifier/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-create-integration": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-create-integration",
+      "sourceRoot": "libs/feedback-app/feature-create-integration/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-create-integration"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-create-integration/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-create-integration/src/**/*.ts",
+              "libs/feedback-app/feature-create-integration/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-create-survey": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-create-survey",
+      "sourceRoot": "libs/feedback-app/feature-create-survey/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-create-survey"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-create-survey/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-create-survey/src/**/*.ts",
+              "libs/feedback-app/feature-create-survey/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-delete-survey": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-delete-survey",
+      "sourceRoot": "libs/feedback-app/feature-delete-survey/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-delete-survey"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-delete-survey/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-delete-survey/src/**/*.ts",
+              "libs/feedback-app/feature-delete-survey/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-home": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-home",
+      "sourceRoot": "libs/feedback-app/feature-home/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-home"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-home/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-home/src/**/*.ts",
+              "libs/feedback-app/feature-home/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-integration": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-integration",
+      "sourceRoot": "libs/feedback-app/feature-integration/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-integration"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-integration/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-integration/src/**/*.ts",
+              "libs/feedback-app/feature-integration/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-integration-list": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-integration-list",
+      "sourceRoot": "libs/feedback-app/feature-integration-list/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-integration-list"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-integration-list/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-integration-list/src/**/*.ts",
+              "libs/feedback-app/feature-integration-list/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-interview": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-interview",
+      "sourceRoot": "libs/feedback-app/feature-interview/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-interview"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-interview/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-interview/src/**/*.ts",
+              "libs/feedback-app/feature-interview/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-interview-filter": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-interview-filter",
+      "sourceRoot": "libs/feedback-app/feature-interview-filter/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-interview-filter"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-interview-filter/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-interview-filter/src/**/*.ts",
+              "libs/feedback-app/feature-interview-filter/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-interview-list": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-interview-list",
+      "sourceRoot": "libs/feedback-app/feature-interview-list/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-interview-list"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-interview-list/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-interview-list/src/**/*.ts",
+              "libs/feedback-app/feature-interview-list/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-login-merch": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-login-merch",
+      "sourceRoot": "libs/feedback-app/feature-login-merch/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-login-merch"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-login-merch/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-login-merch/src/**/*.ts",
+              "libs/feedback-app/feature-login-merch/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-settings-survey": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-settings-survey",
+      "sourceRoot": "libs/feedback-app/feature-settings-survey/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-settings-survey"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-settings-survey/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-settings-survey/src/**/*.ts",
+              "libs/feedback-app/feature-settings-survey/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-setup-survey": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-setup-survey",
+      "sourceRoot": "libs/feedback-app/feature-setup-survey/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-setup-survey"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-setup-survey/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-setup-survey/src/**/*.ts",
+              "libs/feedback-app/feature-setup-survey/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-feature-survey-dashboard": {
+      "projectType": "library",
+      "root": "libs/feedback-app/feature-survey-dashboard",
+      "sourceRoot": "libs/feedback-app/feature-survey-dashboard/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/feature-survey-dashboard"],
+          "options": {
+            "jestConfig": "libs/feedback-app/feature-survey-dashboard/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/feature-survey-dashboard/src/**/*.ts",
+              "libs/feedback-app/feature-survey-dashboard/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-questions": {
+      "projectType": "library",
+      "root": "libs/feedback-app/questions",
+      "sourceRoot": "libs/feedback-app/questions/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/questions"],
+          "options": {
+            "jestConfig": "libs/feedback-app/questions/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/questions/src/**/*.ts",
+              "libs/feedback-app/questions/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-app-ui": {
+      "projectType": "library",
+      "root": "libs/feedback-app/ui",
+      "sourceRoot": "libs/feedback-app/ui/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-app/ui"],
+          "options": {
+            "jestConfig": "libs/feedback-app/ui/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feedback-app/ui/src/**/*.ts",
+              "libs/feedback-app/ui/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-server": {
+      "root": "apps/feedback-server",
+      "sourceRoot": "apps/feedback-server/src",
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:webpack",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/feedback-server",
+            "main": "apps/feedback-server/src/main.ts",
+            "tsConfig": "apps/feedback-server/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "libs/+auth/server/src/email-templates",
+                "output": "./email-templates/"
+              },
+              "apps/feedback-server/src/assets",
+              "apps/feedback-server/src/email-templates"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/feedback-server/src/environments/environment.ts",
+                  "with": "apps/feedback-server/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:node",
+          "options": {
+            "buildTarget": "feedback-server:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/feedback-server/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/feedback-server"],
+          "options": {
+            "jestConfig": "apps/feedback-server/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "feedback-shared-core": {
+      "root": "libs/feedback-shared/core",
+      "sourceRoot": "libs/feedback-shared/core/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/feedback-shared/core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feedback-shared/core"],
+          "options": {
+            "jestConfig": "libs/feedback-shared/core/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "health-server": {
+      "root": "libs/+health/server",
+      "sourceRoot": "libs/+health/server/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/+health/server/**/*.ts"]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/+health/server"],
+          "options": {
+            "jestConfig": "libs/+health/server/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "job-app": {
+      "projectType": "application",
+      "root": "apps/job-app",
+      "sourceRoot": "apps/job-app/src",
+      "prefix": "nui",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "pt": "apps/job-app/locale/messages.pt.xlf"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/job-app",
+            "index": "apps/job-app/src/index.html",
+            "main": "apps/job-app/src/main.ts",
+            "polyfills": "apps/job-app/src/polyfills.ts",
+            "tsConfig": "apps/job-app/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "apps/job-app/src/favicon.ico",
+              "apps/job-app/src/assets"
+            ],
+            "styles": [
+              "libs/shared-app/ui/src/styles.scss",
+              "apps/job-app/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "localize": true,
+              "aot": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "apps/job-app/src/environments/environment.ts",
+                  "with": "apps/job-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "job-app:build:production"
+            },
+            "development": {
+              "browserTarget": "job-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "job-app:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/job-app/src/**/*.ts",
+              "apps/job-app/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/job-app"],
+          "options": {
+            "jestConfig": "apps/job-app/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "job-app-feature-create": {
+      "projectType": "library",
+      "root": "libs/job-app/feature-create",
+      "sourceRoot": "libs/job-app/feature-create/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/job-app/feature-create"],
+          "options": {
+            "jestConfig": "libs/job-app/feature-create/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/job-app/feature-create/src/**/*.ts",
+              "libs/job-app/feature-create/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "job-app-ui": {
+      "projectType": "library",
+      "root": "libs/job-app/ui",
+      "sourceRoot": "libs/job-app/ui/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/job-app/ui"],
+          "options": {
+            "jestConfig": "libs/job-app/ui/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/job-app/ui/src/**/*.ts",
+              "libs/job-app/ui/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "job-server": {
+      "root": "apps/job-server",
+      "sourceRoot": "apps/job-server/src",
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:webpack",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/job-server",
+            "main": "apps/job-server/src/main.ts",
+            "tsConfig": "apps/job-server/tsconfig.app.json",
+            "assets": [
+              "apps/job-server/src/assets",
+              "apps/job-server/src/email-templates",
+              "apps/job-server/src/image-templates"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/job-server/src/environments/environment.ts",
+                  "with": "apps/job-server/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:node",
+          "options": {
+            "buildTarget": "job-server:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/job-server/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/job-server"],
+          "options": {
+            "jestConfig": "apps/job-server/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "job-shared-core": {
+      "root": "libs/job-shared/core",
+      "sourceRoot": "libs/job-shared/core/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/job-shared/core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/job-shared/core"],
+          "options": {
+            "jestConfig": "libs/job-shared/core/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "shared-app-forms": {
+      "projectType": "library",
+      "root": "libs/shared-app/forms",
+      "sourceRoot": "libs/shared-app/forms/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared-app/forms"],
+          "options": {
+            "jestConfig": "libs/shared-app/forms/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared-app/forms/src/**/*.ts",
+              "libs/shared-app/forms/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        }
+      },
+      "tags": []
+    },
+    "shared-app-ui": {
+      "projectType": "library",
+      "root": "libs/shared-app/ui",
+      "sourceRoot": "libs/shared-app/ui/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared-app/ui"],
+          "options": {
+            "jestConfig": "libs/shared-app/ui/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared-app/ui/src/**/*.ts",
+              "libs/shared-app/ui/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        }
+      },
+      "tags": []
+    },
+    "shared-app-utils": {
+      "projectType": "library",
+      "root": "libs/shared-app/utils",
+      "sourceRoot": "libs/shared-app/utils/src",
+      "prefix": "nui",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared-app/utils"],
+          "options": {
+            "jestConfig": "libs/shared-app/utils/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared-app/utils/src/**/*.ts",
+              "libs/shared-app/utils/src/**/*.html"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        }
+      },
+      "tags": []
+    },
+    "shared-server-beew": {
+      "root": "libs/shared-server/beew",
+      "sourceRoot": "libs/shared-server/beew/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/shared-server/beew/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared-server/beew"],
+          "options": {
+            "jestConfig": "libs/shared-server/beew/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "shared-server-email-list": {
+      "root": "libs/shared-server/email-list",
+      "sourceRoot": "libs/shared-server/email-list/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared-server/email-list/**/*.ts"]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared-server/email-list"],
+          "options": {
+            "jestConfig": "libs/shared-server/email-list/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "shared-server-logging": {
+      "root": "libs/shared-server/logging",
+      "sourceRoot": "libs/shared-server/logging/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared-server/logging/**/*.ts"]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared-server/logging"],
+          "options": {
+            "jestConfig": "libs/shared-server/logging/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "shared-server-sitemap": {
+      "root": "libs/shared-server/sitemap",
+      "sourceRoot": "libs/shared-server/sitemap/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared-server/sitemap/**/*.ts"]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared-server/sitemap"],
+          "options": {
+            "jestConfig": "libs/shared-server/sitemap/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "shared-server-stripe": {
+      "root": "libs/shared-server/stripe",
+      "sourceRoot": "libs/shared-server/stripe/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared-server/stripe/**/*.ts"]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared-server/stripe"],
+          "options": {
+            "jestConfig": "libs/shared-server/stripe/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "shared-server-upload": {
+      "root": "libs/shared-server/upload",
+      "sourceRoot": "libs/shared-server/upload/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/shared-server/upload/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared-server/upload"],
+          "options": {
+            "jestConfig": "libs/shared-server/upload/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "shared-server-utils": {
+      "root": "libs/shared-server/utils",
+      "sourceRoot": "libs/shared-server/utils/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared-server/utils/**/*.ts"]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared-server/utils"],
+          "options": {
+            "jestConfig": "libs/shared-server/utils/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "shared-utils": {
+      "root": "libs/shared/utils",
+      "sourceRoot": "libs/shared/utils/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared/utils/**/*.ts"]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/utils"],
+          "options": {
+            "jestConfig": "libs/shared/utils/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    }
+  }
+}

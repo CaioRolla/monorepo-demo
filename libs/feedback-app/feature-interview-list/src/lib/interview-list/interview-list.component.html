@@ -1,0 +1,149 @@
+<nui-feedback-app-page-wrapper
+    pageTitle="Responses"
+    i18n-pageTitle
+>
+
+    <h1
+        nui-page-wrapper-title
+        i18n
+    >
+        Responses
+    </h1>
+
+    <p nui-page-wrapper-subtitle>
+        Dive deep into your subscribers feedbacks.
+    </p>
+
+    <div class="interview-list">
+
+        <div class="interview-list__table">
+            <nui-stacked-list>
+                <nui-stacked-list-header>
+                    <div class="interview-list__table__header">
+                        <div class="interview-list__table__header__first-column">Feedback</div>
+                        <div class="interview-list__table__header__primary">Primary Answer</div>
+                        <!-- <div class="interview-list__table__header__started">Started</div> -->
+                        <!-- <div class="interview-list__table__header__actions">Actions</div> -->
+                    </div>
+                </nui-stacked-list-header>
+
+                <nui-stacked-list-row *ngIf="(displayEmptyInterviewsMessage$ | async) || false">
+                    <div class="interview-list__table__row--empty">
+                        Your survey doesn't have any feedback yet.
+                    </div>
+                </nui-stacked-list-row>
+
+                <ng-container
+                    ngProjectAs="nui-stacked-list-row"
+                    *ngIf="(loadingInterviews$ | async) || false"
+                >
+                    <nui-stacked-list-row *ngFor="let __ of [0, 1, 2, 3, 4, 5]">
+                        <div class="interview-list__table__row">
+
+                            <div class="interview-list__table__row__first-column">
+
+                                <div class="interview-list__table__row__first-column__identifiers">
+                                    <div
+                                        nui-loading-placeholder
+                                        style="height: 12px; width: 20%;max-width: 80px; "
+                                    ></div>
+                                    <div
+                                        nui-loading-placeholder
+                                        style="height: 12px; width: 20%; max-width: 80px; margin-left: 8px;"
+                                    ></div>
+                                    <div
+                                        nui-loading-placeholder
+                                        style="height: 12px; width: 20%; max-width: 80px; margin-left: 8px;"
+                                    ></div>
+                                </div>
+
+                                <div class="interview-list__table__row__first-column__open">
+                                    <div
+                                        nui-loading-placeholder
+                                        style="height: 12px; width: 60%;"
+                                    ></div>
+                                </div>
+
+                            </div>
+
+                            <div class="interview-list__table__row__primary">
+                                <div
+                                    nui-loading-placeholder
+                                    style="height: 12px; width: 20%;"
+                                ></div>
+                            </div>
+
+                            <!-- <div class="interview-list__table__row__actions">
+                                <div
+                                    nui-loading-placeholder
+                                    style="height: 12px; width: 20%;"
+                                ></div>
+                                <div
+                                    nui-loading-placeholder
+                                    style="height: 12px; width: 20%; margin-left: 8px;"
+                                ></div>
+                                <div
+                                    nui-loading-placeholder
+                                    style="height: 12px; width: 20%; margin-left: 8px;"
+                                ></div>
+                            </div> -->
+                        </div>
+                    </nui-stacked-list-row>
+                </ng-container>
+
+                <ng-container
+                    ngProjectAs="nui-stacked-list-row"
+                    *ngIf="!((loadingInterviews$ | async) || false)"
+                >
+                    <nui-stacked-list-row *ngFor="let interview of (paginatedInterviews$ | async)">
+                        <div class="interview-list__table__row">
+
+                            <div class="interview-list__table__row__first-column">
+
+                                <div class="interview-list__table__row__first-column__identifiers">
+                                    <div
+                                        nuiChip
+                                        *ngFor="let value of interview.identifierValues"
+                                    >
+                                        {{ value }}
+                                    </div>
+                                </div>
+
+                                <div class="interview-list__table__row__first-column__open">
+                                    {{ interview.openQuestionAnswer || '-' }}
+                                </div>
+                            </div>
+                            <div class="interview-list__table__row__primary">
+                                <nui-primary-question-answer-chip
+                                    [type]="interview.type"
+                                    [primaryQuestionAnswer]="interview.primaryQuestionAnswer"
+                                ></nui-primary-question-answer-chip>
+                            </div>
+
+                            <!-- <div class="interview-list__table__row__started">Started</div> -->
+                            <!-- <div class="interview-list__table__row__actions">Actions</div> -->
+
+                        </div>
+                    </nui-stacked-list-row>
+                </ng-container>
+
+                <nui-paginator
+                    [totalCount]="(interviewsTotalAmount$ | async) || 0"
+                    [showingCount]="(showingInterviews$ | async) || 0"
+                    [disableNext]="(disableNextInterviews$ | async) || false"
+                    [disablePrevious]="(disablePreviousInterviews$ | async) || false"
+                    (nextClicked)="nextInterviewsPage()"
+                    (previousClicked)="previousInterviewsPage()"
+                ></nui-paginator>
+            </nui-stacked-list>
+        </div>
+        <div class="interview-list__filters">
+            <nui-interview-filter
+                [surveyId]="surveyId"
+                (appliedFilter)="loadInterviews($any($event))"
+            ></nui-interview-filter>
+        </div>
+
+    </div>
+
+</nui-feedback-app-page-wrapper>

@@ -1,0 +1,30 @@
+:host {
+  display: block;
+}
+
+.checkbox-field {
+  display: flex;
+  flex-direction: row;
+
+  &__first-column {
+    margin-right: 8px;
+  }
+  &__second-column {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    &::ng-deep label {
+      color: var(--nui-color-neutral-500);
+      font-weight: 500;
+      font-size: var(--nui-fs-300);
+      cursor: pointer;
+    }
+
+    &::ng-deep [nui-checkbox-subtitle] {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--nui-color-neutral-400);
+    }
+  }
+}

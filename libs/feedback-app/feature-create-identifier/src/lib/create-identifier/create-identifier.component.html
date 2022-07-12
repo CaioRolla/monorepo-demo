@@ -1,0 +1,54 @@
+<div class="create-identifier">
+    <form [formGroup]="form" class="create-identifier__form">
+
+        <nui-form-field>
+            <label
+                for="identifierKey"
+                nui-label
+                i18n
+            >
+                Key
+            </label>
+            <input
+                name="identifierKey"
+                formControlName="key"
+                type="text"
+                nui-input
+                maxlength="500"
+            >
+            <nui-error *ngIf="form.get('key')?.hasError('required')">
+                <ng-container i18n>Your identifier must have a unique key.</ng-container>
+            </nui-error>
+            <nui-hint>
+                <ng-container i18n>
+                    The Identifier key will be used in the Survey URL: &key=value
+                </ng-container>
+            </nui-hint>
+        </nui-form-field>
+
+        <nui-checkbox-field>
+            <input
+                formControlName="primary"
+                type="checkbox"
+                name="primaryIdentifier"
+            >
+            <label
+                for="primaryIdentifier"
+                i18n
+            >
+                Unique
+            </label>
+        </nui-checkbox-field>
+
+        <button
+            type="button"
+            nui-primary-button
+            (click)="onSubmit()"
+            [loading]="(creatingIdentifier$ | async) || false"
+            i18n
+        >
+            Create
+        </button>
+
+    </form>
+</div>

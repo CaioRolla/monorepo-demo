@@ -1,0 +1,56 @@
+<div class="save-schedule-dialog">
+    <nui-card>
+        <nui-card-simple-header>
+            <ng-container
+                i18n
+                *ngIf="isEdit"
+            >
+                Update Scheduler
+            </ng-container>
+            <ng-container
+                i18n
+                *ngIf="!isEdit"
+            >
+                Create Scheduler
+            </ng-container>
+        </nui-card-simple-header>
+        <nui-loading-content [loading]="(loadingSchedule$ | async) || false">
+            <div class="save-schedule-dialog__content">
+                <nui-save-schedule [scheduleId]="data?.scheduleId"></nui-save-schedule>
+            </div>
+        </nui-loading-content>
+        <nui-card-actions-footer>
+
+            <button
+                nui-text-neutral-button
+                i18n
+                (click)="onCancel()"
+            >
+                Cancel
+            </button>
+
+            <button
+                type="button"
+                nui-primary-button
+                *ngIf="isEdit"
+                (click)="onPatch()"
+                [loading]="(savingSchedule$ | async) || false"
+                i18n
+            >
+                Save
+            </button>
+
+            <button
+                type="button"
+                nui-primary-button
+                *ngIf="!isEdit"
+                (click)="onCreate()"
+                [loading]="(savingSchedule$ | async) || false"
+                i18n
+            >
+                Create
+            </button>
+        </nui-card-actions-footer>
+    </nui-card>
+
+</div>

@@ -1,0 +1,22 @@
+<div class="stacked-list">
+
+    <nui-card [noPadding]="true">
+        <div class="stacked-list__content">
+
+            <div class="stacked-list__content__header">
+                <ng-content select="nui-stacked-list-header"></ng-content>
+            </div>
+
+            <div class="stacked-list__content__content">
+
+                <ng-content select="nui-stacked-list-row"></ng-content>
+
+            </div>
+
+        </div>
+    </nui-card>
+
+    <div class="stacked-list__pagination">
+        <ng-content select="nui-paginator"></ng-content>
+    </div>
+</div>

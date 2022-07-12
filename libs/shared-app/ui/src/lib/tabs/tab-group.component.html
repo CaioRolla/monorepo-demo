@@ -1,0 +1,26 @@
+<div class="tab-group">
+    <div class="tab-group__header" [class.tab-group__header--card]="card">
+        <ng-content select="nui-tab-header"></ng-content>
+    </div>
+    <div class="tab-group__content" >
+
+        <ng-container *ngIf="card">
+            <nui-card [noPadding]="true">
+                <ng-container *ngTemplateOutlet="tabs"></ng-container>
+            </nui-card>
+        </ng-container>
+        <ng-container *ngIf="!card">
+            <ng-container *ngTemplateOutlet="tabs"></ng-container>
+        </ng-container>
+        <ng-template #tabs>
+            <div
+                [style.height.px]="currentHeight$ | async"
+                class="tab-group__content__container"
+                [class.tab-group__content__container--animation]="animationEnabled$ | async"
+                [style.transform]="currentTabTranslate$ | async"
+            >
+                <ng-content select="nui-tab"></ng-content>
+            </div>
+        </ng-template>
+    </div>
+</div>

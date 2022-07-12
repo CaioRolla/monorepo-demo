@@ -1,0 +1,38 @@
+<div class="delete-survey-dialog">
+
+    <nui-card>
+
+        <div class="delete-survey-dialog__content">
+            <p i18n>
+                You are about to permanently delete the survey
+                <strong>{{data?.surveyName}}</strong>
+                . Are you sure you want to continue?
+            </p>
+        </div>
+
+        <nui-card-actions-footer>
+
+            <button
+                nui-text-neutral-button
+                i18n
+                (click)="onCancel()"
+            >
+                Cancel
+            </button>
+
+            <button
+                id="delete-survey-dialog__delete-button"
+                type="button"
+                nui-danger-button
+                (click)="onDelete()"
+                i18n
+                [loading]="(deletingSurvey$ | async) || false"
+            >
+                Delete
+            </button>
+
+        </nui-card-actions-footer>
+
+    </nui-card>
+
+</div>

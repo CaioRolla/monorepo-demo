@@ -1,0 +1,69 @@
+<nui-card>
+  <nui-card-simple-header>
+      <ng-container i18n>Create Integration</ng-container>
+  </nui-card-simple-header>
+
+  <div class="create-integration-dialog">
+      <form class="create-integration-dialog__content" [formGroup]="form">
+          <nui-form-field>
+              <label
+                  for="integrationName"
+                  nui-label
+                  i18n
+              >
+                  Name
+              </label>
+              <input
+                  name="integrationName"
+                  formControlName="name"
+                  type="text"
+                  nui-input
+                  maxlength="255"
+              >
+              <nui-error *ngIf="nameControl.hasError('required')">
+                  <ng-container i18n>Your integration must have a name</ng-container>
+              </nui-error>
+          </nui-form-field>
+
+          <nui-form-field class="full-width">
+              <label
+                  for="integrationDesc"
+                  [optional]="true"
+                  nui-label
+                  i18n
+              >
+                  Description
+              </label>
+              <textarea
+                  name="integrationDesc"
+                  formControlName="desc"
+                  type="text"
+                  nui-input
+                  rows="4"
+                  maxlength="500"
+              ></textarea>
+
+          </nui-form-field>
+      </form>
+  </div>
+
+  <nui-card-actions-footer>
+      <button
+          nui-text-neutral-button
+          i18n
+          (click)="onCancel()"
+      >
+          Cancel
+      </button>
+
+      <button
+          type="button"
+          nui-primary-button
+          (click)="onSubmit()"
+          [loading]="(creatingIntegration$ | async) || false"
+          i18n
+      >
+          Create
+      </button>
+  </nui-card-actions-footer>
+</nui-card>

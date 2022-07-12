@@ -1,0 +1,81 @@
+<nui-card>
+
+    <div class="interview-filter">
+
+        <div
+            class="interview-filter__container--empty"
+            *ngIf="(displayEmptyMessage$ | async ) || false"
+        >
+            <span>
+                You don't have any identifiers available to be used as filter.
+                <a
+                    [routerLink]="['/', 'survey-settings',surveyId ]"
+                    [queryParams]="{tabId: 'identifiers'}"
+                >
+                    Click here
+                </a>
+                to set up identifiers for your survey.
+            </span>
+        </div>
+
+        <form
+            class="interview-filter__container"
+            *ngIf="!((displayEmptyMessage$ | async ) || false)"
+            #form="ngForm"
+        >
+            <ng-container *ngFor="let identifier of filterDataIdentifiers$ | async; let islast = last">
+
+                <label
+                    class="interview-filter__container__label"
+                    nui-label
+                >
+                    {{ identifier.key |titlecase  }}
+                </label>
+
+                <nui-checkbox-field *ngFor="let option of identifier.values">
+                    <input
+                        type="checkbox"
+                        [ngModel]="false"
+                        [name]="option.value"
+                        (change)="registerFilterChange(identifier.key, option.value, $any($event.target).checked)"
+                    >
+                    <label
+                        [for]="option.value"
+                        i18n
+                    >
+                        {{ option.value }}
+                    </label>
+
+                </nui-checkbox-field>
+
+                <nui-form-section-separator *ngIf="!islast"></nui-form-section-separator>
+
+            </ng-container>
+
+            <div class="interview-filter__container__actions">
+
+                <button
+                    nui-text-neutral-button
+                    (click)="form.resetForm(); clearFilter()"
+                >
+                    Clear
+                </button>
+                <button
+                    nui-primary-button
+                    (click)="applyfilter()"
+                    [loading]="applyingFilters"
+                >
+
+                    <hero-icon
+                        nui-icon-prefix
+                        name="filter"
+                    ></hero-icon>
+                    Filter
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+</nui-card>

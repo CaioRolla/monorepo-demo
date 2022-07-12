@@ -1,0 +1,107 @@
+.save-schedule {
+  display: flex;
+  flex-direction: column;
+  
+  nui-form-field {
+    max-width: 280px;
+    margin-top: 16px;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+
+  .full-width {
+    max-width: 100%;
+  }
+
+  &__url-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 16px;
+
+    nui-form-field {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 0px;
+      &:first-child {
+        max-width: 86px;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__frequency-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 16px;
+
+    nui-form-field {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 0px;
+      &:first-child {
+        max-width: 180px;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__notification-section {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    nui-checkbox-field {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__recurring-section {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+
+  &__headers-section {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 16px;
+
+    &__add-button {
+      width: min-content;
+      align-self: flex-end;
+    }
+
+    &__row {
+      display: flex;
+      flex-direction: row;
+      
+
+      button {
+        margin-left: 8px;
+        height: min-content;
+        margin-top: 8px;
+
+        &:disabled {
+          opacity: 0;
+          cursor: normal;
+          pointer-events: none;
+        }
+      }
+
+      nui-form-field {
+        width: 50%;
+        margin-top: 0px;
+
+        &:first-child {
+          margin-right: 16px;
+        }
+        &:last-child {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

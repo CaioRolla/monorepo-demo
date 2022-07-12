@@ -1,0 +1,61 @@
+
+.top-bar {
+  // position: sti;
+  // top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: 64px;
+  background: var(--nui-color-neutral-0);
+  border-bottom: 1px solid var(--nui-color-neutral-200);
+  z-index: 99;
+
+  &__logo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+
+    ::ng-deep img[nui-topbar-logo] {
+      max-height: 42px;
+    }
+
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
+  }
+
+  &__toggle-navbar {
+    height: 100%;
+
+    button {
+      height: 100%;
+      width: 64px;
+      border-radius: 0px;
+      border: none;
+      line-height: 0;
+      user-select: none;
+      background: var(--nui-color-neutral-0);
+      color: var(--nui-color-neutral-600);
+      transition: all 0.1s ease-in-out;
+      cursor: pointer;
+      outline: unset;
+
+      &:hover, &:focus {
+        background: var(--nui-color-neutral-100);
+      }
+
+      hero-icon {
+        height: 24px !important;
+        width: auto !important;
+      }
+    }
+  }
+}

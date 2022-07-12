@@ -1,0 +1,74 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 100%;
+
+  &__filters {
+    padding-left: 24px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--nui-content-container);
+
+    &__stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 24px;
+    }
+
+    &__bars {
+      margin-top: 24px;
+    }
+
+    &__table {
+      margin-top: 24px;
+
+      &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      &__row {
+        display: flex;
+        flex-direction: column;
+
+        &--empty {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          font-size: var(--nui-fs-200);
+          color: var(--nui-color-neutral-500);
+          font-weight: 300;
+        }
+
+        &__open {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+
+
+    &__filters {
+      padding-left: 0px;
+      padding-bottom: 24px;
+
+      nui-interview-filter {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

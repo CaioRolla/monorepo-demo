@@ -1,0 +1,70 @@
+:host {
+  width: 100%;
+  display: block;
+}
+
+.schedules-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  nui-paginator {
+    margin-top: 16px;
+  }
+
+  &__header,
+  &__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__empty {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      &__msg {
+        text-align: center;
+        max-width: 480px;
+        font-size: var(--nui-fs-200);
+        color: var(--nui-color-neutral-400);
+        font-weight: 300;
+      }
+    }
+
+    &__column {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+
+      button {
+        padding: 2px;
+        font-size: 10px;
+
+        hero-icon {
+          height: 16px !important;
+        }
+      }
+
+      &:last-child {
+        max-width: 100px;
+      }
+
+      @media screen and (max-width: 600px) {
+        &:nth-of-type(2) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        &:nth-of-type(1) {
+          flex: 2;
+        }
+        &:nth-of-type(3) {
+          display: none;
+        }
+      }
+    }
+  }
+}

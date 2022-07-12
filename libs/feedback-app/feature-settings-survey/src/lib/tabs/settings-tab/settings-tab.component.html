@@ -1,0 +1,251 @@
+<div class="settings-tab">
+
+    <form
+        class="settings-tab__form"
+        [formGroup]="form"
+    >
+
+        <nui-form-section-header>
+            <h2
+                nui-form-section-header-title
+                i18n
+            >
+                Settings
+            </h2>
+            <p
+                nui-form-section-header-subtitle
+                i18n
+            >
+                Update your survey settings.
+            </p>
+        </nui-form-section-header>
+
+        <nui-form-field id="surveyName">
+            <label
+                for="surveyName"
+                nui-label
+                i18n
+            >
+                Name
+            </label>
+            <input
+                name="surveyName"
+                formControlName="name"
+                type="text"
+                nui-input
+                maxlength="255"
+            >
+            <nui-error *ngIf="form.get('name')?.hasError('required')">
+                <ng-container i18n>Your job must have a name</ng-container>
+            </nui-error>
+        </nui-form-field>
+
+        <nui-form-field id="surveyDesc">
+            <label
+                for="surveyDesc"
+                [optional]="true"
+                nui-label
+                i18n
+            >
+                Description
+            </label>
+            <textarea
+                name="surveyDesc"
+                formControlName="desc"
+                type="text"
+                nui-input
+                rows="4"
+                maxlength="500"
+            ></textarea>
+
+        </nui-form-field>
+
+        <nui-form-section-separator></nui-form-section-separator>
+
+        <nui-form-field id="primaryQuestionTitle">
+            <label
+                for="primaryQuestionTitle"
+                nui-label
+                i18n
+            >
+                Primary Question
+            </label>
+            <textarea
+                name="primaryQuestionTitle"
+                formControlName="primaryQuestionTitle"
+                type="text"
+                nui-input
+                rows="2"
+                maxlength="500"
+            ></textarea>
+
+            <nui-error *ngIf="form.get('primaryQuestionTitle')?.hasError('required')">
+                <ng-container i18n>
+                    You need to provide a custom question when "Custom title for primary question" is enabled.
+                </ng-container>
+            </nui-error>
+
+            <nui-hint>
+                <ng-container i18n></ng-container>
+            </nui-hint>
+
+        </nui-form-field>
+
+        <nui-form-section-separator></nui-form-section-separator>
+
+        <nui-checkbox-field>
+            <input
+                formControlName="customLogo"
+                type="checkbox"
+                name="customLogo"
+            >
+            <label
+                for="customLogo"
+                i18n
+            >
+                Custom logo
+            </label>
+
+            <span nui-checkbox-subtitle>
+                Use your newsletter logo as survey logo.
+            </span>
+        </nui-checkbox-field>
+
+        <div class="settings-tab__form__logo" *ngIf="form.get('customLogo')?.value || false">
+            <nui-image-upload
+                titleText="Newsletter Logo"
+                [fileUrl]="(loadedSurvey$ | async)?.logoUrl || null"
+                (fileBase64Change)="patchlogoBase64($event)"
+            ></nui-image-upload>
+        </div>
+
+        <nui-form-section-separator></nui-form-section-separator>
+
+        <nui-checkbox-field>
+            <input
+                formControlName="openQuestionEnabled"
+                type="checkbox"
+                name="openQuestionEnabled"
+            >
+            <label
+                for="openQuestionEnabled"
+                i18n
+            >
+                Open question enabled
+            </label>
+
+            <span nui-checkbox-subtitle>
+                Dive into your subscribers opinions about your newsletter.
+            </span>
+        </nui-checkbox-field>
+        <ng-container *ngIf="form.get('openQuestionEnabled')?.value || false">
+
+            <nui-checkbox-field id="openQuestionOptional">
+                <input
+                    formControlName="openQuestionOptional"
+                    type="checkbox"
+                    name="openQuestionOptional"
+                >
+                <label
+                    for="openQuestionOptional"
+                    i18n
+                >
+                    Open question optional
+                </label>
+
+                <span nui-checkbox-subtitle>
+                    Your subscribers can finish the survey without answering the open question.
+                </span>
+            </nui-checkbox-field>
+
+            <nui-form-field id="openQuestionTitle">
+                <label
+                    for="openQuestionTitle"
+                    nui-label
+                    i18n
+                >
+                    Open Question
+                </label>
+                <textarea
+                    name="openQuestionTitle"
+                    formControlName="openQuestionTitle"
+                    type="text"
+                    nui-input
+                    rows="2"
+                    maxlength="500"
+                ></textarea>
+
+                <nui-error *ngIf="form.get('openQuestionTitle')?.hasError('required')">
+                    <ng-container i18n>
+                        You need to provide a custom question when "Custom title for open question" is enabled.
+                    </ng-container>
+                </nui-error>
+
+            </nui-form-field>
+        </ng-container>
+
+        <nui-form-section-separator></nui-form-section-separator>
+
+        <nui-checkbox-field>
+            <input
+                formControlName="redirectAfterCompleted"
+                type="checkbox"
+                name="redirectAfterCompleted"
+            >
+            <label
+                for="redirectAfterCompleted"
+                i18n
+            >
+                Redirect after completed
+            </label>
+
+            <span nui-checkbox-subtitle>
+                Redirect user to any URL after finishing interview.
+            </span>
+        </nui-checkbox-field>
+
+        <ng-container *ngIf="form.get('redirectAfterCompleted')?.value || false">
+            <nui-form-field id="redirectAfterCompletedUrl">
+                <label
+                    for="redirectAfterCompletedUrl"
+                    nui-label
+                    i18n
+                >
+                    Redirect URL
+                </label>
+                <input
+                    name="redirectAfterCompletedUrl"
+                    formControlName="redirectAfterCompletedUrl"
+                    type="text"
+                    nui-input
+                    maxlength="255"
+                >
+                <nui-error *ngIf="form.get('redirectAfterCompletedUrl')?.hasError('required')">
+                    <ng-container i18n>
+                        You must provide a redirect URL when "Redirect after completed" is enabled.
+                    </ng-container>
+                </nui-error>
+
+                <nui-error *ngIf="form.get('redirectAfterCompletedUrl')?.hasError('invalidUrl')">
+                    <ng-container i18n>Invalid URL format.</ng-container>
+                </nui-error>
+
+            </nui-form-field>
+        </ng-container>
+
+        <div class="settings-tab__form__actions">
+            <button
+                type="button"
+                nui-primary-button
+                (click)="onSubmit()"
+                [loading]="(patchingSurvey$ | async) || false"
+                i18n
+            >
+
+                <span nui-icon-prefix>💾</span>
+                Save
+            </button>
+        </div>
+    </form>
+
+</div>

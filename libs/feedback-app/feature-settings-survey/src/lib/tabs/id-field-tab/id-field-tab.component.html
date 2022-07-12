@@ -1,0 +1,114 @@
+<div class="id-field">
+
+    <nui-form-section-header>
+        <h2
+            nui-form-section-header-title
+            i18n
+        >
+            Identifiers
+        </h2>
+        <p
+            nui-form-section-header-subtitle
+            i18n
+        >
+            Identify your survey respondent by their email address, phone number, or other unique identifier. You can also use non-unique identifiers such as gender and name.
+        </p>
+    </nui-form-section-header>
+
+    <div class="id-field__create">
+        <nui-create-identifier
+            [surveyId]="surveyId"
+            (created)="reloadIdentifiers()"
+        ></nui-create-identifier>
+    </div>
+
+    <nui-form-section-separator></nui-form-section-separator>
+
+    <div class="id-field__table">
+        <nui-stacked-list>
+            <nui-stacked-list-header>
+                <div class="id-field__table__header">
+                    <div
+                        class="id-field__table__header__name"
+                        i18n
+                    >
+                        Key
+                    </div>
+                    <div
+                        class="id-field__table__header__status"
+                        i18n
+                    >
+                        Unique
+                    </div>
+                    <div
+                        class="id-field__table__header__interviews"
+                        i18n
+                    >
+                        Values
+                    </div>
+                    <!-- <div
+                        class="id-field__table__header__actions"
+                        i18n
+                    >
+                        Actions
+                    </div> -->
+                </div>
+            </nui-stacked-list-header>
+
+            <nui-stacked-list-row *ngFor="let identifier of (paginatedIdentifiers$ | async)">
+                <div class="id-field__table__row">
+                    <div
+                        class="id-field__table__row__name"
+                        i18n
+                    >
+                        {{ identifier.key }}
+                    </div>
+                    <div
+                        class="id-field__table__row__status"
+                        i18n
+                    >
+                        <nui-checkbox-field>
+                            <input
+                                type="checkbox"
+                                name="primary"
+                                disabled="true"
+                                [checked]="identifier.primary"
+                            >
+                        </nui-checkbox-field>
+                    </div>
+                    <div
+                        class="id-field__table__row__interviews"
+                        i18n
+                    >
+                        {{ identifier.valuesCount }}
+                    </div>
+                    <!-- <div
+                        class="id-field__table__row__actions"
+                        i18n
+                    >
+                        Actions
+                    </div> -->
+                </div>
+            </nui-stacked-list-row>
+
+            <nui-stacked-list-row *ngIf="(displayEmptyIdentifiersMessage$ | async) || false">
+                <div class="id-field__table__row">
+                    <div class="id-field__table__row__empty">
+                        <div class="id-field__table__row__empty__msg">You don't have any identifiers yet.</div>
+                    </div>
+                </div>
+            </nui-stacked-list-row>
+
+            <nui-paginator
+                [totalCount]="(identifiersTotalAmount$ | async) || 0"
+                [showingCount]="(showingIdentifiers$ | async) || 0"
+                [disableNext]="(disableNextIdentifier$ | async) || false"
+                [disablePrevious]="(disablePreviousIdentifier$ | async) || false"
+                (nextClicked)="nextIdentifiersPage()"
+                (previousClicked)="previousIdentifiersPage()"
+            ></nui-paginator>
+        </nui-stacked-list>
+
+    </div>
+
+</div>

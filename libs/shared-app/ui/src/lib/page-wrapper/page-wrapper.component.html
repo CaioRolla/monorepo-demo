@@ -1,0 +1,44 @@
+<div class="page-wrapper">
+
+    <div class="page-wrapper__sidebar">
+
+        <ng-content select="nui-sidebar"></ng-content>
+
+    </div>
+
+    <div class="page-wrapper__body">
+
+        <div class="page-wrapper__body__top-bar">
+
+            <ng-content select="nui-topbar"></ng-content>
+
+        </div>
+
+        <div class="page-wrapper__body__header">
+
+            <div class="page-wrapper__body__header__left">
+                <div class="page-wrapper__body__header__left__title">
+                    <ng-content select="h1[nui-page-wrapper-title]"></ng-content>
+                </div>
+
+                <div class="page-wrapper__body__header__left__subtitle">
+                    <ng-content select="p[nui-page-wrapper-subtitle]"></ng-content>
+                </div>
+
+            </div>
+
+            <div class="page-wrapper__body__header__actions">
+                <ng-content select="[nui-page-wrapper-title-actions]"></ng-content>
+            </div>
+
+        </div>
+
+        <div class="page-wrapper__body__content">
+
+            <ng-content></ng-content>
+
+        </div>
+
+    </div>
+
+</div>

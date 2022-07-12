@@ -1,0 +1,78 @@
+<div
+    *ngIf="type === surveyType.LIKE"
+    class="primary-question-answer-chip__LIKE-score"
+>
+
+    <ng-container *ngIf="primaryQuestionAnswer !== undefined">
+        <ng-container>
+            <span
+                nuiChip
+                class="primary-question-answer-chip__LIKE-score--{{primaryQuestionAnswer}}"
+                [style.background]="primaryQuestionAnswer === 1 ? '#10b981' : '#dc2626'"
+            >
+
+                <ng-container *ngIf="primaryQuestionAnswer === 1">👍 Satisfied</ng-container>
+                <ng-container *ngIf="primaryQuestionAnswer === 0">👎 Unsatisfied</ng-container>
+            </span>
+        </ng-container>
+    </ng-container>
+
+</div>
+
+<div
+    *ngIf="type === surveyType.CSAT"
+    class="primary-question-answer-chip__CSAT-score"
+>
+
+    <ng-container *ngIf="primaryQuestionAnswer !== undefined">
+        <ng-container>
+            <span
+                nuiChip
+                class="primary-question-answer-chip__CSAT-score--{{primaryQuestionAnswer - 1}}"
+                [style.background]="satisfactionColorRange[primaryQuestionAnswer - 1]"
+            >
+                {{ CSATrange[primaryQuestionAnswer - 1] }} -
+                <ng-container *ngIf="primaryQuestionAnswer === 1">Very Dissatisfied</ng-container>
+                <ng-container *ngIf="primaryQuestionAnswer === 2">Dissatisfied</ng-container>
+                <ng-container *ngIf="primaryQuestionAnswer === 3">Neutral</ng-container>
+                <ng-container *ngIf="primaryQuestionAnswer === 4">Satisfied</ng-container>
+                <ng-container *ngIf="primaryQuestionAnswer === 5">Very Satisfied</ng-container>
+            </span>
+        </ng-container>
+    </ng-container>
+
+</div>
+
+<div
+    *ngIf="type === surveyType.NPS"
+    class="primary-question-answer-chip__NPS-score"
+>
+
+    <ng-container *ngIf="primaryQuestionAnswer !== undefined">
+        <ng-container *ngIf="primaryQuestionAnswer <= 6 ">
+            <span
+                nuiChip
+                class="primary-question-answer-chip__NPS-score--detractor"
+            >
+                {{ primaryQuestionAnswer }} - Detractor
+            </span>
+        </ng-container>
+        <ng-container *ngIf="primaryQuestionAnswer > 6 && primaryQuestionAnswer <9 ">
+            <span
+                nuiChip
+                class="primary-question-answer-chip__NPS-score--passive"
+            >
+                {{ primaryQuestionAnswer }} - Passive
+            </span>
+        </ng-container>
+        <ng-container *ngIf="primaryQuestionAnswer >= 9 ">
+            <span
+                nuiChip
+                class="primary-question-answer-chip__NPS-score--promoter"
+            >
+                {{ primaryQuestionAnswer }} - Promoter
+            </span>
+        </ng-container>
+    </ng-container>
+
+</div>

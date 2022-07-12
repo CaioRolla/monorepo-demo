@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="pt">
+    <body>
+      <trans-unit id="77bb2aa45f1cc0890bcf9cfd3446970041d5222d" datatype="html">
+        <source> Continue with Google </source>
+        <target state="translated">Entrar com o Google</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/login/login.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1d6a0ac8b5afcaa0b3ffa53059146e710853a2bb" datatype="html">
+        <source> By signing in you accept our <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+                    target=&quot;_blank&quot;
+                    [href]=&quot;config.termsOfServiceUrl&quot;
+                >"/> terms of service <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> . </source>
+        <target state="translated">Ao fazer o login, você aceita nossos <x id="START_LINK" ctype="x-a" equiv-text="&lt;a>"/>termos de serviço<x id="CLOSE_LINK" ctype="x-a"/> .</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/+auth/app/src/lib/login/login.component.html</context>
+          <context context-type="linenumber">37,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f65253954b66e929a8b4d5ecaf61f9129f8cec64" datatype="html">
+        <source>Dashboard</source>
+        <target state="translated">Painel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/ui/src/lib/cron-app-page-wrapper/cron-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb694b49d408265c91c62799c2b3a7e3151c824d" datatype="html">
+        <source>Logout</source>
+        <target state="translated">Sair</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/cron-app/ui/src/lib/cron-app-page-wrapper/cron-app-page-wrapper.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

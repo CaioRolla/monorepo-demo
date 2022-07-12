@@ -1,0 +1,24 @@
+.login-merch {
+  width: 100vw;
+  height: 100vh;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--nui-color-neutral-900);
+  color: var(--nui-color-neutral-50);
+
+  &__logo {
+  }
+
+  h2 {
+    margin-top: 16px;
+    font-size: var(--nui-fs-400);
+    font-weight: 300;
+    text-align: center;
+    max-width: 380px;
+  }
+}

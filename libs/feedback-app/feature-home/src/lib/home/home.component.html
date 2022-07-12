@@ -1,0 +1,279 @@
+<nui-feedback-app-page-wrapper pageTitle="Surveys"
+                               i18n-pageTitle>
+
+    <h1 *ngIf="!((emptySurveysMessage$ | async) || false)"
+        nui-page-wrapper-title
+        i18n>
+        Surveys
+    </h1>
+
+    <p nui-page-wrapper-subtitle
+       *ngIf="!((emptySurveysMessage$ | async) || false)">
+        Access your surveys dashboards, settings, and more.
+    </p>
+
+    <div nui-page-wrapper-title-actions
+         *ngIf="!((emptySurveysMessage$ | async) || false) && !((limitedMode$ | async) || false)"
+         [nuiTooltip]="'You reached you account limit. Upgrade to create more Surveys.'"
+         [nuiTooltipPosition]="'start'"
+         [nuiTooltipDisabled]="!((accountLimitReached$ | async) || false)"
+         style="height: min-content;">
+        <button type="button"
+                nui-primary-button
+                [disabled]="(accountLimitReached$ | async) || false"
+                (click)="createSuveyClicked()">
+            <hero-icon nui-icon-prefix
+                       name="plus"></hero-icon>
+            <ng-container i18n>Create Survey</ng-container>
+        </button>
+    </div>
+
+    <div class="home"
+         *ngIf="!((emptySurveysMessage$ | async) || false) else emptyState">
+
+        <div class="home__container">
+
+            <!-- <nui-card> -->
+            <div class="home__container__content">
+
+                <nui-cta-card>
+                    <ng-container nui-cta-card-title>{{ welcomeMessage$ | async }}</ng-container>
+                    <ng-container *ngIf="(account$ | async)?.plan === AccountPlan.UNSET"
+                                  nui-cta-card-content>
+                        Upgrade your account to get unlimited Surveys and Feedbacks.
+                    </ng-container>
+                    <a *ngIf="(account$ | async)?.plan === AccountPlan.UNSET"
+                       nui-cta-card-action
+                       href="javascript:"
+                       (click)="openStartTrialDialog()">
+                        Upgrade
+                    </a>
+
+                    <ng-container *ngIf="(account$ | async)?.plan !== AccountPlan.UNSET"
+                                  nui-cta-card-content>
+                        Need help with Surveyx? Get in touch with our support.
+                    </ng-container>
+                    <a *ngIf="(account$ | async)?.plan !== AccountPlan.UNSET"
+                       nui-cta-card-action
+                       href="mailto:caio.rolla@surveyx.co">
+                        Contact Support
+                    </a>
+                </nui-cta-card>
+
+                <div class="home__container__content__table">
+                    <nui-stacked-list>
+                        <nui-stacked-list-header>
+                            <div class="home__container__content__table__header">
+                                <div class="home__container__content__table__header__name"
+                                     i18n>
+                                    Name
+                                </div>
+                                <div class="home__container__content__table__header__metric"
+                                     i18n>
+                                    Metric
+                                </div>
+                                <div class="home__container__content__table__header__status"
+                                     i18n>
+                                    Status
+                                </div>
+                                <div class="home__container__content__table__header__interviews"
+                                     i18n>
+                                    Responses
+                                </div>
+                                <div class="home__container__content__table__header__actions"
+                                     i18n>
+                                    Actions
+                                </div>
+                            </div>
+                        </nui-stacked-list-header>
+
+                        <ng-container ngProjectAs="nui-stacked-list-row"
+                                      *ngIf="(loadingSurveys$ | async) || false">
+                            <nui-stacked-list-row *ngFor="let __ of [0, 1, 2, 3, 4, 5]">
+                                <div class="home__container__content__table__row">
+                                    <div class="home__container__content__table__row__name">
+                                        <div nui-loading-placeholder
+                                             style="height: 12px; width: 60%;"></div>
+                                    </div>
+                                    <div class="home__container__content__table__row__metric">
+                                        <div nui-loading-placeholder
+                                             style="height: 12px; width: 20%;"></div>
+                                    </div>
+                                    <div class="home__container__content__table__row__status">
+                                        <div nui-loading-placeholder
+                                             style="height: 12px; width: 20%;"></div>
+                                    </div>
+                                    <div class="home__container__content__table__row__interviews">
+                                        <div nui-loading-placeholder
+                                             style="height: 12px; width: 20%;"></div>
+                                    </div>
+                                    <div class="home__container__content__table__row__actions">
+                                        <div nui-loading-placeholder
+                                             style="height: 12px; width: 20%;"></div>
+                                        <div nui-loading-placeholder
+                                             style="height: 12px; width: 20%; margin-left: 8px;"></div>
+                                        <div nui-loading-placeholder
+                                             style="height: 12px; width: 20%; margin-left: 8px;"></div>
+                                    </div>
+                                </div>
+                            </nui-stacked-list-row>
+                        </ng-container>
+
+                        <ng-container ngProjectAs="nui-stacked-list-row"
+                                      *ngIf="!((loadingSurveys$ | async) || false)">
+                            <nui-stacked-list-row *ngFor="let survey of (paginatedSurveys$ | async)">
+                                <div class="home__container__content__table__row">
+                                    <div class="home__container__content__table__row__name">
+                                        <a [routerLink]="['/', 'interviews']"
+                                           [queryParams]="{surveyId: survey.id}">
+                                            {{ survey.name }}
+                                        </a>
+                                    </div>
+                                    <div class="home__container__content__table__row__metric">
+                                        <span nuiChip>
+                                            <ng-container [ngSwitch]="survey.type">
+                                                <ng-container *ngSwitchCase="SurveyType.NPS"
+                                                              i18n>
+                                                    🚀 NPS
+                                                </ng-container>
+                                                <ng-container *ngSwitchCase="SurveyType.CSAT"
+                                                              i18n>
+                                                    🎖 CSAT
+                                                </ng-container>
+                                                <ng-container *ngSwitchCase="SurveyType.LIKE"
+                                                              i18n>
+                                                    👍 Like & Dislike
+                                                </ng-container>
+                                                <ng-container *ngSwitchDefault
+                                                              i18n>
+                                                    -
+                                                </ng-container>
+                                            </ng-container>
+                                        </span>
+                                    </div>
+                                    <div class="home__container__content__table__row__status">
+                                        <ng-container [ngSwitch]="survey.status">
+                                            <ng-container *ngSwitchCase="surveyStatus.DRAFT"
+                                                          i18n>
+                                                Draft
+                                            </ng-container>
+                                            <ng-container *ngSwitchCase="surveyStatus.ACTIVE"
+                                                          i18n>
+                                                Active
+                                            </ng-container>
+                                            <ng-container *ngSwitchCase="surveyStatus.STOPPED"
+                                                          i18n>
+                                                Stopped
+                                            </ng-container>
+                                        </ng-container>
+                                    </div>
+                                    <div class="home__container__content__table__row__interviews">{{ survey.interviewsCount }}</div>
+                                    <div class="home__container__content__table__row__actions">
+
+                                        <button type="button"
+                                                nui-text-neutral-button
+                                                [routerLink]="['/', 'survey-dashboard', survey.id]"
+                                                [disabled]="survey.status === surveyStatus.DRAFT"
+                                                nuiTooltip="Dashboard">
+                                            <hero-icon name="chart-bar"></hero-icon>
+                                        </button>
+
+                                        <!-- <button
+                                            type="button"
+                                            nui-text-neutral-button
+                                            [routerLink]="['/', 'interviews']"
+                                            [queryParams]="{surveyId: survey.id}"
+                                            nuiTooltip="Interviews"
+                                        >
+                                            <hero-icon name="view-list"></hero-icon>
+                                        </button> -->
+
+                                        <ng-container *ngIf="survey.status === surveyStatus.DRAFT">
+
+                                            <a nui-text-neutral-button
+                                               [routerLink]="['/', 'survey-setup', survey.id]"
+                                               nuiTooltip="Setup Survey">
+                                                <hero-icon name="cog"></hero-icon>
+                                            </a>
+                                        </ng-container>
+                                        <ng-container *ngIf="survey.status !== surveyStatus.DRAFT">
+                                            <a nui-text-neutral-button
+                                               [routerLink]="['/', 'survey-settings', survey.id]"
+                                               [queryParams]="{tabId: 'settings'}"
+                                               *ngIf="!((limitedMode$ | async) || false)"
+                                               nuiTooltip="Settings">
+                                                <hero-icon name="cog"></hero-icon>
+                                            </a>
+
+                                            <a nui-text-neutral-button
+                                               [routerLink]="['/', 'survey-settings', survey.id]"
+                                               [queryParams]="{tabId: 'share'}"
+                                               *ngIf="!((limitedMode$ | async) || false)"
+                                               nuiTooltip="Share Survey">
+                                                <hero-icon name="share"></hero-icon>
+                                            </a>
+                                        </ng-container>
+
+                                        <button type="button"
+                                                nui-text-neutral-button
+                                                (click)="deleteSurveyClicked(survey.id, survey.name)"
+                                                nuiTooltip="Delete">
+                                            <hero-icon name="trash"></hero-icon>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </nui-stacked-list-row>
+                        </ng-container>
+                        <nui-paginator [totalCount]="(surveysTotalAmount$ | async) || 0"
+                                       [showingCount]="(showingSurveys$ | async) || 0"
+                                       [disableNext]="(disableNextSurvey$ | async) || false"
+                                       [disablePrevious]="(disablePreviousSurvey$ | async) || false"
+                                       (nextClicked)="nextSurveysPage()"
+                                       (previousClicked)="previousSurveysPage()"></nui-paginator>
+                    </nui-stacked-list>
+                </div>
+            </div>
+            <!-- </nui-card> -->
+
+        </div>
+
+    </div>
+
+    <ng-template #emptyState>
+        <div class="home--empty">
+            <nui-empty-state>
+                <ng-container nui-empty-state-image>
+                    <img src="assets/illustrations/undraw_dreamer_gxxi.svg"
+                         alt="No Surveys">
+                </ng-container>
+                <ng-container nui-empty-state-title
+                              i18n>
+                    You don't have any Surveys yet
+                </ng-container>
+                <ng-container nui-empty-state-subtitle
+                              i18n>
+                    Create a Survey and start collecting feedback from your Newsletter subscribers.
+                </ng-container>
+                <ng-container nui-empty-state-actions
+                              *ngIf="!((limitedMode$ | async) || false)">
+                    <!-- <a
+                        nui-text-primary-button
+                        href="#"
+                        i18n
+                    >
+                        Read more
+                    </a> -->
+                    <button nui-primary-button
+                            (click)="createSuveyClicked()">
+
+                        <hero-icon nui-icon-prefix
+                                   name="plus"></hero-icon>
+                        <ng-container i18n>Create Survey</ng-container>
+                    </button>
+                </ng-container>
+            </nui-empty-state>
+        </div>
+    </ng-template>
+
+</nui-feedback-app-page-wrapper>

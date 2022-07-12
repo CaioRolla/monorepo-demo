@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  color: var(--nui-color-neutral-600);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.label {
+  &__optional {
+    color: var(--nui-color-neutral-400);
+    font-weight: 300;
+    font-size: 12px;
+  }
+}

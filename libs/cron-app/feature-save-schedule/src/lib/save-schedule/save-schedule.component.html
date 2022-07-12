@@ -1,0 +1,476 @@
+<div class="save-schedule">
+    <nui-form-field>
+        <label
+            for="scheduleName"
+            nui-label
+            i18n
+        >
+            Name
+        </label>
+        <input
+            name="scheduleName"
+            [formControl]="nameControl"
+            type="text"
+            nui-input
+            maxlength="255"
+        >
+        <nui-error *ngIf="nameControl.hasError('required')">
+            <ng-container i18n>Your job must have a name</ng-container>
+        </nui-error>
+    </nui-form-field>
+
+    <nui-form-field class="full-width">
+        <label
+            for="scheduleDesc"
+            nui-label
+            i18n
+            [optional]="true"
+        >
+            Description
+        </label>
+        <textarea
+            name="scheduleDesc"
+            [formControl]="descControl"
+            type="text"
+            nui-input
+            rows="2"
+            maxlength="500"
+        ></textarea>
+
+    </nui-form-field>
+
+    <nui-form-field *ngIf="idControl.value">
+        <label
+            for="statusMethod"
+            nui-label
+            i18n
+        >
+            Status
+        </label>
+        <select
+            name="statusMethod"
+            [formControl]="statusControl"
+            nui-select
+        >
+            <option
+                [value]="ScheduleStatus.ACTIVE"
+                i18n
+            >
+                Active
+            </option>
+            <option
+                [value]="ScheduleStatus.PAUSED"
+                i18n
+            >
+                Paused
+            </option>
+        </select>
+    </nui-form-field>
+
+    <div class="save-schedule__url-section">
+        <nui-form-field>
+            <label
+                for="scheduleMethod"
+                nui-label
+                i18n
+            >
+                Method
+            </label>
+            <select
+                name="scheduleMethod"
+                [formControl]="methodControl"
+                nui-select
+            >
+                <option [value]="ScheduleMethod.GET">GET</option>
+                <option [value]="ScheduleMethod.POST">POST</option>
+                <option [value]="ScheduleMethod.PATCH">PATCH</option>
+                <option [value]="ScheduleMethod.PUT">PUT</option>
+                <option [value]="ScheduleMethod.DELETE">DELETE</option>
+            </select>
+        </nui-form-field>
+
+        <nui-form-field>
+            <label
+                for="scheduleUrl"
+                nui-label
+                i18n
+            >
+                URL
+            </label>
+            <input
+                name="scheduleUrl"
+                [formControl]="urlControl"
+                type="text"
+                nui-input
+                maxlength="500"
+            >
+            <nui-error *ngIf="urlControl.hasError('required')">
+                <ng-container i18n>You need to inform a target URL</ng-container>
+            </nui-error>
+        </nui-form-field>
+    </div>
+
+    <div
+        class="save-schedule__recurring-section"
+        *ngIf="!idControl.value"
+    >
+
+        <nui-checkbox-field>
+            <input
+                [formControl]="recurringControl"
+                type="checkbox"
+                name="recurring"
+            >
+            <label
+                for="recurring"
+                i18n
+            >
+                Recurring execution
+            </label>
+        </nui-checkbox-field>
+    </div>
+
+    <nui-form-field *ngIf="!recurringControl.value">
+        <label
+            for="trigger"
+            nui-label
+            i18n
+        >
+            Execution Date
+        </label>
+        <input
+            name="trigger"
+            autocomplete="off"
+            [formControl]="triggerControl"
+            nui-input
+            [dpDayPicker]="datePickerConfig"
+            [mode]="'daytime'"
+            type="text"
+        >
+
+        <nui-error *ngIf="triggerControl.hasError('required')">
+            <ng-container i18n>You need to inform a execution date</ng-container>
+        </nui-error>
+
+        <nui-error *ngIf="triggerControl.hasError('format')">
+            <ng-container i18n>Invalid date format</ng-container>
+        </nui-error>
+
+    </nui-form-field>
+
+    <nui-form-field *ngIf="recurringControl.value">
+        <label
+            for="scheduleTimezone"
+            nui-label
+            i18n
+        >
+            Timezone
+        </label>
+        <select
+            name="scheduleTimezone"
+            [formControl]="timezoneControl"
+            nui-select
+        >
+            <option
+                *ngFor="let tz of timezoneOptions"
+                [value]="tz"
+            >
+                {{ tz }}
+            </option>
+
+        </select>
+    </nui-form-field>
+
+    <div
+        class="save-schedule__frequency-section"
+        *ngIf="recurringControl.value"
+    >
+        <nui-form-field>
+            <label
+                for="scheduleFrequency"
+                nui-label
+                i18n
+            >
+                Frequency
+            </label>
+            <select
+                name="scheduleFrequency"
+                [formControl]="frequencyControl"
+                nui-select
+            >
+
+                <option value="* * * * *">every minute</option>
+                <option value="*/30 * * * *">every 30 minutes</option>
+                <option value="0 * * * *">every hour</option>
+                <option value="0 0 * * *">every day at midnight</option>
+                <option value="custom">Custom</option>
+            </select>
+        </nui-form-field>
+
+        <nui-form-field *ngIf="frequencyControl.value === 'custom'">
+            <label
+                for="scheduleCrontab"
+                nui-label
+                i18n
+            >
+                Custom Frequency
+            </label>
+            <input
+                name="scheduleCrontab"
+                [formControl]="cronExpressionControl"
+                type="text"
+                nui-input
+            >
+            <nui-error *ngIf="cronExpressionControl.hasError('required')">
+                <ng-container i18n>
+                    You must configure your job execution frequency
+                </ng-container>
+            </nui-error>
+            <nui-error *ngIf="cronExpressionControl.hasError('cronExpression')">
+                <ng-container i18n>Invalid unix-cron expression</ng-container>
+            </nui-error>
+            <nui-hint>
+                <ng-container i18n>
+                    Use
+                    <a
+                        href="https://crontab.guru/"
+                        target="_blank"
+                    >
+                        unix-cron schedule expressions
+                    </a>
+                    to setup the execution dates of your task
+                </ng-container>
+            </nui-hint>
+        </nui-form-field>
+    </div>
+
+    <div class="save-schedule__notification-section">
+        <nui-checkbox-field>
+            <input
+                [formControl]="notifyOnErrorControl"
+                type="checkbox"
+                id="notifyOnError"
+                name="notifyOnError"
+                [attr.disabled]="!!(disableNotificationOption$ | async) || undefined"
+            >
+            <label
+                for="notifyOnError"
+                i18n
+            >
+                Notify in case of failure
+                <span
+                    *ngIf="disableNotificationOption$ | async"
+                    nuiChip
+                >
+                    Upgrade
+                </span>
+            </label>
+            <span nui-checkbox-subtitle>
+                If the request returns any status code different than 2xx, it's considered a failure.
+            </span>
+        </nui-checkbox-field>
+
+        <nui-form-field *ngIf="notifyOnErrorControl.value">
+            <label
+                for="notifyEmail"
+                nui-label
+                i18n
+            >
+                Notification email
+            </label>
+            <input
+                name="notifyEmail"
+                [formControl]="notifyEmailControl"
+                type="text"
+                nui-input
+                maxlength="255"
+            >
+            <nui-hint>
+                <ng-container i18n>
+                    The email address where the notification will be sent.
+                </ng-container>
+            </nui-hint>
+            <nui-error *ngIf="notifyEmailControl.hasError('required')">
+                <ng-container i18n>
+                    You can only be notified if you provide a email
+                </ng-container>
+            </nui-error>
+            <nui-error *ngIf="notifyEmailControl.hasError('email')">
+                <ng-container i18n>Invalid email</ng-container>
+            </nui-error>
+        </nui-form-field>
+    </div>
+
+    <div class="save-schedule__show-more-button-section">
+        <button
+            *ngIf="!(showMore$ | async)"
+            nui-text-primary-button
+            i18n
+            (click)="toggleShowMore()"
+        >
+            <hero-icon
+                nui-icon-prefix
+                name="chevron-down"
+            ></hero-icon>
+            Show more
+        </button>
+
+        <button
+            *ngIf="showMore$ | async"
+            nui-text-primary-button
+            i18n
+            (click)="toggleShowMore()"
+        >
+            <hero-icon
+                nui-icon-prefix
+                name="chevron-up"
+            ></hero-icon>
+            Show less
+        </button>
+    </div>
+
+    <ng-container *ngIf="showMore$ | async">
+
+        <div class="save-schedule__headers-section">
+            <label
+                nui-label
+                i18n
+            >
+                Headers
+            </label>
+
+            <div
+                class="save-schedule__headers-section__row"
+                *ngFor="let group of headersControl.controls; let isFirst = first; let index = index"
+            >
+                <nui-form-field>
+                    <!-- <label
+                        *ngIf="isFirst"
+                        nui-label
+                        i18n
+                    >
+                        Key
+                    </label> -->
+                    <input
+                        placeholder="key"
+                        [formControl]="$any(group).controls.key"
+                        nui-input
+                    >
+                </nui-form-field>
+
+                <nui-form-field>
+                    <!-- <label
+                        *ngIf="isFirst"
+                        nui-label
+                        i18n
+                    >
+                        Value
+                    </label> -->
+                    <input
+                        placeholder="value"
+                        [formControl]="$any(group).controls.value"
+                        nui-input
+                    >
+                </nui-form-field>
+
+                <button
+                    [disabled]="isFirst"
+                    nui-text-neutral-button
+                    i18n
+                    (click)="removeHeaderClicked(index)"
+                >
+                    <hero-icon name="x"></hero-icon>
+                </button>
+
+            </div>
+
+            <button
+                class="save-schedule__headers-section__add-button"
+                nui-text-primary-button
+                i18n
+                (click)="addHeaderClicked()"
+            >
+                <hero-icon
+                    nui-icon-prefix
+                    name="plus"
+                ></hero-icon>
+                Add header
+            </button>
+
+        </div>
+
+        <nui-form-field>
+            <label
+                for="responseTypeMethod"
+                nui-label
+                i18n
+            >
+                Response Type
+            </label>
+            <select
+                name="responseTypeMethod"
+                [formControl]="responseTypeControl"
+                nui-select
+            >
+                <option
+                    [value]="ScheduleResponseType.TEXT"
+                    i18n
+                >
+                    text
+                </option>
+                <!-- <option
+                    [value]="ScheduleResponseType.ARRAY_BUFFER"
+                    i18n
+                >
+                    arraybuffer
+                </option>
+                <option
+                    [value]="ScheduleResponseType.BLOB"
+                    i18n
+                >
+                    blob
+                </option>
+
+                <option
+                    [value]="ScheduleResponseType.DOCUMENT"
+                    i18n
+                >
+                    document
+                </option> -->
+                <option
+                    [value]="ScheduleResponseType.JSON"
+                    i18n
+                >
+                    json
+                </option>
+                <!-- <option
+                    [value]="ScheduleResponseType.STREAM"
+                    i18n
+                >
+                    stream
+                </option> -->
+            </select>
+        </nui-form-field>
+
+        <nui-form-field class="full-width">
+            <label
+                for="schedulePaylod"
+                nui-label
+                [optional]="true"
+                i18n
+            >
+                Payload
+            </label>
+            <textarea
+                name="schedulePaylod"
+                [formControl]="payloadControl"
+                (focusout)="onPayloadFocusOut()"
+                type="text"
+                nui-input
+                rows="4"
+            ></textarea>
+        </nui-form-field>
+
+    </ng-container>
+
+</div>

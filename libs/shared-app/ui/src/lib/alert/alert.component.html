@@ -1,0 +1,18 @@
+<nui-card>
+    <div class="alert__content">
+        <div class="alert__content__icon">
+            <ng-content select="hero-icon[nui-alert-icon]"></ng-content>
+        </div>
+        <div class="alert__content__info">
+            <div class="alert__content__info__title">
+                <ng-content select="[nui-alert-title]"></ng-content>
+            </div>
+            <div class="alert__content__info__subtitle">
+                <ng-content select="[nui-alert-subtitle]"></ng-content>
+            </div>
+        </div>
+        <div class="alert__content__action">
+            <ng-content select="button,a"></ng-content>
+        </div>
+    </div>
+</nui-card>

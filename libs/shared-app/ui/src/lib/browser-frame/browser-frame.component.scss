@@ -1,0 +1,115 @@
+:host {
+  display: block;
+}
+
+.browser-frame {
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    background-color: #e6ecef;
+
+    &__controls {
+      display: flex;
+      flex-direction: row;
+
+      &__item {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+
+        &:nth-of-type(1) {
+          background: #ff8585;
+        }
+        &:nth-of-type(2) {
+          background: #ffd071;
+          margin-left: 2px;
+        }
+        &:nth-of-type(3) {
+          background: #74ed94;
+          margin-left: 2px;
+        }
+      }
+    }
+
+    &__bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      flex: 1;
+      margin-left: 8px;
+      border-radius: 6px;
+
+      &__title {
+        font-size: 12px;
+        margin-left: 8px;
+        color: var(--nui-color-neutral-400);
+      }
+
+      &__icon {
+        position: relative;
+        width: 26px;
+        height: 26px;
+        font-size: 18px;
+
+        ::ng-deep svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        color: var(--nui-color-neutral-400);
+      }
+    }
+
+    &__back-next {
+      display: flex;
+      flex-direction: row;
+      color: var(--nui-color-neutral-400);
+      margin-left: 22px;
+
+      &__item {
+        position: relative;
+        // background: white;
+        width: 26px;
+        height: 26px;
+        border-radius: 2px;
+        font-size: 22px;
+
+        ::ng-deep svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &:last-child {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    &__expand {
+      position: relative;
+      color: var(--nui-color-neutral-400);
+      width: 26px;
+      height: 26px;
+      border-radius: 2px;
+      font-size: 22px;
+      margin-left: 8px;
+
+      ::ng-deep svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

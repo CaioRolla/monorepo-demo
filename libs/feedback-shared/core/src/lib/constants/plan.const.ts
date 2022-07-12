@@ -1,0 +1,1 @@
+export const FREE_PLAN_SURVEY_LIMT = 1;

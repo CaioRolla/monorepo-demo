@@ -1,0 +1,17 @@
+<button
+    type="button"
+    class="question-radio-answer"
+    [class.question-radio-answer--checked]="input?.nativeElement?.checked"
+    (click)="input?.nativeElement?.click()"
+>
+
+
+    <div class="question-radio-answer__input">
+        <ng-content select="input"></ng-content>
+    </div>
+
+    <div class="question-radio-answer__content">
+        <ng-content></ng-content>
+    </div>
+
+</button>

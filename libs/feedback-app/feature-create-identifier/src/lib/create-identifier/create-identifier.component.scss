@@ -1,0 +1,25 @@
+.create-identifier {
+  display: flex;
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+    // nui-form-field {
+    //   width: 100%;
+    //   max-width: 300px;
+    // }
+
+    nui-checkbox-field,
+    nui-form-field {
+      flex: 1;
+    }
+
+    nui-checkbox-field,
+    button {
+      margin-left: 16px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+:host {
+  display: block;
+}
+
+.stacked-list-header {
+  background: var(--nui-color-neutral-100);
+  color: var(--nui-color-neutral-500);
+  padding: 12px 16px;
+
+  border-bottom: 1px solid var(--nui-color-neutral-100);
+  
+  font-size: var(--nui-fs-200);
+  font-weight: 400;
+
+}

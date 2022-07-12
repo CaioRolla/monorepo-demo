@@ -1,0 +1,4 @@
+export const FREE_PLAN_SCHEDULE_LIMT = 2;
+export const FREE_PLAN_EXECUTION_LIMT = 15;
+
+export const DEVELOPER_PLAN_SCHEDULE_LIMT = 15;

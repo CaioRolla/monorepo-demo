@@ -1,0 +1,164 @@
+<nui-cron-app-page-wrapper pageTitle="Executions"
+                           i18n-pageTitle>
+    <h1 nui-page-wrapper-title
+        i18n>
+        Executions
+    </h1>
+
+    <div class="list-execution">
+        <nui-stacked-list>
+            <nui-stacked-list-header>
+                <div class="list-execution__header">
+
+                    <div class="list-execution__header__column"
+                         i18n>
+                        URL
+                    </div>
+
+                    <div class="list-execution__header__column"
+                         i18n>
+                        Scheduler
+                    </div>
+                    <div class="list-execution__header__column"
+                         i18n>
+                        Status
+                    </div>
+
+                    <div class="list-execution__header__column"
+                         i18n>
+                        Execution
+                    </div>
+
+                    <div class="list-execution__header__column"
+                         i18n>
+                        Duration
+                    </div>
+
+                    <!-- <div
+                        class="list-execution__header__column"
+                        i18n
+                    >
+                        Actions
+                    </div> -->
+
+                </div>
+
+            </nui-stacked-list-header>
+
+            <ng-container ngProjectAs="nui-stacked-list-row"
+                          *ngIf="(loadingExecutions$ | async) || false">
+                <nui-stacked-list-row *ngFor="let __ of [0, 1, 2, 3, 4, 5]">
+                    <div class="list-execution__row">
+                        <div class="list-execution__row__column">
+                            <div nui-loading-placeholder
+                                 style="height: 12px; width: 60%;"></div>
+                        </div>
+                        <div class="list-execution__row__column">
+                            <div nui-loading-placeholder
+                                 style="height: 12px; width: 20%;"></div>
+                        </div>
+                        <div class="list-execution__row__column">
+                            <div nui-loading-placeholder
+                                 style="height: 12px; width: 20%;"></div>
+                        </div>
+                        <div class="list-execution__row__column">
+                            <div nui-loading-placeholder
+                                 style="height: 12px; width: 20%;"></div>
+                        </div>
+                        <div class="list-execution__row__column">
+                            <div nui-loading-placeholder
+                                 style="height: 12px; width: 20%;"></div>
+                        </div>
+                        <!-- <div class="list-execution__row__column">
+                            <div
+                                nui-loading-placeholder
+                                style="height: 12px; width: 20%;"
+                            ></div>
+                            <div
+                                nui-loading-placeholder
+                                style="height: 12px; width: 20%; margin-left: 8px;"
+                            ></div>
+                            <div
+                                nui-loading-placeholder
+                                style="height: 12px; width: 20%; margin-left: 8px;"
+                            ></div>
+                        </div> -->
+                    </div>
+                </nui-stacked-list-row>
+            </ng-container>
+
+            <nui-stacked-list-row *ngIf="(displayEmptyMessage$ | async) || false">
+                <div class="list-execution__row">
+                    <div class="list-execution__row__empty">
+                        <div class="list-execution__row__empty__msg">
+                            None of your jobs have been executed yet
+                        </div>
+                    </div>
+                </div>
+            </nui-stacked-list-row>
+
+            <ng-container ngProjectAs="nui-stacked-list-row"
+                          *ngIf="!(loadingExecutions$ | async) || false">
+                <nui-stacked-list-row *ngFor="let execution of (executionsResData$ | async)">
+                    <div class="list-execution__row">
+                        <div class="list-execution__row__column">
+                            <div><span nuiChip>{{ execution.method }}</span> {{ execution.url }}</div>
+                        </div>
+                        <div class="list-execution__row__column">{{ execution.scheduleName }}</div>
+                        <div class="list-execution__row__column">
+
+                            <ng-container [ngSwitch]="execution.status">
+                                <ng-container i18n
+                                              *ngSwitchCase="ExecutionStatus.RUNNING">
+                                    Running
+                                </ng-container>
+
+                                <ng-container i18n
+                                              *ngSwitchCase="ExecutionStatus.FAILURE">
+                                    Failure
+                                    <ng-container *ngIf="execution.responseStatus">- {{ execution.responseStatus }}</ng-container>
+                                </ng-container>
+
+                                <ng-container i18n
+                                              *ngSwitchCase="ExecutionStatus.SUCCESS">
+                                    Success - {{ execution.responseStatus }}
+                                </ng-container>
+
+                                <ng-container i18n
+                                              *ngSwitchCase="ExecutionStatus.ABORTED">
+                                    Aborted (timeout)
+                                </ng-container>
+
+                                <ng-container i18n
+                                              *ngSwitchCase="ExecutionStatus.ACCOUNT_LIMIT">
+                                    Failure (Account Limit)
+                                </ng-container>
+
+
+                                <ng-container *ngSwitchDefault>-</ng-container>
+                            </ng-container>
+                        </div>
+
+                        <div class="list-execution__row__column">
+                            <ng-container>{{ execution.createdAt | date: 'short' }}</ng-container>
+                        </div>
+
+                        <div class="list-execution__row__column">
+                            <ng-container *ngIf="execution.responseTime">{{ execution.responseTime }} ms</ng-container>
+                            <ng-container *ngIf="!execution.responseTime">-</ng-container>
+                        </div>
+                        <!-- <div class="list-execution__row__column">todo</div> -->
+                    </div>
+                </nui-stacked-list-row>
+            </ng-container>
+        </nui-stacked-list>
+
+        <nui-paginator [totalCount]="(paginatedExecutionsCount$ | async) || 0"
+                       [showingCount]="(executionsResDataCount$ | async) || 0"
+                       [disableNext]="(disableNextExecutions$ | async) || false"
+                       [disablePrevious]="(disablePreviousExecutions$ | async) || false"
+                       [loading]="(loadingExecutionsSilently$ | async) || false"
+                       (nextClicked)="nextExecutions()"
+                       (previousClicked)="previousExecutions()"></nui-paginator>
+    </div>
+</nui-cron-app-page-wrapper>

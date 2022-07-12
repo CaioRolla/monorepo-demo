@@ -1,0 +1,120 @@
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.bubble.css';
+@import '~quill/dist/quill.snow.css';
+
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --nui-content-container: 1024px;
+  --nui-content-horizontal-padding: 32px;
+
+  // Colors
+  // Primary
+  --nui-color-primary-0: #fff;
+  --nui-color-primary-50: #eff6ff;
+  --nui-color-primary-100: #dbeafe;
+  --nui-color-primary-200: #bfdbfe;
+  --nui-color-primary-300: #93c5fd;
+  --nui-color-primary-400: #60a5fa;
+  --nui-color-primary-500: #3b82f6;
+  --nui-color-primary-600: #2563eb;
+  --nui-color-primary-700: #1d4ed8;
+  --nui-color-primary-800: #1e40af;
+  --nui-color-primary-900: #1e3a8a;
+  // accent
+  --nui-color-accent-0: #fff;
+  --nui-color-accent-50: #f5f3ff;
+  --nui-color-accent-100: #ede9fe;
+  --nui-color-accent-200: #ddd6fe;
+  --nui-color-accent-300: #c4b5fd;
+  --nui-color-accent-400: #a78bfa;
+  --nui-color-accent-500: #8b5cf6;
+  --nui-color-accent-600: #7c3aed;
+  --nui-color-accent-700: #6d28d9;
+  --nui-color-accent-800: #5b21b6;
+  --nui-color-accent-900: #4c1d95;
+  // Neutral
+  --nui-color-neutral-0: #fff;
+  --nui-color-neutral-50: #f9fafb;
+  --nui-color-neutral-100: #f3f4f6;
+  --nui-color-neutral-200: #e5e7eb;
+  --nui-color-neutral-300: #d1d5db;
+  --nui-color-neutral-400: #9ca3af;
+  --nui-color-neutral-500: #6b7280;
+  --nui-color-neutral-600: #4b5563;
+  --nui-color-neutral-700: #374151;
+  --nui-color-neutral-800: #1f2937;
+  --nui-color-neutral-900: #111827;
+
+  --nui-color-danger-0: #fff;
+  --nui-color-danger-50: #fef2f2;
+  --nui-color-danger-100: #fee2e2;
+  --nui-color-danger-200: #fecaca;
+  --nui-color-danger-300: #fca5a5;
+  --nui-color-danger-400: #f87171;
+  --nui-color-danger-500: #ef4444;
+  --nui-color-danger-600: #dc2626;
+  --nui-color-danger-700: #b91c1c;
+  --nui-color-danger-800: #991b1b;
+  --nui-color-danger-900: #7f1d1d;
+
+  --nui-color-warning-0: #fff;
+  --nui-color-warning-50: #fffbeb;
+  --nui-color-warning-100: #fef3c7;
+  --nui-color-warning-200: #fde68a;
+  --nui-color-warning-300: #fcd34d;
+  --nui-color-warning-400: #fbbf24;
+  --nui-color-warning-500: #f59e0b;
+  --nui-color-warning-600: #d97706;
+  --nui-color-warning-700: #b45309;
+  --nui-color-warning-800: #92400e;
+  --nui-color-warning-900: #78350f;
+
+  --nui-color-success-0: #fff;
+  --nui-color-success-50: #ecfdf5;
+  --nui-color-success-100: #d1fae5;
+  --nui-color-success-200: #a7f3d0;
+  --nui-color-success-300: #6ee7b7;
+  --nui-color-success-400: #34d399;
+  --nui-color-success-500: #10b981;
+  --nui-color-success-600: #059669;
+  --nui-color-success-700: #047857;
+  --nui-color-success-800: #065f46;
+  --nui-color-success-900: #064e3b;
+
+  --nui-color-brand-900: #ff654d;
+  --nui-color-brand-800: #ff6053;
+  --nui-color-brand-700: #ff5a59;
+  --nui-color-brand-600: #ff555e;
+  --nui-color-brand-500: #ff5064;
+  --nui-color-brand-400: #ff4b6a;
+  --nui-color-brand-300: #ff4570;
+  --nui-color-brand-200: #ff4076;
+  --nui-color-brand-100: #ff3b7b;
+  --nui-color-brand-50: #ff3581;
+  --nui-color-brand-0: #ff3087;
+
+  --nui-fs-100: 8px;
+  --nui-fs-200: 12px;
+  --nui-fs-300: 14px;
+  --nui-fs-400: 16px;
+  --nui-fs-500: 18px;
+  --nui-fs-600: 24px;
+  --nui-fs-700: 32px;
+  --nui-fs-800: 64px;
+
+  --nui-size-100: 8px;
+  --nui-size-200: 12px;
+  --nui-size-300: 16px;
+  --nui-size-400: 24px;
+  --nui-size-500: 32px;
+  --nui-size-600: 48px;
+  --nui-size-700: 56px;
+  --nui-size-800: 64px;
+  --nui-size-900: 80px;
+}
+
+@media screen and (max-width: 640px) {
+  :root {
+    --nui-content-horizontal-padding: 16px;
+  }
+}

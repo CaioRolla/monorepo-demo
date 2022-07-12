@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+
+    // Colors
+    // Primary
+    --nui-color-primary-0: #fff;
+    --nui-color-primary-50: #EFF6FF;
+    --nui-color-primary-100: #DBEAFE;
+    --nui-color-primary-200: #BFDBFE;
+    --nui-color-primary-300: #93C5FD;
+    --nui-color-primary-400: #60A5FA;
+    --nui-color-primary-500: #3b82f6;
+    --nui-color-primary-600: #2563EB;
+    --nui-color-primary-700: #1D4ED8;
+    --nui-color-primary-800: #1E40AF;
+    --nui-color-primary-900: #1E3A8A;
+    // accent
+    --nui-color-accent-0: #fff;
+    --nui-color-accent-50: #F5F3FF;
+    --nui-color-accent-100: #EDE9FE;
+    --nui-color-accent-200: #DDD6FE;
+    --nui-color-accent-300: #C4B5FD;
+    --nui-color-accent-400: #A78BFA;
+    --nui-color-accent-500: #8B5CF6;
+    --nui-color-accent-600: #7C3AED;
+    --nui-color-accent-700: #6D28D9;
+    --nui-color-accent-800: #5B21B6;
+    --nui-color-accent-900: #4C1D95;
+    // Neutral
+    --nui-color-neutral-0: #fff;
+    --nui-color-neutral-50: #F9FAFB;
+    --nui-color-neutral-100: #F3F4F6;
+    --nui-color-neutral-200: #E5E7EB;
+    --nui-color-neutral-300: #D1D5DB;
+    --nui-color-neutral-400: #9CA3AF;
+    --nui-color-neutral-500: #6B7280;
+    --nui-color-neutral-600: #4B5563;
+    --nui-color-neutral-700: #374151;
+    --nui-color-neutral-800: #1F2937;
+    --nui-color-neutral-900: #111827;
+
+    --nui-color-danger-0: #fff;
+    --nui-color-danger-50: #FEF2F2;
+    --nui-color-danger-100: #FEE2E2;
+    --nui-color-danger-200: #FECACA;
+    --nui-color-danger-300: #FCA5A5;
+    --nui-color-danger-400: #F87171;
+    --nui-color-danger-500: #EF4444;
+    --nui-color-danger-600: #DC2626;
+    --nui-color-danger-700: #B91C1C;
+    --nui-color-danger-800: #991B1B;
+    --nui-color-danger-900: #7F1D1D;
+
+    --nui-color-warning-0: #fff;
+    --nui-color-warning-50: #FFFBEB;
+    --nui-color-warning-100: #FEF3C7;
+    --nui-color-warning-200: #FDE68A;
+    --nui-color-warning-300: #FCD34D;
+    --nui-color-warning-400: #FBBF24;
+    --nui-color-warning-500: #F59E0B;
+    --nui-color-warning-600: #D97706;
+    --nui-color-warning-700: #B45309;
+    --nui-color-warning-800: #92400E;
+    --nui-color-warning-900: #78350F;
+
+    --nui-color-success-0: #fff;
+    --nui-color-success-50: #ECFDF5;
+    --nui-color-success-100: #D1FAE5;
+    --nui-color-success-200: #A7F3D0;
+    --nui-color-success-300: #6EE7B7;
+    --nui-color-success-400: #34D399;
+    --nui-color-success-500: #10B981;
+    --nui-color-success-600: #059669;
+    --nui-color-success-700: #047857;
+    --nui-color-success-800: #065F46;
+    --nui-color-success-900: #064E3B;
+
+    --nui-fs-100: 8px;
+    --nui-fs-200: 12px;
+    --nui-fs-300: 14px;
+    --nui-fs-400: 16px;
+    --nui-fs-500: 18px;
+    --nui-fs-600: 24px;
+    --nui-fs-700: 32px;
+    --nui-fs-800: 64px;
+
+    --nui-size-100: 8px;
+    --nui-size-200: 12px;
+    --nui-size-300: 16px;
+    --nui-size-400: 24px;
+    --nui-size-500: 32px;
+    --nui-size-600: 48px;
+    --nui-size-700: 56px;
+    --nui-size-800: 64px;
+    --nui-size-900: 80px;
+
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Create Surveys for your Newsletter - surveyx.co
+        </title>
+        <base href="/">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        >
+
+        <meta
+            name="description"
+            content="Create Surveys for your Newsletter."
+        >
+        <meta
+            name="referrer"
+            content="no-referrer-when-downgrade"
+        >
+
+        <meta
+            property="og:site_name"
+            content="Cartinha"
+        >
+        <meta
+            property="og:type"
+            content="website"
+        >
+        <meta
+            property="og:title"
+            content="Create Surveys for your Newsletter - surveyx.co"
+        >
+        <meta
+            property="og:description"
+            content="Find out what your Subscribers think about your newsletter."
+        >
+        <meta
+            property="og:url"
+            content="https://surveyx.co/"
+        >
+        <meta
+            name="twitter:card"
+            content="summary_large_image"
+        >
+        <meta
+            name="twitter:title"
+            content="Create Surveys for your Newsletter - surveyx.co"
+        >
+        <meta
+            name="twitter:description"
+            content="Find out what your Subscribers think about your newsletter."
+        >
+        <meta
+            name="twitter:image"
+            content="https://surveyx.s3.us-east-1.amazonaws.com/previews/og.png"
+        >
+        <meta
+            name="twitter:image:alt"
+            content="Create Surveys for your Newsletter - surveyx.co"
+        >
+        <meta
+            name="twitter:site"
+            content="surveyx.co"
+        >
+        <meta
+            property="og:image"
+            content="https://surveyx.s3.us-east-1.amazonaws.com/previews/og.png"
+        >
+        <!-- <meta
+            property="og:image:width"
+            content="800"
+        >
+        <meta
+            property="og:image:height"
+            content="800"
+        > -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicons/manifest.json">
+        <meta
+            name="msapplication-TileColor"
+            content="#ffffff"
+        >
+        <meta
+            name="msapplication-TileImage"
+            content="assets/favicons/ms-icon-144x144.png"
+        >
+        <meta
+            name="theme-color"
+            content="#ffffff"
+        >
+
+    </head>
+
+    <style>
+
+        .splash-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            background: var(--nui-color-neutral-900);
+            color: var(--nui-color-neutral-50);
+        }
+
+        .splash-screen__logo {
+            font-size: 62px;
+        }
+
+        .splash-screen__logo svg {
+            max-height: 36px;
+            width: auto;
+        }
+
+        .splash-screen__loader {
+            text-align: center;
+            margin-top: 26px;
+        }
+
+        .splash-screen__loader svg {
+            width: 24px;
+            height: 24px;
+
+            color: var(--nui-color-primary-50);
+
+            animation: rotating 1s linear infinite;
+
+        }
+
+        @keyframes rotating {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+        }
+
+    </style>
+    <body>
+        <nui-root></nui-root>
+
+        <div
+            id="splash-screen"
+            class="splash-screen"
+        >
+            <div
+                id="splash-screen"
+                class="splash-screen__logo"
+            >
+                <svg
+                    width="1525"
+                    height="367"
+                    viewBox="0 0 1525 367"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <g clip-path="url(#clip0_101_34)">
+                        <path
+                            d="M94.6547 238.4C103.455 238.4 110.655 237.733 116.255 236.4C122.121 234.8 126.788 232.8 130.255 230.4C133.721 227.733 136.121 224.667 137.455 221.2C138.788 217.733 139.455 213.867 139.455 209.6C139.455 200.533 135.188 193.067 126.655 187.2C118.121 181.067 103.455 174.533 82.6547 167.6C73.588 164.4 64.5214 160.8 55.4547 156.8C46.388 152.533 38.2547 147.333 31.0547 141.2C23.8547 134.8 17.988 127.2 13.4547 118.4C8.92135 109.333 6.65469 98.4 6.65469 85.6C6.65469 72.8 9.05469 61.3333 13.8547 51.2C18.6547 40.8 25.4547 32 34.2547 24.8C43.0547 17.6 53.7214 12.1333 66.2547 8.4C78.788 4.39999 92.9214 2.39998 108.655 2.39998C127.321 2.39998 143.455 4.39999 157.055 8.4C170.655 12.4 181.855 16.8 190.655 21.6L172.655 70.8C164.921 66.8 156.255 63.3333 146.655 60.4C137.321 57.2 125.988 55.6 112.655 55.6C97.7214 55.6 86.9214 57.7333 80.2547 62C73.8547 66 70.6547 72.2667 70.6547 80.8C70.6547 85.8667 71.8547 90.1333 74.2547 93.6C76.6547 97.0667 79.988 100.267 84.2547 103.2C88.788 105.867 93.8547 108.4 99.4547 110.8C105.321 112.933 111.721 115.2 118.655 117.6C133.055 122.933 145.588 128.267 156.255 133.6C166.921 138.667 175.721 144.667 182.655 151.6C189.855 158.533 195.188 166.667 198.655 176C202.121 185.333 203.855 196.667 203.855 210C203.855 235.867 194.788 256 176.655 270.4C158.521 284.533 131.188 291.6 94.6547 291.6C82.388 291.6 71.3214 290.8 61.4547 289.2C51.588 287.867 42.788 286.133 35.0547 284C27.588 281.867 21.0547 279.6 15.4547 277.2C10.1214 274.8 5.58802 272.533 1.85469 270.4L19.4547 220.8C27.7214 225.333 37.8547 229.467 49.8547 233.2C62.1214 236.667 77.0547 238.4 94.6547 238.4ZM427.467 278.8C417.334 281.733 404.267 284.4 388.267 286.8C372.267 289.467 355.467 290.8 337.867 290.8C320.001 290.8 305.067 288.4 293.067 283.6C281.334 278.8 272.001 272.133 265.067 263.6C258.134 254.8 253.201 244.4 250.267 232.4C247.334 220.4 245.867 207.2 245.867 192.8V75.6H305.467V185.6C305.467 204.8 308.001 218.667 313.067 227.2C318.134 235.733 327.601 240 341.467 240C345.734 240 350.267 239.867 355.067 239.6C359.867 239.067 364.134 238.533 367.867 238V75.6H427.467V278.8ZM610.214 128.4C604.881 127.067 598.614 125.733 591.414 124.4C584.214 122.8 576.481 122 568.214 122C564.481 122 559.947 122.4 554.614 123.2C549.547 123.733 545.681 124.4 543.014 125.2V286H483.414V86.8C494.081 83.0667 506.614 79.6 521.014 76.4C535.681 72.9333 551.947 71.2 569.814 71.2C573.014 71.2 576.881 71.4667 581.414 72C585.947 72.2667 590.481 72.8 595.014 73.6C599.547 74.1333 604.081 74.9333 608.614 76C613.147 76.8 617.014 77.8667 620.214 79.2L610.214 128.4ZM721.864 286C708.264 259.333 694.397 228.133 680.264 192.4C666.397 156.667 653.197 117.733 640.664 75.6H703.864C706.531 86 709.597 97.3333 713.064 109.6C716.797 121.6 720.531 133.867 724.264 146.4C728.264 158.667 732.131 170.667 735.864 182.4C739.864 194.133 743.731 204.8 747.464 214.4C750.931 204.8 754.664 194.133 758.664 182.4C762.664 170.667 766.531 158.667 770.264 146.4C774.264 133.867 777.997 121.6 781.464 109.6C785.197 97.3333 788.397 86 791.064 75.6H852.664C840.131 117.733 826.797 156.667 812.664 192.4C798.797 228.133 785.064 259.333 771.464 286H721.864ZM869.117 182.4C869.117 163.733 871.917 147.467 877.517 133.6C883.384 119.467 890.984 107.733 900.317 98.4C909.651 89.0667 920.317 82 932.317 77.2C944.584 72.4 957.117 70 969.917 70C999.784 70 1023.38 79.2 1040.72 97.6C1058.05 115.733 1066.72 142.533 1066.72 178C1066.72 181.467 1066.58 185.333 1066.32 189.6C1066.05 193.6 1065.78 197.2 1065.52 200.4H930.317C931.651 212.667 937.384 222.4 947.517 229.6C957.651 236.8 971.251 240.4 988.317 240.4C999.251 240.4 1009.92 239.467 1020.32 237.6C1030.98 235.467 1039.65 232.933 1046.32 230L1054.32 278.4C1051.12 280 1046.85 281.6 1041.52 283.2C1036.18 284.8 1030.18 286.133 1023.52 287.2C1017.12 288.533 1010.18 289.6 1002.72 290.4C995.251 291.2 987.784 291.6 980.317 291.6C961.384 291.6 944.851 288.8 930.717 283.2C916.851 277.6 905.251 270 895.917 260.4C886.851 250.533 880.051 238.933 875.517 225.6C871.251 212.267 869.117 197.867 869.117 182.4ZM1009.12 159.6C1008.85 154.533 1007.92 149.6 1006.32 144.8C1004.98 140 1002.72 135.733 999.517 132C996.584 128.267 992.717 125.2 987.917 122.8C983.384 120.4 977.651 119.2 970.717 119.2C964.051 119.2 958.317 120.4 953.517 122.8C948.717 124.933 944.717 127.867 941.517 131.6C938.317 135.333 935.784 139.733 933.917 144.8C932.317 149.6 931.117 154.533 930.317 159.6H1009.12ZM1299.51 75.6C1287.51 116.133 1274.98 154.133 1261.91 189.6C1248.84 225.067 1234.58 259.467 1219.11 292.8C1213.51 304.8 1207.91 314.933 1202.31 323.2C1196.71 331.733 1190.58 338.667 1183.91 344C1177.24 349.6 1169.64 353.6 1161.11 356C1152.84 358.667 1143.11 360 1131.91 360C1122.58 360 1113.91 359.067 1105.91 357.2C1098.18 355.6 1091.78 353.733 1086.71 351.6L1097.11 304C1103.24 306.133 1108.71 307.6 1113.51 308.4C1118.31 309.2 1123.38 309.6 1128.71 309.6C1139.38 309.6 1147.51 306.667 1153.11 300.8C1158.98 295.2 1163.91 287.333 1167.91 277.2C1154.31 250.533 1140.71 220.667 1127.11 187.6C1113.51 154.267 1100.71 116.933 1088.71 75.6H1151.91C1154.58 86 1157.64 97.3333 1161.11 109.6C1164.84 121.6 1168.71 133.867 1172.71 146.4C1176.71 158.667 1180.71 170.667 1184.71 182.4C1188.98 194.133 1192.98 204.8 1196.71 214.4C1200.18 204.8 1203.78 194.133 1207.51 182.4C1211.24 170.667 1214.84 158.667 1218.31 146.4C1222.04 133.867 1225.51 121.6 1228.71 109.6C1232.18 97.3333 1235.24 86 1237.91 75.6H1299.51Z"
+                            fill="white"
+                        ></path>
+                        <path
+                            d="M1415.06 139.6L1456.66 75.6H1518.26L1446.26 176.8C1462.26 196.8 1476.79 216.267 1489.86 235.2C1502.93 254.133 1513.33 271.067 1521.06 286H1457.06C1454.93 282 1452.26 277.067 1449.06 271.2C1445.86 265.067 1442.26 258.8 1438.26 252.4C1434.26 245.733 1429.99 239.2 1425.46 232.8C1421.19 226.133 1416.93 220.133 1412.66 214.8C1408.66 219.867 1404.53 225.467 1400.26 231.6C1396.26 237.733 1392.39 244 1388.66 250.4C1384.93 256.533 1381.19 262.667 1377.46 268.8C1373.99 274.933 1370.93 280.667 1368.26 286H1307.46C1310.66 279.333 1315.06 271.467 1320.66 262.4C1326.26 253.333 1332.26 244 1338.66 234.4C1345.33 224.533 1352.26 214.8 1359.46 205.2C1366.66 195.333 1373.73 186.133 1380.66 177.6C1368.66 160.8 1356.66 143.867 1344.66 126.8C1332.66 109.467 1320.79 92.4 1309.06 75.6H1373.46L1415.06 139.6Z"
+                            fill="url(#paint0_linear_101_34)"
+                        ></path>
+                    </g>
+                    <defs>
+                        <linearGradient
+                            id="paint0_linear_101_34"
+                            x1="-13"
+                            y1="-93"
+                            x2="603.819"
+                            y2="925.1"
+                            gradientUnits="userSpaceOnUse"
+                        >
+                            <stop stop-color="#FFD700"></stop>
+                            <stop
+                                offset="1"
+                                stop-color="#FDC400"
+                            ></stop>
+                        </linearGradient>
+                        <clipPath id="clip0_101_34">
+                            <rect
+                                width="1525"
+                                height="367"
+                                fill="white"
+                            ></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
+            <div
+                id="splash-screen"
+                class="splash-screen__loader"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                >
+                    <circle
+                        style="opacity: .25;"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        stroke-width="4"
+                    ></circle>
+                    <path
+                        style="opacity: .75;"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                </svg>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        adjustVh();
+
+        window.addEventListener('resize', () => {
+          adjustVh();
+        });
+
+        function adjustVh() {
+          const vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+    </script>
+</html>

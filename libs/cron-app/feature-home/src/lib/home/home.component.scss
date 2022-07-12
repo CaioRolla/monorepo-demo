@@ -1,0 +1,50 @@
+.home {
+
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 64px;
+
+  &__alerts {
+    margin-bottom: 32px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    &__stats {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 320px;
+
+      margin-right: 32px;
+
+      nui-stats-card {
+        margin-top: 32px;
+      }
+
+      @media screen and (max-width: 600px) {
+        margin-right: 0px;
+        max-width: unset;
+
+        nui-stats-card {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    &__schedules {
+      flex: 1;
+      @media screen and (max-width: 600px) {
+        margin-top: 16px;
+      }
+    }
+  }
+}

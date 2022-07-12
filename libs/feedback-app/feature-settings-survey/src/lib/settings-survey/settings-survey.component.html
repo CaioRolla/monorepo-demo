@@ -1,0 +1,63 @@
+<nui-feedback-app-page-wrapper
+    pageTitle="Settings"
+    i18n-pageTitle
+>
+
+    <h1
+        nui-page-wrapper-title
+        i18n
+        *ngIf="surveyName$ | async as surveyName"
+    >
+        {{ surveyName }}
+    </h1>
+
+    <p nui-page-wrapper-subtitle>
+        Update your survey and share with your subscribers.
+    </p>
+
+    <div class="settings-survey">
+        <div class="settings-survey__container">
+
+            <nui-tab-group [card]="true">
+                <nui-tab-header tabId="settings">
+                    <hero-icon
+                        name="cog"
+                        nui-tab-header-prefix
+                    ></hero-icon>
+                    <ng-container i18n>Settings</ng-container>
+                </nui-tab-header>
+
+                <nui-tab-header tabId="share">
+                    <hero-icon
+                        name="share"
+                        nui-tab-header-prefix
+                    ></hero-icon>
+                    <ng-container i18n>Share</ng-container>
+                </nui-tab-header>
+
+                <nui-tab-header tabId="identifiers">
+                    <hero-icon
+                        name="finger-print"
+                        nui-tab-header-prefix
+                    ></hero-icon>
+                    <ng-container i18n>Identifiers</ng-container>
+                </nui-tab-header>
+
+                <nui-tab tabId="settings">
+                    <nui-settings-tab></nui-settings-tab>
+                </nui-tab>
+
+                <nui-tab tabId="share">
+                    <nui-share-tab></nui-share-tab>
+                </nui-tab>
+
+                <nui-tab tabId="identifiers">
+                    <nui-id-field-tab [surveyId]="surveyId"></nui-id-field-tab>
+                </nui-tab>
+
+            </nui-tab-group>
+
+        </div>
+    </div>
+
+</nui-feedback-app-page-wrapper>

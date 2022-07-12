@@ -1,0 +1,21 @@
+<nui-content-over-content [displayOverContent]="loading">
+
+  <ng-content>
+  </ng-content>
+
+
+  <div class="loading-content__loading" overContent>
+
+    <div class="loading-content__loading__spinner">
+      <nui-spinner-progress style="height: 24px;" primary></nui-spinner-progress>
+    </div>
+    <div
+      class="loading-content__loading__label"
+      i18n
+    >
+      Loading...
+    </div>
+
+  </div>
+
+</nui-content-over-content>

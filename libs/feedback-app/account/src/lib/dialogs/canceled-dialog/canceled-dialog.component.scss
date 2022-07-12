@@ -1,0 +1,51 @@
+:host {
+  display: block;
+}
+
+.canceled-dialog {
+  min-width: 400px;
+  padding: 16px;
+
+  nui-card {
+    width: 100%;
+  }
+
+
+  &__content {
+    width: 100%;
+
+    padding: 32px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+
+
+    &__logo {
+      height: 24px;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    ::ng-deep .radio-card-group__content {
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+
+      @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    p {
+      color: var(--nui-color-neutral-600);
+      font-weight: 300;
+
+      margin-top: 22px;
+      width: 100%;
+    }
+  }
+}
